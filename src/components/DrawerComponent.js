@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme)=>({
      flexDirection:'column',
      justifyContent:'left',
      height:'100vh',
-     width:'90vw',
+     width:'100vw',
      color:'white'
    },
    listItem:{
