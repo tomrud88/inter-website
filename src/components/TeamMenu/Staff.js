@@ -1,9 +1,12 @@
 import React from 'react'
+import AnalysisArea from '../StaffComponents/AnalysisArea'
+import TechnicalArea from '../StaffComponents/TachnicalArea'
 
 function Staff() {
     return (
         <div>
-           <h1>This is Staff page</h1>
+          <TechnicalArea/>
+          <AnalysisArea/>
         </div>
     )
 }
