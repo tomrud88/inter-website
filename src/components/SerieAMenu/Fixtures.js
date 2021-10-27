@@ -3,7 +3,7 @@ import React from 'react'
 function Fixtures() {
     return (
         <div>
-            <h1>Fixtures</h1>
+            <h1>Fixtures site</h1>
         </div>
     )
 }
