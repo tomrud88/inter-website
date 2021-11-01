@@ -118,26 +118,6 @@ function AnalysisArea() {
                     </CardActionArea>
                 </Card>
             </Grid>  
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://i1.rgstatic.net/ii/profile.image/997920413335552-1614934175484_Q512/Andrea-Belli-2.jpg'
-                        title='Belli'
-                        />
-                        <CardContent>
-                            <Typography variant='h5'
-                            className={classes.name}>
-                            ANDREA BELLI</Typography>
-                            <Typography variant='h5'
-                            className={classes.name}>Functional rehab</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid>  
         </Grid>
         </Container>
     )

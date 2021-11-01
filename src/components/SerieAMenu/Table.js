@@ -26,10 +26,10 @@ const useStyles = makeStyles((theme)=>({
      const responseData = await response.json()
      
      const standings = responseData.standings;
-     console.log(standings)
-
-     const table = responseData.standings[0].table;
-     console.log(table)
+             console.log(standings)
+         
+             const table = responseData.standings[0].table;
+             console.log(table)
      
     const  loadedData = [];
 
