@@ -1,12 +1,19 @@
 import { PostAddSharp } from '@material-ui/icons';
 import React from 'react';
 import {useState,useEffect} from 'react';
-import { Container, Grid,Table, TableContainer, TableHead, TableRow,TableCell, TableBody, Typography, makeStyles } from '@material-ui/core'
+import { Container, Grid, Table, TableContainer, TableHead, TableRow,TableCell, TableBody, Typography, makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles((theme)=>({
+    mainContainer:{
+        marginTop:'100px',
+        marginBottom:'50px',
+        [theme.breakpoints.down('sm')]:{
+            marginTop:'90px'
+        }
+    },
     tableHead:{
         color:'white'
-    },
+    }
 }))
 
 
@@ -58,12 +65,12 @@ const useStyles = makeStyles((theme)=>({
    console.log(footballData)
 
    return (
-    <Container style={{marginTop:'20px'}}>
+    <Container className={classes.mainContainer}>
         <Typography variant='h5' style={{marginBottom:'15px'}}>
             SERIE A TABLE
         </Typography>
         <TableContainer className={classes.tablecontainer}>
-           <Table style={{minWidth:550}} size='small' aria-label='a dense table'>
+           <Table style={{minWidth:550}}size='medium' aria-label='a dense table'>
         <TableHead style={{backgroundColor:'black'}}
         >
             <TableRow >

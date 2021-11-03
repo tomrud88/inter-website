@@ -13,8 +13,12 @@ const useStyles = makeStyles((theme)=>({
         maxWidth:'1000px'
     },
     mainContainer:{
+        marginTop:'80px',
         justifyContent:'center',
-        display:'flex'
+        display:'flex',
+        [theme.breakpoints.down('sm')]:{
+          marginTop:'70px'
+      }
     },
     SimoneImg:{
         objectFit:'cover',

@@ -3,6 +3,12 @@ import {useEffect,useState} from 'react'
 import{ makeStyles,Container,Typography,TableContainer,Table,TableHead,TableRow,TableCell,TableBody} from '@material-ui/core'
 
 const useStyles = makeStyles((theme)=>({
+    outerContainer:{
+        marginTop:'100px',
+        [theme.breakpoints.down('sm')]:{
+            marginTop:'90px'
+        }
+    },
     mainContainer:{
         display:'flex',
         flexDirection:'column',
@@ -42,7 +48,8 @@ const useStyles = makeStyles((theme)=>({
      },
      tableHead:{
         color:'white',
-        fontSize:'16px'
+        fontSize:'16px',
+        fontWeight:'bold'
     },
     tablecontainer:{
         maxWidth:'800px',
@@ -138,6 +145,7 @@ function ChampionsLeage() {
     
     return (
         <div>
+            <Container className={classes.outerContainer}>
             <h1>Champions League</h1>
             {fixtures.map(fixture =>(
                 <div className={classes.mainContainer}id={fixture.id}>
@@ -167,7 +175,7 @@ function ChampionsLeage() {
                     <Container style={{marginTop:'20px',justifyContent:'center',display:'flex'}}>
         
         <TableContainer className={classes.tablecontainer}>
-           <Table style={{minWidth:450}} size='small' aria-label='a dense table'>
+           <Table  size='medium' aria-label='a dense table'>
         <TableHead style={{backgroundColor:'black'}}
         >
             <TableRow >
@@ -219,6 +227,7 @@ function ChampionsLeage() {
           </TableBody>
         </Table>
         </TableContainer>
+    </Container>
     </Container>
                 
             

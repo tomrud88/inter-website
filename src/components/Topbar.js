@@ -7,17 +7,30 @@ import SerieA from './menuOptions/SerieA';
 import Cups from './menuOptions/Cups';
 import ForFans from './menuOptions/ForFans';
 import Team from './menuOptions/Team';
-import Home from './menuOptions/Home';
+import Home from './menuOptions/Hom';
 import FirstTeam from './TeamMenu/FirstTeam';
 import {BrowserRouter as Router,Switch,Route } from 'react-router-dom'
 
 const drawerWidth = 350;
 
 const useStyles = makeStyles((theme)=>({
+    cursorElement:{
+        hover:{
+        cursor:'pointer'
+    }},
     toolbar:{
+        position:'fixed',
+        top:0,
+        right:0,
+        left:0,
+        zIndex:2,
+        height:'80px',
         display:'flex',
         justifyContent:'space-between',
-        backgroundColor:'#001ea0'
+        backgroundColor:'#001ea0',
+        [theme.breakpoints.down('sm')]:{
+            height:'50px'
+        }
     },
     smallMenu:{
         display:'none',
@@ -41,7 +54,7 @@ const useStyles = makeStyles((theme)=>({
     logo:{
         height:'55px',
         width:'55px',
-        [theme.breakpoints.down('xs')]:{
+        [theme.breakpoints.down('sm')]:{
             height:'40px',
             width:'40px',
     },
@@ -92,7 +105,7 @@ function Topbar() {
                  style={{color:'white'}}><Home/></Link>
               </div>
               <div className={classes.menuItem}>
-                 <Team/>
+                 <Team className={classes.cursorElement}/>
               </div>
               <div className={classes.menuItem}>
                   <SerieA/>

@@ -1,7 +1,7 @@
 import { Typography } from '@material-ui/core'
 import React from 'react'
 
-function Home() {
+function Hom() {
     return (
         <div>
         <Typography
@@ -12,4 +12,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Hom

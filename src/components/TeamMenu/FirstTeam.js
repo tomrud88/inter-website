@@ -7,11 +7,15 @@ import Strikers from '../FirstTeamComponents/Strikers';
 
 const useStyles = makeStyles((theme)=>({
      mainContainer:{
+         marginTop:'80px',
          display:'flex',
          justifyItems:'center',
          alignItems:'center',
          flexDirection:'column',
-         backgroundColor:'darkblue'
+         backgroundColor:'darkblue',
+         [theme.breakpoints.down('sm')]:{
+            marginTop:'50px'
+        }
      }
 }))
 

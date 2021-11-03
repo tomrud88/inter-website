@@ -1,13 +1,20 @@
 import React from 'react'
 import {useEffect,useState} from 'react'
-import{makeStyle, makeStyles} from '@material-ui/core'
+import{Container, makeStyle, makeStyles} from '@material-ui/core'
 
 const useStyles = makeStyles((theme)=>({
+    outerContainer:{
+        marginTop:'110px',
+        [theme.breakpoints.down('sm')]:{
+            marginTop:'90px'
+        }
+    },
     mainContainer:{
         display:'flex',
         flexDirection:'column',
         justifyContent:'center',
-        alignItems:'center'
+        alignItems:'center',
+        
     },
      matchContainer:{
          display:'grid',
@@ -82,6 +89,7 @@ function Fixtures() {
     
     return (
         <div>
+            <Container className={classes.outerContainer}>
             <h1>Fixtures</h1>
             {fixtures.map(fixture =>(
                 <div className={classes.mainContainer}id={fixture.id}>
@@ -102,7 +110,7 @@ function Fixtures() {
                     </div>
                 </div>
             ))}
-            
+            </Container>
         </div>
     )
 }

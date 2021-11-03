@@ -5,7 +5,7 @@ import React from 'react'
 
 const useStyles = makeStyles((theme)=>({
   cardTitleArea:{
-      backgroundColor:'#193c8c',
+      backgroundColor:'rgba(5, 5, 5, 0.95)',
       color:'white'
   }
 }))

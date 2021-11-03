@@ -14,12 +14,15 @@ const useStyles = makeStyles((theme)=>({
         justifyContent:'center',
         alignItems:'center',
         [theme.breakpoints.down('md')]:{
-          height:'750px'
+          height:'750px',
+          marginTop:'55px'
         },  
         [theme.breakpoints.down('xs')]:{
-          height:'300px'
+          height:'300px',
+          marginTop:'55px'
         },
-        marginBottom:'10px',  
+        marginBottom:'10px',
+        marginTop:'30px'  
     },
     back:{
         backgroundImage:`url(/san-siro.jpg)`,

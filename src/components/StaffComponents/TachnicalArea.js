@@ -41,10 +41,14 @@ const useStyles = makeStyles((theme)=>({
         marginBottom:'15px'
     },
     outerContainer:{
+        marginTop:'80px',
         display:'flex',
         flexDirection:'column',
         backgroundColor:'lightgrey',
         borderBottom:'5px black solid',
+        [theme.breakpoints.down('sm')]:{
+            marginTop:'50px'
+        }
     }
 }))
 

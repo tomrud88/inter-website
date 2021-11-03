@@ -4,6 +4,12 @@ import {useState,useEffect} from 'react';
 import { Container, Grid,Table, TableContainer, TableHead, TableRow,TableCell, TableBody, Typography, makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles((theme)=>({
+    mainContainer:{
+        marginTop:'100px',
+        [theme.breakpoints.down('sm')]:{
+            marginTop:'90px'
+        }
+    },
     tableHead:{
         color:'white'
     },
@@ -50,7 +56,7 @@ const useStyles = makeStyles((theme)=>({
    console.log(topScorers)
 
    return (
-    <Container style={{marginTop:'20px'}}>
+    <Container className={classes.mainContainer}>
         <Typography variant='h5' style={{marginBottom:'15px'}}>
             TOP SCORERS
         </Typography>

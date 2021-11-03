@@ -1,6 +1,11 @@
-import { List, ListItem, ListItemText,Drawer,makeStyles, Container, Button, Typography } from "@material-ui/core";
+import { List, ListItem, ListItemText,Drawer,makeStyles, Container, Button, Typography,Link } from "@material-ui/core";
 import { CalendarTodayOutlined, ConfirmationNumberOutlined, Home, People, ReceiptOutlined, ShoppingCartOutlined } from "@material-ui/icons";
 import { useState } from "react";
+import Team from "./menuOptions/Team";
+import Hom from './menuOptions/Hom'
+import SerieA from "./menuOptions/SerieA";
+import Cups from "./menuOptions/Cups";
+import ForFans from "./menuOptions/ForFans";
 
 const useStyles = makeStyles((theme)=>({
   
@@ -43,50 +48,29 @@ function DrawerComponent(props) {
       onClose={()=>props.changeOpen(false)} 
       >
           <List className={classes.leftMenu} 
-          onClick={()=>props.changeOpen(false)} 
+         
           itemSize={30}>
             <ListItem  className={classes.listItem}>
             <Home className={classes.icon}/>
-            <Typography variant="h6" className={classes.itemText}>
-             HOME
-            </Typography>
+            <Link href='/' underline='none'
+                 style={{color:'white'}}><Hom/></Link>
             </ListItem>
             <ListItem className={classes.listItem}>
             <People className={classes.icon}/>
-            <Typography variant="h6" className={classes.itemText}>
-             TEAM
-            </Typography>
+             <Team/>
             </ListItem>
             <ListItem className={classes.listItem}>
             <ReceiptOutlined className={classes.icon}/>
-            <Typography variant="h6" className={classes.itemText}>
-             NEWS
-            </Typography>
+             <SerieA/>
             </ListItem>
             <ListItem className={classes.listItem}>
             <CalendarTodayOutlined className={classes.icon}/>
-            <Typography variant="h6" className={classes.itemText}>
-             SEASON
-            </Typography>
+            <Cups/>
             </ListItem>
             <ListItem className={classes.listItem}>
             <img src='https://static.dezeen.com/uploads/2021/04/inter-milan-football-club-rebrand-logo_dezeen_2364_sq2.jpg' className={classes.img}/>
-            <Typography variant="h6" className={classes.itemText}>
-             CLUB
-            </Typography>
-            </ListItem>
-            <ListItem className={classes.listItem}>
-            <ShoppingCartOutlined className={classes.icon}/>
-            <Typography variant="h6" className={classes.itemText}>
-             SHOP
-            </Typography>
-            </ListItem>
-            <ListItem className={classes.listItem}>
-            <ConfirmationNumberOutlined className={classes.icon}/>
-            <Typography variant="h6" className={classes.itemText}>
-             TICKETS
-            </Typography>
-            </ListItem>
+             <ForFans/>
+            </ListItem> 
           </List>
           <Button onClick={()=>props.changeOpen(false)}>
             close

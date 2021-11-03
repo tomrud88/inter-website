@@ -8,6 +8,13 @@ function createData(name,surname,club,value,transaction){
 }
 
 const useStyles = makeStyles((theme)=>({
+    mainContainer:{
+      marginTop:'110px',
+      [theme.breakpoints.down('sm')]:{
+          marginTop:'90px'
+      }
+
+    },
     tableHead:{
         color:'white'
     },
@@ -43,7 +50,7 @@ const rowsOut = [
 function Transfers() {
     const classes = useStyles()
     return (
-        <Container style={{marginTop:'20px'}}>
+        <Container className={classes.mainContainer}>
             <Typography variant='h5' style={{marginBottom:'15px'}}>
                 Transfers from the Club
             </Typography>
