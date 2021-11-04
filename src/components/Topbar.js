@@ -1,5 +1,6 @@
-import { AppBar, Button, IconButton, Toolbar, Typography, makeStyles, Drawer, MenuItem, Menu,Box, Popover, Fade, MenuList, Popper, Paper, ClickAwayListener, ImageListItem,Link} from '@material-ui/core'
-import { MenuBook } from '@material-ui/icons'
+import { AppBar, Button, IconButton, Toolbar, Typography,  Drawer, MenuItem, Box, Popover, Fade, MenuList, Popper, Paper, ClickAwayListener, ImageListItem,Link} from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles';
+import { Menu } from '@material-ui/icons'
 import React from 'react'
 import DrawerComponent from './DrawerComponent';
 import { useState } from 'react';
@@ -10,14 +11,14 @@ import Team from './menuOptions/Team';
 import Home from './menuOptions/Hom';
 import FirstTeam from './TeamMenu/FirstTeam';
 import {BrowserRouter as Router,Switch,Route } from 'react-router-dom'
+import {white} from '@material-ui/core/colors'
 
 const drawerWidth = 350;
 
 const useStyles = makeStyles((theme)=>({
-    cursorElement:{
-        hover:{
-        cursor:'pointer'
-    }},
+    palette:{
+        primary:'#ffffff'
+    },
     toolbar:{
         position:'fixed',
         top:0,
@@ -61,7 +62,7 @@ const useStyles = makeStyles((theme)=>({
     paperMenu:{
         color:'green'
     }
-   
+
 }
 }))
 
@@ -93,11 +94,11 @@ function Topbar() {
             sx={{ mr: 2 }}
             onClick={()=>setOpent(!opent)}
           >
-            <MenuBook />
+            <Menu />
             </IconButton>
-            
+            <Link href='/' underline='none'>
               <img className={classes.logo}src='https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2d3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce6018a9cc74938350147bc60dd018680e15b5f1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/interr.png'/>
-           
+           </Link>
             
           <Typography variant='h9' component='div' className={classes.menuoptions} sx={{flexGrow:1}}>
               <div className={classes.menuItem}>
@@ -105,16 +106,24 @@ function Topbar() {
                  style={{color:'white'}}><Home/></Link>
               </div>
               <div className={classes.menuItem}>
-                 <Team className={classes.cursorElement}/>
+                  <Link href='#' underline='none'>
+                 <Team/>
+                 </Link>
               </div>
               <div className={classes.menuItem}>
-                  <SerieA/>
+                 <Link href='#' underline='none'>
+                <SerieA/>
+                </Link>
               </div>
               <div className={classes.menuItem}>
+                  <Link href='#' underline='none'>
                   <Cups/>
+                  </Link>
               </div>
               <div className={classes.menuItem}>
+                  <Link href='#' underline='none'>
                   <ForFans/>
+                  </Link>
               </div>
               
           </Typography>

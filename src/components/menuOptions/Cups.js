@@ -25,7 +25,7 @@ function Cups() {
         <div>
                   <Typography
                  onClick={handleMenuOpen}
-                 style={{fontWeight:'bold',fontSize:'17px'}}
+                 style={{fontWeight:'bold',fontSize:'17px',color:'white'}}
                   >CUPS
                 </Typography>
                 <Popper
