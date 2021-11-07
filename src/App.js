@@ -16,7 +16,7 @@ import TopScorers from './components/SerieAMenu/TopScorers';
 import ChampionsLeague from './components/CupsMenu/ChampionsLeague';
 import ItalianCup from './components/CupsMenu/ItalianCup';
 import Anthem from './components/FansMenu/Anthem';
-import Departure from './components/FansMenu/Departure';
+import FanToken from './components/FansMenu/FanToken';
 
 function App() {
   return (
@@ -35,7 +35,7 @@ function App() {
       <Route path='/champions-league' component={ChampionsLeague}/>
       <Route path='/italian-cup' component={ItalianCup}/>
       <Route path='/anthem' component={Anthem}/>
-      <Route path='/departure' component={Departure}/>
+      <Route path='/fantoken' component={FanToken}/>
       </Switch>
     </div>
     </Router>

@@ -53,7 +53,7 @@ function ForFans() {
              ><Link href='/anthem' underline='none'>ANTHEM</Link>
              </MenuItem >
                     <MenuItem onClick={handleClose}
-                     ><Link href='/departure' underline='none'>DEPARTURE</Link></MenuItem >
+                     ><Link href='/fantoken' underline='none'>FAN TOKEN</Link></MenuItem >
                 </MenuList>
                 </ClickAwayListener>
                 </Paper>
