@@ -17,8 +17,12 @@ import ChampionsLeague from './components/CupsMenu/ChampionsLeague';
 import ItalianCup from './components/CupsMenu/ItalianCup';
 import Anthem from './components/FansMenu/Anthem';
 import FanToken from './components/FansMenu/FanToken';
+import LoginModal from './components/LoginModal';
+import {useState} from 'react'
+import zIndex from '@material-ui/core/styles/zIndex';
 
 function App() {
+  
   return (
     <Router>
     <div className="App">

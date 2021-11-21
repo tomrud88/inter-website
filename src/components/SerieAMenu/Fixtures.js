@@ -1,6 +1,7 @@
 import React from 'react'
 import {useEffect,useState} from 'react'
 import{Container, makeStyle, makeStyles} from '@material-ui/core'
+import { ClipLoader } from 'react-spinners';
 
 const useStyles = makeStyles((theme)=>({
     outerContainer:{
@@ -55,8 +56,10 @@ function Fixtures() {
     const classes = useStyles()
 
     const[fixtures,setFixtures] = useState([])
+    const[loading,setLoading] = useState(false)
 
     useEffect(() => {
+        setLoading(true)
         const fetchFixtures = async() =>{
             const response = await fetch('https://api.football-data.org/v2/competitions/SA/matches',{
                 'method':'GET',
@@ -82,15 +85,23 @@ function Fixtures() {
                 })
             }
             setFixtures(loadedData)
+            setLoading(false)
         }
         fetchFixtures()
+        
     }, [])
 
     
     return (
-        <div>
             <Container className={classes.outerContainer}>
-            <h1>Fixtures</h1>
+            {loading ?  
+           ( <ClipLoader
+            size={350}
+            color={'#001ea0'}
+            loading={loading}
+            />):
+            (<div>
+            <h1>Fixtures</h1>   
             {fixtures.map(fixture =>(
                 <div className={classes.mainContainer}id={fixture.id}>
                     {(fixture.id %10) == 0 && <div className={classes.round}>
@@ -108,10 +119,11 @@ function Fixtures() {
                     {(fixture.awayTeam) === 'FC Internazionale Milano' ? <p style={{color:'#0841ff'}}>{fixture.awayTeam}</p> : <p>{fixture.awayTeam}</p> }
                     </div>
                     </div>
-                </div>
+                </div>    
             ))}
+            </div>)
+          }
             </Container>
-        </div>
     )
 }
 

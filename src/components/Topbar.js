@@ -12,6 +12,7 @@ import Home from './menuOptions/Hom';
 import FirstTeam from './TeamMenu/FirstTeam';
 import {BrowserRouter as Router,Switch,Route } from 'react-router-dom'
 import {white} from '@material-ui/core/colors'
+import LoginModal from './LoginModal';
 
 const drawerWidth = 350;
 
@@ -70,7 +71,7 @@ function Topbar() {
     const classes = useStyles()
     const [opent,setOpent] = useState(false)
     const [anchor, setAnchor] = useState(null)
-
+    const [isOpen,setIsOpen] = useState(false)
 
     const handleMenuOpen = (event) =>{
        setAnchor(event.currentTarget)
@@ -127,7 +128,8 @@ function Topbar() {
               </div>
               
           </Typography>
-          <Button color="inherit">Login</Button>
+      <LoginModal open={isOpen} onClose={()=> setIsOpen(false)}/>
+          <Button onClick={()=> setIsOpen(true)} color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
       {opent && <DrawerComponent changeOpen={opent => setOpent(opent)}/>}

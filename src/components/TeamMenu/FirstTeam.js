@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme)=>({
          justifyItems:'center',
          alignItems:'center',
          flexDirection:'column',
-         backgroundColor:'darkblue',
+         backgroundColor:'rgba(20,46,107,255)',
          [theme.breakpoints.down('sm')]:{
             marginTop:'50px'
         }

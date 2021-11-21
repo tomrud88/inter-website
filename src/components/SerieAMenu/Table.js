@@ -1,7 +1,8 @@
 import { PostAddSharp } from '@material-ui/icons';
 import React from 'react';
 import {useState,useEffect} from 'react';
-import { Container, Grid, Table, TableContainer, TableHead, TableRow,TableCell, TableBody, Typography, makeStyles } from '@material-ui/core'
+import { Container, Grid, Table, TableContainer, TableHead, TableRow,TableCell, TableBody, Typography, makeStyles } from '@material-ui/core';
+import { ClipLoader } from 'react-spinners';
 
 const useStyles = makeStyles((theme)=>({
     mainContainer:{
@@ -19,10 +20,12 @@ const useStyles = makeStyles((theme)=>({
 
  function Tables() {
     const[footballData,setFootballData] = useState([]);
+    const[loading,setLoading] = useState(false)
     const classes = useStyles()
 
 
    useEffect(()=>{
+       setLoading(true)
        const fetchTable = async () =>{
    const response = await fetch("https://api.football-data.org/v2/competitions/SA/standings", {
 	"method": "GET",
@@ -57,7 +60,7 @@ const useStyles = makeStyles((theme)=>({
             }
             console.log(loadedData)
             setFootballData(loadedData)
-         
+            setLoading(false)
         }
        fetchTable() 
        
@@ -66,6 +69,13 @@ const useStyles = makeStyles((theme)=>({
 
    return (
     <Container className={classes.mainContainer}>
+        {loading ?
+        (<ClipLoader
+        size={350}
+        color={'#001ea0'}
+        loading={loading}
+        />):(
+            <div>
         <Typography variant='h5' style={{marginBottom:'15px'}}>
             SERIE A TABLE
         </Typography>
@@ -122,7 +132,10 @@ const useStyles = makeStyles((theme)=>({
           </TableBody>
         </Table>
         </TableContainer>
+        </div>)
+        }
     </Container>
+    
 ) 
 }
 export default Tables

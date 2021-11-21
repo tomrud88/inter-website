@@ -1,6 +1,7 @@
 import React from 'react'
 import {useEffect,useState} from 'react'
-import{ makeStyles,Container,Typography,TableContainer,Table,TableHead,TableRow,TableCell,TableBody} from '@material-ui/core'
+import{ makeStyles,Container,Typography,TableContainer,Table,TableHead,TableRow,TableCell,TableBody} from '@material-ui/core';
+import { ClipLoader } from 'react-spinners';
 
 const useStyles = makeStyles((theme)=>({
     outerContainer:{
@@ -67,6 +68,7 @@ function ChampionsLeage() {
     const classes = useStyles()
 
     const[footballData,setFootballData] = useState([])
+    const[loading,setLoading]= useState(false);
     const[fixtures,setFixtures] = useState([])
 
     useEffect(() => {
@@ -101,6 +103,7 @@ function ChampionsLeage() {
             setFixtures(loadedData)
         }
         const fetchTable = async () =>{
+            setLoading(true);
             const responses = await fetch("https://api.football-data.org/v2/competitions/CL/standings", {
              "method": "GET",
              "headers": {
@@ -135,7 +138,7 @@ function ChampionsLeage() {
                      }
                      console.log(loadedDat)
                      setFootballData(loadedDat)
-                  
+                     setLoading(false)
                  }
         fetchTable()
         fetchFixtures()
@@ -146,6 +149,13 @@ function ChampionsLeage() {
     return (
         <div>
             <Container className={classes.outerContainer}>
+            {loading ? 
+            (<ClipLoader
+                size={350}
+                color={'#001ea0'}
+                loading={loading}
+                />):(
+            <div>
             <h1>Champions League</h1>
             {fixtures.map(fixture =>(
                 <div className={classes.mainContainer}id={fixture.id}>
@@ -228,9 +238,8 @@ function ChampionsLeage() {
         </Table>
         </TableContainer>
     </Container>
-    </Container>
-                
-            
+    </div>)}
+    </Container>     
         </div>
     )
 }

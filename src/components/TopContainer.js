@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme)=>({
     stadium:{
         width:'100%',
         height:'100%',
-        backgroundColor:'rgba(35, 61, 191, 0.94)',
+        backgroundColor:'rgba(20,46,107,0.9)',
         zIndex:1,
         position:'absolute',
         top:0,
@@ -91,7 +91,7 @@ const useStyles = makeStyles((theme)=>({
     results:{
       zIndex:1,
       justifyContent:'center',
-      backgroundColor: 'rgba(35, 61, 191, 0.94)',
+      backgroundColor: 'rgba(20,46,107,255)',
       
       [theme.breakpoints.down('xs')]:{
         
@@ -113,7 +113,7 @@ const useStyles = makeStyles((theme)=>({
       display:'flex',
       justifyContent:'space-between',
       alignItems:'center',
-      backgroundColor: 'rgba(5, 5, 5, 0.95)',
+      backgroundColor: 'rgba(0,0,0,255)',
       color:'white',
       fontWeight:'700'
     },
