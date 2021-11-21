@@ -14,6 +14,22 @@ const useStyles = makeStyles((theme)=>({
     },
     tableHead:{
         color:'white'
+    },
+    legend:{
+        marginTop:'50px',
+        display:'flex',
+        flexDirection:'column',
+        justifyContent:'flex-start',
+        alignItems:'flex-start'
+    },
+    legendItem:{
+        display:'flex',
+    },
+    square:{
+        marginRight:'30px',
+        marginBottom:'10px',
+        height:'50px',
+        width:'50px'
     }
 }))
 
@@ -100,9 +116,31 @@ const useStyles = makeStyles((theme)=>({
                   <TableRow
                   key={table.key}
                   >
+                      {(table.position < 5) ?
+                     <TableCell  style={{backgroundColor:'green'}}>
+                         {table.position}
+                    </TableCell>:
+                    (table.position == 5)?
+                      <TableCell style={{
+                          backgroundColor:'#b66d84'
+                      }}>
+                          {table.position}
+                      </TableCell>:
+                      (table.position == 6)?
+                      <TableCell style={{
+                          backgroundColor:'#b8860b'
+                      }}>
+                          {table.position}
+                       </TableCell>:
+                        (table.position > 17)?
+                        <TableCell style={{
+                            backgroundColor:'#bd0000'
+                        }}>
+                            {table.position}
+                         </TableCell>:
                       <TableCell>
                           {table.position}
-                      </TableCell>
+                      </TableCell>}
                       <TableCell>
                           {table.name}
                       </TableCell>
@@ -134,6 +172,28 @@ const useStyles = makeStyles((theme)=>({
         </TableContainer>
         </div>)
         }
+        <div className={classes.legend}>
+            <div className={classes.legendItem}>
+            <div className={classes.square} style={{backgroundColor:'green'}}>
+             </div>
+             <p>Promotion - Champions League (Group Stage)</p>
+            </div>
+            <div className={classes.legendItem}>
+             <div className={classes.square} style={{                          backgroundColor:'#b66d84'}}>
+             </div>
+             <p>Promotion - Europa League (Group Stage)</p>
+            </div>
+            <div className={classes.legendItem}>
+             <div className={classes.square} style={{backgroundColor:'#b8860b'}}>
+             </div>
+             <p>Promotion - Europa Conference League (Group Stage)</p>
+            </div>
+            <div className={classes.legendItem}>
+             <div className={classes.square} style={{backgroundColor:'#bd0000'}} >
+             </div>
+             <p>Relegation - Serie B</p>
+            </div>
+        </div>
     </Container>
     
 ) 
