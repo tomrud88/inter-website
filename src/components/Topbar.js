@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme)=>({
         }
     },
     menuItem:{
-        marginRight:theme.spacing(2),
+        marginRight:theme.spacing(7),
         [theme.breakpoints.down('sm')]:{
             marginRight:theme.spacing(1),
             fontSize:'10px'

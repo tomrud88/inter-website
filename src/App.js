@@ -20,12 +20,18 @@ import FanToken from './components/FansMenu/FanToken';
 import LoginModal from './components/LoginModal';
 import {useState} from 'react'
 import zIndex from '@material-ui/core/styles/zIndex';
+import { makeStyles } from '@material-ui/core';
+
+
+const useStyles = makeStyles((theme)=>({
+   
+}));
 
 function App() {
-  
+  const classes = useStyles()
   return (
     <Router>
-    <div className="App">
+    <div className={classes.App}>
       <Topbar/>
       <Switch>
       <Route path='/' exact component={MainContainer}/>

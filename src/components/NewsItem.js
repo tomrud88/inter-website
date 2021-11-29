@@ -7,6 +7,12 @@ const useStyles = makeStyles((theme)=>({
   cardTitleArea:{
       backgroundColor:'rgba(5, 5, 5, 0.95)',
       color:'white'
+  },
+  Card:{
+      '&:hover':{
+          transform:
+              'scale(1.02)'
+      }
   }
 }))
 
@@ -16,7 +22,7 @@ function NewsItem({item}) {
 
     return (
         <div>
-            <Card>
+            <Card className={classes.Card}>
              <CardActionArea>
                  <CardMedia
                    component='img'

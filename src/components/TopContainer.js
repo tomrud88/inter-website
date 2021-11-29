@@ -1,27 +1,32 @@
-import { Container,Box,makeStyles, Card, CardMedia, CardContent,ImageListItemBar , Typography, Grid, ListItem, ImageList, ImageListItem,Item} from '@material-ui/core'
+import { Container,Box,makeStyles, Card, CardMedia, CardContent,ImageListItemBar , Typography, Grid, ListItem, ImageList, ImageListItem,Item, Paper,Shadow, Link} from '@material-ui/core'
+
 
 
 import React from 'react'
 
 const useStyles = makeStyles((theme)=>({
   con:{
-    width:'100vw'
+   minWidth:'100vw',
+   margin:'0px',
+   padding: '0px',
   },
     containerone:{
+        boxSizing:'border-box',
         minWidth:'100vw',
-        height:'900px',
+        height:'850px',
         position:'relative',
         justifyContent:'center',
         alignItems:'center',
         [theme.breakpoints.down('md')]:{
           height:'750px',
           marginTop:'55px'
+        },
+        [theme.breakpoints.down('sm')]:{
+          height:'500px',
         },  
         [theme.breakpoints.down('xs')]:{
-          height:'300px',
-          marginTop:'55px'
+          height:'500px',
         },
-        marginBottom:'10px',
         marginTop:'30px'  
     },
     back:{
@@ -39,10 +44,11 @@ const useStyles = makeStyles((theme)=>({
         justifyContent:'center',
         alignItems:'center',
         [theme.breakpoints.down('xs')]:{
-          height:'300px'
+          height:'525px'
         }  
     },
     stadium:{
+        boxSizing:'border-box',
         width:'100%',
         height:'100%',
         backgroundColor:'rgba(20,46,107,0.9)',
@@ -51,36 +57,8 @@ const useStyles = makeStyles((theme)=>({
         top:0,
         bottom:0,
         left:0,
-        right:0,
-        [theme.breakpoints.down('xs')]:{
-          
-        }  
+        right:0,   
     },
-    imagelist:{
-      width:'60vw',
-      gap:theme.spacing(1.7),
-      zIndex:1,
-      [theme.breakpoints.down('md')]:{
-        width:'100vw',
-        gap:theme.spacing(1)
-      },
-      [theme.breakpoints.down('xs')]:{
-        Maxheight:'300px',
-        zIndex:1
-      }
-    },
-    imagelistItem:{
-        zIndex:1,
-        [theme.breakpoints.down('xs')]:{
-        maxHeight:'300px',
-      }
-    },
-    imagelistItemSmall:{
-      zIndex:1,
-      [theme.breakpoints.down('xs')]:{
-        display:'none'
-      }  
-  },
     title:{
       zIndex:2,
       fontSize:'34px'
@@ -88,13 +66,20 @@ const useStyles = makeStyles((theme)=>({
     typo:{
       zIndex:1
     },
+    resultsContainer:{
+      width:'100vw',
+      backgroundColor: 'rgba(20,46,107,255)',
+      [theme.breakpoints.down('xs')]:{
+        marginTop:'5px'
+      }  
+    },
     results:{
       zIndex:1,
       justifyContent:'center',
       backgroundColor: 'rgba(20,46,107,255)',
-      
+      width:'100%',
       [theme.breakpoints.down('xs')]:{
-        
+        marginTop:'25px'
       }  
     },
     bottomcontainer:{
@@ -121,6 +106,80 @@ const useStyles = makeStyles((theme)=>({
     timeofplay:{
        fontWeight:'700'
        
+    },
+    gridContainer:{
+      marginRight:'0px',
+      boxSizing:'border-box',
+      width:'60%',
+      zIndex:1,
+      marginTop:'50px',
+      [theme.breakpoints.down('md')]:{
+        width:'80%',
+        marginTop:'20px',
+        marginRight:'0px',
+        overflow:'hidden'
+      },
+      [theme.breakpoints.down('sm')]:{
+        width:'100%',
+        height:'100%',
+        marginBottom:'25px',
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center'
+      },
+      [theme.breakpoints.down('xs')]:{ 
+       marginBottom:'0px',
+       padding:'0px',
+       marginTop:'0px'
+      }
+    },
+    mainCardContainer:{
+      '&:hover':{
+        transform:
+          'scale(1.02)'
+       },
+      height:'500px',
+      padding:theme.spacing(1),
+      [theme.breakpoints.down('xs')]:{
+         height:'500px',
+         margin:'0px',
+         padding:theme.spacing(0),
+         overflow:'hidden' 
+      } 
+    },
+    cardContainer:{
+      maxWidth:'360px',
+      height:'190px',
+      padding:theme.spacing(1),
+      [theme.breakpoints.down('sm')]:{
+        display:'none'
+      },
+      '&:hover':{
+        transform:
+          'scale(1.02) 2s'
+        
+      },
+
+      
+    },
+    paper:{
+      backgroundRepeat: 'no-repeat',
+        backgroundSize:'cover',
+        backgroundPosition:'top',
+        height:'100%',
+        width:'100%',
+        display:'flex',
+        justifyContent:'flex-start',
+        alignItems:'flex-end'
+    },
+    mainTitle:{
+      fontSize:'1.5em',
+      fontWeight:'bold',
+      marginBottom:'5%',
+      color:'white',
+      marginLeft:'3%',
+      marginRight:'3%',
+     
     }
     
 }))
@@ -133,49 +192,54 @@ function TopContainer() {
             <Container className={classes.containerone}>
                 <div className={classes.back}>
                 <div className={classes.stadium}></div> 
-                <ImageList 
-                className={classes.imagelist}
-                variant="woven"
-                cols={6.3}
-                rows={4}
-                style={{margin:'50px 0'}}
-    >
-        <ImageListItem  className={classes.imagelistItem}
-        cols={6.2} 
-        rows={3}>
-          <img style={{objectFit:'fill'}}src='https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDh6IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a7ab554cd35540bf88c0492d5f9627345ebce0e8/E9uhyx3WUAYZhDK.jpg'
-            alt='main'
-           
-          /><ImageListItemBar className={classes.title} position='bottom' text='secondary' title='Martinez lub Correa wroca do Mediolanu szybciej?'/>
-        </ImageListItem>
-        <ImageListItem className={classes.imagelistItemSmall}
-        cols={2} 
-        rows={1}>
-          <img style={{objectFit:'fill',width:'100%'}}src='https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcHd3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8a8ef401ca90ee66c163ffe2cee8fff13a0fdb97/facx.png'
-            alt='main'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem className={classes.imagelistItemSmall}
-        cols={2} 
-        rows={1}>
-          <img style={{objectFit:'fill',width:'100%'}}src='https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3dwIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--136870637a6b6ea2dd06c8aa5dde47e62880f97b/twitter.png'
-            alt='main'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem className={classes.imagelistItemSmall}
-        cols={2} 
-        rows={1}>
-          <img style={{objectFit:'fill',width:'100%'}}src='https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbkF5IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--73bd9332e1ccf249d70cf9851eb682c0a0fce317/rgol-malyxq.gif'
-            alt='main'
-            loading="lazy"
-          />
-        </ImageListItem>
-    </ImageList>
+                <Grid container rowSpacing={1}
+                columnSpacing={1} className={classes.gridContainer}
+               >
+               
+    
+        <Grid item xs={12} sm={12} md={12} lg={12}
+        ><div className={classes.mainCardContainer}>
+          <Paper style={{backgroundImage:'url(https://www.inter.it/binaries/content/gallery/internazionale/photos/2021/11/24/2021-11-24-19-30-20_407059.JPG/2021-11-24-19-30-20_407059.JPG/internazionale%3AcinemaApp)'}} className={classes.paper}>
+            <p className={classes.mainTitle} boxShadow={2}>
+            INTER REACH THE LAST 16: GROUP D STANDINGS
+            </p>
+       </Paper>
+        </div>
+        </Grid>
+        <Grid item  md={4} lg={4} className={classes.imagelistItemSmall}
+       // cols={2} 
+       // rows={1}
+       ><div className={classes.cardContainer}>
+         <Link href='https://www.facebook.com/Inter'>
+         <Paper style={{backgroundImage:'url(https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcHd3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8a8ef401ca90ee66c163ffe2cee8fff13a0fdb97/facx.png)'}} className={classes.paper}>
+       </Paper>
+       </Link>
+       </div>
+        </Grid>
+        <Grid item  md={4} lg={4} 
+       // cols={2} 
+        //rows={1}
+        ><div className={classes.cardContainer}>
+          <Link href='https://twitter.com/Inter'>
+          <Paper style={{backgroundImage:'url(https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3dwIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--136870637a6b6ea2dd06c8aa5dde47e62880f97b/twitter.png)'}} className={classes.paper}
+          >
+          </Paper>
+          </Link>
+          </div>
+        </Grid>
+        <Grid item md={4} lg={4} className={classes.imagelistItemSmall}
+       // cols={2} 
+       // rows={1}
+       ><div className={classes.cardContainer}>
+         <Paper style={{backgroundImage:'url(https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbkF5IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--73bd9332e1ccf249d70cf9851eb682c0a0fce317/rgol-malyxq.gif)'}} className={classes.paper}
+          >
+          </Paper>
+          </div>
+        </Grid>
+    </Grid>
     </div>
     </Container>
-
+    <div className={classes.resultsContainer} >
     <Grid  className={classes.results} container direction='row' spacing={2}>
       <Grid className={classes.leftsite} item lg={4} sm={6} xs={12}>
         <Grid item container direction='column' alignItems='center'>
@@ -211,6 +275,7 @@ function TopContainer() {
         </Grid>
     </Grid>
     </Grid>
+    </div>
         </div>           
     )
 }
