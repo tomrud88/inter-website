@@ -211,7 +211,7 @@ function TopContainer() {
        // rows={1}
        ><div className={classes.cardContainer}>
          <Link href='https://www.facebook.com/Inter'>
-         <Paper style={{backgroundImage:'url(https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcHd3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8a8ef401ca90ee66c163ffe2cee8fff13a0fdb97/facx.png)'}} className={classes.paper}>
+         <Paper style={{backgroundImage:'url(https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3dwIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--136870637a6b6ea2dd06c8aa5dde47e62880f97b/twitter.png)'}} className={classes.paper}>
        </Paper>
        </Link>
        </div>
@@ -221,7 +221,7 @@ function TopContainer() {
         //rows={1}
         ><div className={classes.cardContainer}>
           <Link href='https://twitter.com/Inter'>
-          <Paper style={{backgroundImage:'url(https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3dwIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--136870637a6b6ea2dd06c8aa5dde47e62880f97b/twitter.png)'}} className={classes.paper}
+          <Paper style={{backgroundImage:'url(https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcVUwIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c2163d0caa6561942ca0c09e5d907bc35ba125c5/fb%20maly.jpg)'}} className={classes.paper}
           >
           </Paper>
           </Link>

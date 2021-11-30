@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme)=>({
     outerContainer:{
         marginTop:'100px',
         [theme.breakpoints.down('sm')]:{
-            marginTop:'90px'
+            marginTop:'90px',
         }
     },
     mainContainer:{
@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme)=>({
      matchContainer:{
          display:'grid',
          gridTemplateColumns:'3fr 3fr 2fr 3fr',
+         height:'50px',
          minWidth:'800px',
          fontWeight:'bold',
          borderBottom:'solid grey 1px',
@@ -33,7 +34,7 @@ const useStyles = makeStyles((theme)=>({
          minWidth:'800px',
          color:'white',
          display:'flex',
-         marginTop:'15px',
+         marginTop:'1px',
          padding:'5px',
          fontWeight:'bold',
          fontSize:'20px',
@@ -59,6 +60,21 @@ const useStyles = makeStyles((theme)=>({
     tableCellbody:{
         fontSize:'16px',
         fontWeight:'bold'
+    },
+    dateContainer:{
+        display:'flex',
+        justifyContent:'flex-start',
+        alignItems:'center'
+    },
+    homeContainer:{
+        display:'flex',
+        justifyContent:'flex-start',
+        alignItems:'center'
+    },
+    awayContainer:{
+        display:'flex',
+        justifyContent:'flex-start',
+        alignItems:'center'
     }
      })
 )
@@ -155,17 +171,17 @@ function ChampionsLeage() {
                 color={'#001ea0'}
                 loading={loading}
                 />):(
-            <div>
-            <h1>Champions League</h1>
+            <div> 
+                 <h1>Champions League</h1> 
             {fixtures.map(fixture =>(
                 <div className={classes.mainContainer}id={fixture.id}>
                     {(fixture.id %2) == 0 && <div className={classes.round}>
                         <p style={{margin:'5px 13px'}}>Round {fixture.round}</p></div> }
                     <div className={classes.matchContainer}>
-                    <div>
+                    <div className={classes.dateContainer}>
                     <p>{new Date(fixture.date).toLocaleString()}</p>
                     </div>
-                    <div>
+                    <div className={classes.homeContainer}>
                     {(fixture.homeTeam) === 'FC Internazionale Milano' ? <p style={{color:'#0841ff'}}>{fixture.homeTeam}</p> : <p>{fixture.homeTeam}</p> }
                     </div>
                     <div className={classes.result}>
@@ -173,7 +189,7 @@ function ChampionsLeage() {
                     <p>:</p>
                     <p>{fixture.scoreAwayTeam}</p>
                     </div>
-                    <div>
+                    <div className={classes.awayContainer}>
                     {(fixture.awayTeam) === 'FC Internazionale Milano' ? <p style={{color:'#0841ff'}}>{fixture.awayTeam}</p> : <p>{fixture.awayTeam}</p> }
                     </div>
                     </div>

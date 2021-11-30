@@ -39,18 +39,24 @@ const useStyles = makeStyles((theme => ({
           width:'100%',
           height:'30px',
       },
-      login:{
-          padding:'10px 30px',
-          borderRadius:'20px',
+      toggle:{
+          padding:'30px 20px',
+          borderRadius:'30px',
           width:'150px',
-          height:'40px',
-          textSize:'20px',
+          height:'50px',
+          fontSize:'18px',
           margin:'10px',
+          display:'flex',
+          justifyContent:'center',
+          alignItems:'center',
           backgroundColor:'rgba(0,30,160,255)',
           color:'white',
           '&:disabled':{
               backgroundColor:'rgb(128, 128, 128)'
           }
+      },
+      toggleButton:{
+          padding:'10px'
       },
       label:{
           
@@ -61,18 +67,19 @@ const useStyles = makeStyles((theme => ({
 function LoginModal({open,onClose}) {
     const classes = useStyles()
     const[enteredEmail,setEnteredEmail] = useState('');
-    const[enteredName,setEnteredName] = useState('');
+    const[enteredPassword,setEnteredPassword] = useState('');
     const[enteredEmailTouched, setEnteredEmailTouched] = useState(false);
-    const[enteredNameTouched, setEnteredNameTouched] = useState(false);
-
-
-    const enteredNameIsValid = enteredName.trim() !== ''
+    const[enteredPasswordTouched, setEnteredPasswordTouched] = useState(false);
+    const[isLogin,setIsLogin] = useState(false)
+    const[isLoading,setIsLoading] = useState(false)
+     
+    const enteredPasswordIsValid = enteredPassword.trim() !== ''
 
     const enteredEmailIsValid = enteredEmail.includes('@')
 
     let formIsValid = false
 
-    if(enteredEmailIsValid && enteredNameIsValid){
+    if(enteredEmailIsValid && enteredPasswordIsValid){
         formIsValid = true
     }
 
@@ -84,28 +91,72 @@ function LoginModal({open,onClose}) {
         setEnteredEmailTouched(true);
     }
 
-    const nameChangeHandler = (event)=>{
-        setEnteredName(event.target.value)
+    const passwordChangeHandler = (event)=>{
+        setEnteredPassword(event.target.value)
     };
     
-    const nameBlurHandler = event =>{
-        setEnteredNameTouched(true);
+    const passwordBlurHandler = event =>{
+        setEnteredPasswordTouched(true);
+        
+    }
+
+    const switchAuthModeHandler = () =>{
+        setEnteredEmailTouched(false);
+        setEnteredPasswordTouched(false);
+        setEnteredEmail('');
+        setEnteredPassword('');
+        setIsLogin((prevState) => !prevState);
+       
     }
 
     const formSubmissionHandler = event =>{
         event.preventDefault();
 
-        setEnteredEmailTouched(true);
-        setEnteredNameTouched(true);
+        setIsLogin(true)
+        let url;
+       if(isLogin) {
+           url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDNRUqCdkqKgI0RrD4Q4_fJQ-8Ey2z3g3M'
+       } else {
+           url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDNRUqCdkqKgI0RrD4Q4_fJQ-8Ey2z3g3M'
+        }
+           fetch(url,
+           {
+              method:'POST',
+              body: JSON.stringify({
+                  email: enteredEmail,
+                  password: enteredPassword,
+                  returnSecureToken: true
+              }),
+              headers:{
+                  'Content-Type':'application/json'
+              }
+           }).then(res =>{
+               setIsLoading(false)
+               if(res.ok) {
+                  return res.json();
+               }else{
+                  return res.json().then((data) => {
+                      const errorMessage = data.error.message;
+                      alert(errorMessage)
+                  }
+                  );
+               }
+           }).then(data=>{
+               console.log(data)
+           }).catch(err =>{
+            alert(err.message)
+           })
+       
+    
 
         if(!enteredEmailIsValid){
             return 
         }
 
         setEnteredEmail('');
-        setEnteredName('');
+        setEnteredPassword('');
         setEnteredEmailTouched(false);
-        setEnteredNameTouched(false);
+        setEnteredPasswordTouched(false);
     };
 
     if(!open) return null
@@ -114,12 +165,12 @@ function LoginModal({open,onClose}) {
         <form onSubmit={formSubmissionHandler}>
         <div className={classes.loginContainer}>
             <img src='https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2d3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce6018a9cc74938350147bc60dd018680e15b5f1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/interr.png'/>
-            <h3>LOGIN</h3>
+            <h3>{isLogin ? 'LOGIN' : 'SIGN UP'}</h3>
             <div className={classes.inputArea}>
             <div className={classes.inputSection}>
-            <label style={{width:'100%',fontSize:'14px',textTransform:'uppercase',fontWeight:'bold'}}>email</label>
+            <label htmlFor='email' style={{width:'100%',fontSize:'14px',textTransform:'uppercase',fontWeight:'bold'}}>email</label>
             <input className={classes.inputEl} 
-            type='text' 
+            type='email' 
             id='email'
             onChange={emailChangeHandler} 
             onBlur={emailBlurHandler}
@@ -131,18 +182,27 @@ function LoginModal({open,onClose}) {
             <input className={classes.inputEl} 
             type='text' 
             id='password'
-            onChange={nameChangeHandler}
-            onBlur={nameBlurHandler}
-            value={enteredName}>
+            onChange={passwordChangeHandler}
+            onBlur={passwordBlurHandler}
+            value={enteredPassword}>
             </input>
             </div>
             </div>
             {!enteredEmailIsValid && enteredEmailTouched && <p style={{color:'red'}}>Enered email not valid</p>}
-            {!enteredNameIsValid && enteredNameTouched && <p style={{color:'red'}}>Enered password is not valid</p>}
-            <button disabled={!formIsValid} className={classes.login}>Login</button>
-            <button  onClick={onClose}>close</button>
-            <p>Not Register? Sign up</p>
+            {!enteredPasswordIsValid && enteredPasswordTouched && <p style={{color:'red'}}>Enered password is not valid</p>}
+           {!isLoading && <button 
+            type='submit'
+            disabled={!formIsValid} 
+            className={classes.toggle}>{isLogin? 'Login':'Create Account'}</button>}
+           {isLoading && <p>Loading...</p>}
+            <div className={classes.actions}>
+            <button
+            type='button'
+            className={classes.toggleButton}
+            onClick={switchAuthModeHandler}>{isLogin? 'Not Register? Sign up' : 'Login with existing account'}</button>
             <p>Forgot your password?</p>
+            <button onClick={onClose} >close</button>
+            </div>
             </div>
             
             </form>
