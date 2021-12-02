@@ -1,9 +1,9 @@
 import { ClassNames } from '@emotion/react'
-import{useState} from 'react'
+import{useState, useContext} from 'react'
 import React from 'react'
 import {makeStyles} from '@material-ui/core'
 import ReactDom from 'react-dom'
-import reactDom from 'react-dom'
+import AuthContext from '../store/auth-context'
 
 const useStyles = makeStyles((theme => ({
     backdrop:{
@@ -34,10 +34,12 @@ const useStyles = makeStyles((theme => ({
       inputSection:{
           height:'50px',
           padding:'5px',
+         
       },
       inputEl:{
           width:'100%',
           height:'30px',
+          boxShadow:'1px 1px 4px 0px #000000',
       },
       toggle:{
           padding:'30px 20px',
@@ -52,11 +54,29 @@ const useStyles = makeStyles((theme => ({
           backgroundColor:'rgba(0,30,160,255)',
           color:'white',
           '&:disabled':{
-              backgroundColor:'rgb(128, 128, 128)'
-          }
+              backgroundColor:'rgb(128, 128, 128)',
+              color:'white'
+          },
+          boxShadow:'1px 1px 4px 0px #000000'
       },
       toggleButton:{
-          padding:'10px'
+          padding:'10px',
+          backgroundColor:'white',
+          boxShadow:'1px 1px 4px 0px #000000',
+          fontSize:'15px'
+      },
+      closeButtonDiv:{
+        width:'100%',
+        display:'flex',
+        justifyContent:'flex-end',
+        alignItems:'flex-start',
+      },
+      closeButton:{
+       padding:'10px 20px',
+       fontSize:'16px',
+       marginRight:'5px',
+       backgroundColor:'white',
+       boxShadow:'1px 1px 4px 0px #000000'
       },
       label:{
           
@@ -72,6 +92,9 @@ function LoginModal({open,onClose}) {
     const[enteredPasswordTouched, setEnteredPasswordTouched] = useState(false);
     const[isLogin,setIsLogin] = useState(false)
     const[isLoading,setIsLoading] = useState(false)
+
+    const authCtx = useContext(AuthContext)
+    
      
     const enteredPasswordIsValid = enteredPassword.trim() !== ''
 
@@ -103,8 +126,6 @@ function LoginModal({open,onClose}) {
     const switchAuthModeHandler = () =>{
         setEnteredEmailTouched(false);
         setEnteredPasswordTouched(false);
-        setEnteredEmail('');
-        setEnteredPassword('');
         setIsLogin((prevState) => !prevState);
        
     }
@@ -142,16 +163,14 @@ function LoginModal({open,onClose}) {
                   );
                }
            }).then(data=>{
-               console.log(data)
+               authCtx.login(data.idToken)
            }).catch(err =>{
             alert(err.message)
            })
        
     
 
-        if(!enteredEmailIsValid){
-            return 
-        }
+       
 
         setEnteredEmail('');
         setEnteredPassword('');
@@ -164,6 +183,9 @@ function LoginModal({open,onClose}) {
         <div className={classes.backdrop}>
         <form onSubmit={formSubmissionHandler}>
         <div className={classes.loginContainer}>
+            <div className={classes.closeButtonDiv}>
+            <button onClick={onClose} className={classes.closeButton}>x</button>
+            </div>
             <img src='https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2d3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce6018a9cc74938350147bc60dd018680e15b5f1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/interr.png'/>
             <h3>{isLogin ? 'LOGIN' : 'SIGN UP'}</h3>
             <div className={classes.inputArea}>
@@ -201,7 +223,6 @@ function LoginModal({open,onClose}) {
             className={classes.toggleButton}
             onClick={switchAuthModeHandler}>{isLogin? 'Not Register? Sign up' : 'Login with existing account'}</button>
             <p>Forgot your password?</p>
-            <button onClick={onClose} >close</button>
             </div>
             </div>
             

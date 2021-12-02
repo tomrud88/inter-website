@@ -18,9 +18,11 @@ import ItalianCup from './components/CupsMenu/ItalianCup';
 import Anthem from './components/FansMenu/Anthem';
 import FanToken from './components/FansMenu/FanToken';
 import LoginModal from './components/LoginModal';
-import {useState} from 'react'
+import {useState, useContext} from 'react'
 import zIndex from '@material-ui/core/styles/zIndex';
 import { makeStyles } from '@material-ui/core';
+import ProfileForm from './components/ProfileForm';
+import AuthContext, { AuthContextProvider } from './store/auth-context';
 
 
 const useStyles = makeStyles((theme)=>({
@@ -29,12 +31,18 @@ const useStyles = makeStyles((theme)=>({
 
 function App() {
   const classes = useStyles()
+
+  const authCtx = useContext(AuthContext)
   return (
+    
     <Router>
     <div className={classes.App}>
       <Topbar/>
       <Switch>
       <Route path='/' exact component={MainContainer}/>
+      {authCtx.isLoggedIn &&
+      <Route path='/profile' component={ProfileForm}/>
+      }
       <Route path='/first-team' component={FirstTeam}/>
       <Route path='/staff' component={Staff}/>
       <Route path='/coach' component={Coach}/>

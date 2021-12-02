@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Menu } from '@material-ui/icons'
 import React from 'react'
 import DrawerComponent from './DrawerComponent';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import SerieA from './menuOptions/SerieA';
 import Cups from './menuOptions/Cups';
 import ForFans from './menuOptions/ForFans';
@@ -13,6 +13,8 @@ import FirstTeam from './TeamMenu/FirstTeam';
 import {BrowserRouter as Router,Switch,Route } from 'react-router-dom'
 import {white} from '@material-ui/core/colors'
 import LoginModal from './LoginModal';
+import AuthContext from '../store/auth-context';
+
 
 const drawerWidth = 350;
 
@@ -62,6 +64,10 @@ const useStyles = makeStyles((theme)=>({
     },
     paperMenu:{
         color:'green'
+    },
+    profileTitle:{
+        fontWeight:'bold',
+        fontSize:'30px'
     }
 
 }
@@ -72,6 +78,13 @@ function Topbar() {
     const [opent,setOpent] = useState(false)
     const [anchor, setAnchor] = useState(null)
     const [isOpen,setIsOpen] = useState(false)
+
+    const authCtx = useContext(AuthContext)
+    const isLoggedIn = authCtx.isLoggedIn;
+
+    const logoutHandler = () =>{
+        authCtx.logout();
+    }
 
     const handleMenuOpen = (event) =>{
        setAnchor(event.currentTarget)
@@ -127,9 +140,19 @@ function Topbar() {
                   </Link>
               </div>
               
-          </Typography>
-      <LoginModal open={isOpen} onClose={()=> setIsOpen(false)}/>
-          <Button onClick={()=> setIsOpen(true)} color="inherit">Login</Button>
+              {isLoggedIn && (
+              <div className={classes.menuItem}>
+                  <Link href='/profile' underline='none'>
+                     <p style={{fontWeight:'bold',fontSize:'17px',color:'white'}}>PROFILE</p>
+                  </Link>
+              </div>)}
+              </Typography>
+          {isLoggedIn && (
+          <Button onClick={logoutHandler} color="inherit">Logout</Button>)} 
+      {!isLoggedIn && (
+      <LoginModal open={isOpen} onClose={()=> setIsOpen(false)}/>)}
+      {!isLoggedIn && (
+         <Button onClick={()=> setIsOpen(true)} color="inherit">Login</Button>)}
         </Toolbar>
       </AppBar>
       {opent && <DrawerComponent changeOpen={opent => setOpent(opent)}/>}
