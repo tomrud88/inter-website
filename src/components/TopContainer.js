@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme)=>({
    padding: '0px',
   },
     containerone:{
-        boxSizing:'border-box',
+        
         minWidth:'100vw',
         height:'850px',
         position:'relative',
@@ -112,6 +112,7 @@ const useStyles = makeStyles((theme)=>({
       boxSizing:'border-box',
       width:'60%',
       zIndex:1,
+      
       marginTop:'50px',
       [theme.breakpoints.down('md')]:{
         width:'80%',
@@ -138,8 +139,23 @@ const useStyles = makeStyles((theme)=>({
         transform:
           'scale(1.02)'
        },
-      height:'500px',
-      padding:theme.spacing(1),
+       marginTop:'25px',
+       marginBottom:'10px',
+      height:'550px',
+      padding:theme.spacing(0),
+      [theme.breakpoints.down('md')]:{
+        marginTop:'5px',
+        height:'420px',
+        padding:theme.spacing(0),
+        overflow:'hidden' 
+     },
+      [theme.breakpoints.down('sm')]:{
+        height:'500px',
+        marginTop:'5px',
+        marginBottom:'5px',
+        padding:theme.spacing(0),
+        overflow:'hidden' 
+     },
       [theme.breakpoints.down('xs')]:{
          height:'500px',
          margin:'0px',
@@ -148,29 +164,29 @@ const useStyles = makeStyles((theme)=>({
       } 
     },
     cardContainer:{
-      maxWidth:'360px',
+      '&:hover':{
+        transform:
+          'scale(1.02)'
+      },
+      justifyContent:'center',
+      display:'flex',
+      alignItems:'center',
+      maxWidth:'380px',
       height:'190px',
-      padding:theme.spacing(1),
+      padding:theme.spacing(2),
       [theme.breakpoints.down('sm')]:{
         display:'none'
       },
-      '&:hover':{
-        transform:
-          'scale(1.02) 2s'
-        
-      },
-
-      
     },
     paper:{
       backgroundRepeat: 'no-repeat',
         backgroundSize:'cover',
-        backgroundPosition:'top',
+        backgroundPosition:'top-left',
         height:'100%',
         width:'100%',
         display:'flex',
         justifyContent:'flex-start',
-        alignItems:'flex-end'
+        alignItems:'flex-end',
     },
     mainTitle:{
       fontSize:'1.5em',
@@ -199,33 +215,35 @@ function TopContainer() {
     
         <Grid item xs={12} sm={12} md={12} lg={12}
         ><div className={classes.mainCardContainer}>
+          <Link href='mainNews' underline='none'>
           <Paper style={{backgroundImage:'url(https://www.inter.it/binaries/content/gallery/internazionale/photos/2021/11/24/2021-11-24-19-30-20_407059.JPG/2021-11-24-19-30-20_407059.JPG/internazionale%3AcinemaApp)'}} className={classes.paper}>
             <p className={classes.mainTitle} boxShadow={2}>
             INTER REACH THE LAST 16: GROUP D STANDINGS
             </p>
        </Paper>
+       </Link>
         </div>
         </Grid>
         <Grid item  md={4} lg={4} className={classes.imagelistItemSmall}
        // cols={2} 
        // rows={1}
-       ><div className={classes.cardContainer}>
-         <Link href='https://www.facebook.com/Inter'>
+       ><Link href='https://www.facebook.com/Inter' className={classes.linkh}>
+         <div className={classes.cardContainer}>
          <Paper style={{backgroundImage:'url(https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3dwIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--136870637a6b6ea2dd06c8aa5dde47e62880f97b/twitter.png)'}} className={classes.paper}>
        </Paper>
-       </Link>
        </div>
+       </Link>
         </Grid>
-        <Grid item  md={4} lg={4} 
+        <Grid item  md={4} lg={4} className={classes.imagelistItemSmall}
        // cols={2} 
         //rows={1}
-        ><div className={classes.cardContainer}>
-          <Link href='https://twitter.com/Inter'>
+        ><Link href='https://twitter.com/Inter'underline='none'>
+          <div className={classes.cardContainer}>
           <Paper style={{backgroundImage:'url(https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcVUwIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c2163d0caa6561942ca0c09e5d907bc35ba125c5/fb%20maly.jpg)'}} className={classes.paper}
           >
           </Paper>
-          </Link>
           </div>
+          </Link>
         </Grid>
         <Grid item md={4} lg={4} className={classes.imagelistItemSmall}
        // cols={2} 
@@ -247,7 +265,7 @@ function TopContainer() {
         <ListItem style={{justifyContent:'center'}}>SASSUOLO</ListItem>
         </Grid>
         <Grid item className={classes.timeofplay}>
-        <ListItem style={{justifyContent:'center'}}>7.kolejka</ListItem>
+        <ListItem style={{justifyContent:'center'}}>Round 7</ListItem>
         <ListItem style={{justifyContent:'center',fontSize:'40px'}}>1:2</ListItem>
         <ListItem style={{justifyContent:'center',color:'#bea900'}}>02.10.2021</ListItem>
         <ListItem style={{justifyContent:'center',color:'#bea900'}}>20:45</ListItem>
@@ -264,7 +282,7 @@ function TopContainer() {
         <ListItem style={{justifyContent:'center'}}>LAZIO</ListItem>
         </Grid>
         <Grid item className={classes.timeofplay}>
-        <ListItem style={{justifyContent:'center'}}>8.kolejka</ListItem>
+        <ListItem style={{justifyContent:'center'}}>Round 8</ListItem>
         <ListItem style={{justifyContent:'center',fontSize:'40px'}}>-:-</ListItem>
         <ListItem style={{justifyContent:'center',color:'#bea625'}}>16.10.2021</ListItem>
         <ListItem style={{justifyContent:'center',color:'#bea625'}}>18:00</ListItem>

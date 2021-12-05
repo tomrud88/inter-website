@@ -6,9 +6,12 @@ import { ClipLoader } from 'react-spinners';
 const useStyles = makeStyles((theme)=>({
     outerContainer:{
         marginTop:'100px',
+        display:'flex',
+        justifyContent:'center',
+        flexDirection:'column',
         [theme.breakpoints.down('sm')]:{
             marginTop:'90px',
-        }
+        },
     },
     mainContainer:{
         display:'flex',
@@ -16,6 +19,11 @@ const useStyles = makeStyles((theme)=>({
         justifyContent:'center',
         alignItems:'center'
     },
+    mainTitle:{
+        display:'flex',
+        justifyContent:'center',
+        marginBottom:'30px'
+       },
      matchContainer:{
          display:'grid',
          gridTemplateColumns:'3fr 3fr 2fr 3fr',
@@ -47,6 +55,10 @@ const useStyles = makeStyles((theme)=>({
          alignItems:'center',
          justifyContent:'center',
          margin:'0 5px'
+     },
+     tableTitle:{
+         display:'flex',
+         justifyContent:'center',
      },
      tableHead:{
         color:'white',
@@ -165,14 +177,17 @@ function ChampionsLeage() {
     return (
         <div>
             <Container className={classes.outerContainer}>
+            <div className={classes.mainTitle}>
+                    <h1>Champions League</h1>  
+                    </div>   
             {loading ? 
             (<ClipLoader
                 size={350}
                 color={'#001ea0'}
                 loading={loading}
-                />):(
+                />):(        
             <div> 
-                 <h1>Champions League</h1> 
+                 
             {fixtures.map(fixture =>(
                 <div className={classes.mainContainer}id={fixture.id}>
                     {(fixture.id %2) == 0 && <div className={classes.round}>
@@ -195,9 +210,11 @@ function ChampionsLeage() {
                     </div>
                     </div>
             ))}
+            <div className={classes.tableTitle}>
             <Typography variant='h5' style={{marginBottom:'15px',marginTop:'50px'}}>
              TABLE
         </Typography>
+            </div>
                     <Container style={{marginTop:'20px',justifyContent:'center',display:'flex'}}>
         
         <TableContainer className={classes.tablecontainer}>

@@ -222,7 +222,6 @@ function LoginModal({open,onClose}) {
             type='button'
             className={classes.toggleButton}
             onClick={switchAuthModeHandler}>{isLogin? 'Not Register? Sign up' : 'Login with existing account'}</button>
-            <p>Forgot your password?</p>
             </div>
             </div>
             

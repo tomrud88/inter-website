@@ -1,4 +1,4 @@
-import { Container, Grid, makeStyles } from '@material-ui/core'
+import { Container, Grid, Link, makeStyles } from '@material-ui/core'
 import React, {useEffect, useState} from 'react'
 import NewsItem from './NewsItem';
 import { ClipLoader } from 'react-spinners';
@@ -54,13 +54,15 @@ export default function News(props){
             loading={loading}
             />: 
         <Grid id={props.id} container justify='center' className={classes.mainCon}>
-            <Grid container lg={8} sm={11} xs={11}
+            <Grid container lg={8} sm={10} xs={11}
             spacing={2}
             justify='center' className='mainGrid'>
             {news.map(item =>(
-               <Grid item key={item.id}xs={12} sm={12} md={6} lg={6}>
+               
+               <Grid item key={item.id}xs={12} sm={10} md={6} lg={6}>
                    <NewsItem item={item}/>
                 </Grid>
+                
             ))}
             </Grid>
         </Grid>

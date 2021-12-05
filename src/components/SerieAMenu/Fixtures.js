@@ -6,9 +6,18 @@ import { ClipLoader } from 'react-spinners';
 const useStyles = makeStyles((theme)=>({
     outerContainer:{
         marginTop:'110px',
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center',
         [theme.breakpoints.down('sm')]:{
             marginTop:'90px'
         }
+       
+    },
+    mainTitle:{
+     display:'flex',
+     justifyContent:'center',
+     marginBottom:'30px'
     },
     mainContainer:{
         display:'flex',
@@ -22,6 +31,7 @@ const useStyles = makeStyles((theme)=>({
          gridTemplateColumns:'5fr 2fr 5fr',
          minWidth:'800px',
          fontWeight:'bold',
+         height:'50px',
          borderBottom:'solid grey 1px',
          [theme.breakpoints.down('sm')]:{
             minWidth:'100vw'
@@ -34,7 +44,7 @@ const useStyles = makeStyles((theme)=>({
          minWidth:'800px',
          color:'white',
          display:'flex',
-         marginTop:'15px',
+         marginTop:'1px',
          padding:'5px',
          fontWeight:'bold',
          fontSize:'20px',
@@ -47,7 +57,17 @@ const useStyles = makeStyles((theme)=>({
          alignItems:'center',
          justifyContent:'center',
          margin:'0 5px'
-     }
+     },
+     homeContainer:{
+        display:'flex',
+        justifyContent:'flex-start',
+        alignItems:'center'
+    },
+    awayContainer:{
+        display:'flex',
+        justifyContent:'flex-start',
+        alignItems:'center'
+    }
      })
 )
 
@@ -101,13 +121,15 @@ function Fixtures() {
             loading={loading}
             />):
             (<div>
-            <h1>Fixtures</h1>   
+            <div className={classes.mainTitle}>
+            <h1>Fixtures</h1>  
+            </div> 
             {fixtures.map(fixture =>(
                 <div className={classes.mainContainer}id={fixture.id}>
                     {(fixture.id %10) == 0 && <div className={classes.round}>
                         <p style={{margin:'5px 13px'}}>Round {fixture.round}</p></div> }
                     <div className={classes.matchContainer}>
-                    <div>
+                    <div className={classes.homeContainer}>
                     {(fixture.homeTeam) === 'FC Internazionale Milano' ? <p style={{color:'#0841ff'}}>{fixture.homeTeam}</p> : <p>{fixture.homeTeam}</p> }
                     </div>
                     <div className={classes.result}>
@@ -115,7 +137,7 @@ function Fixtures() {
                     <p>:</p>
                     <p>{fixture.scoreAwayTeam}</p>
                     </div>
-                    <div>
+                    <div className={classes.awayContainer}>
                     {(fixture.awayTeam) === 'FC Internazionale Milano' ? <p style={{color:'#0841ff'}}>{fixture.awayTeam}</p> : <p>{fixture.awayTeam}</p> }
                     </div>
                     </div>

@@ -17,6 +17,15 @@ import ChampionsLeague from './components/CupsMenu/ChampionsLeague';
 import ItalianCup from './components/CupsMenu/ItalianCup';
 import Anthem from './components/FansMenu/Anthem';
 import FanToken from './components/FansMenu/FanToken';
+import MainNews from './components/newsFolder/MainNews';
+import NewsOne from './components/newsFolder/NewsOne';
+import NewsTwo from './components/newsFolder/NewsTwo';
+import NewsThree from './components/newsFolder/NewsThree';
+import NewsFour from './components/newsFolder/NewsFour';
+import NewsFive from './components/newsFolder/NewsFive';
+import NewsSix from './components/newsFolder/NewsSix';
+import NewsSeven from './components/newsFolder/NewsSeven';
+import NewsEight from './components/newsFolder/NewsEight';
 import LoginModal from './components/LoginModal';
 import {useState, useContext} from 'react'
 import zIndex from '@material-ui/core/styles/zIndex';
@@ -54,6 +63,15 @@ function App() {
       <Route path='/italian-cup' component={ItalianCup}/>
       <Route path='/anthem' component={Anthem}/>
       <Route path='/fantoken' component={FanToken}/>
+      <Route path='/mainNews' component={MainNews}/>
+      <Route path='/id1' component={NewsOne}/>
+      <Route path='/id2' component={NewsTwo}/>
+      <Route path='/id3' component={NewsThree}/>
+      <Route path='/id4' component={NewsFour}/>
+      <Route path='/id5' component={NewsFive}/>
+      <Route path='/id6' component={NewsSix}/>
+      <Route path='/id7' component={NewsSeven}/>
+      <Route path='/id8' component={NewsEight}/>
       </Switch>
     </div>
     </Router>

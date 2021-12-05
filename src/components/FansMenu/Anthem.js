@@ -3,12 +3,17 @@ import React from 'react'
 
 const useStyles = makeStyles((theme)=>({
     mainContainer:{
-      marginTop:'100px',
+      marginTop:'20px',
       width:'800px',
       [theme.breakpoints.down('sm')]:{
         maxWidth:'100%',
-        marginTop:'80px'
+        marginTop:'10px'
     },
+},
+   mainTitle:{
+     display:'flex',
+     justifyContent:'center',
+     marginTop:'100px'
 },
    firstImg:{
        maxHeight:'500px',
@@ -27,8 +32,10 @@ function Anthem() {
     const classes = useStyles()
     return (
         <div>
+            <div className={classes.mainTitle}>
+            <h1>ANTHEM</h1>  
+            </div>
             <Container className={classes.mainContainer} fixed>
-            <h1>ANTHEM</h1>
             <h4>Inter Milan has 2 anthems. One of them is <span style={{fontWeight:'bold'}}>"C'e Solo Inter"</span> and second <span style={{fontWeight:'bold'}}>"Pazza Inter Amala"</span></h4>
             <p>For a long time "Pazza Inter Amala" was played before the home games because the song displayed the DNA of madness and pure adrenaline of the old team.
             </p>

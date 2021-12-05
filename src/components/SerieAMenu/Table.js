@@ -12,6 +12,12 @@ const useStyles = makeStyles((theme)=>({
             marginTop:'90px'
         }
     },
+    mainTitle:{
+        display:'flex',
+        justifyContent:'center',
+        marginBottom:'30px',
+        fontWeight:'bold'
+       },
     tableHead:{
         color:'white'
     },
@@ -92,7 +98,7 @@ const useStyles = makeStyles((theme)=>({
         loading={loading}
         />):(
             <div>
-        <Typography variant='h5' style={{marginBottom:'15px'}}>
+        <Typography variant='h5'  className={classes.mainTitle}>
             SERIE A TABLE
         </Typography>
         <TableContainer className={classes.tablecontainer}>

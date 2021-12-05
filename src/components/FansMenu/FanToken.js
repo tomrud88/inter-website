@@ -191,6 +191,10 @@ const useStyles = makeStyles((theme) =>({
        transition:'transform 1.5s ease-in-out',
        transformStyle:'preserve-3d', 
     },
+    cardBackText:{
+    fontWeight:'bold',
+    padding:'10px'
+    },
     ownInterContainer:{
         display:'flex',
         justifyContent:'center',
@@ -279,10 +283,10 @@ function FanToken() {
                     <div className={classes.cardContainer}>
                     <div className={classes.card}>
                         <Paper style={{backgroundImage:'url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com442GOAL20CELEB.jpg)',height:'100%'}} className={classes.paper}>
-                            <Typography style={{fontWeight:'bold'}}variant='h4'>Goal Celebration Song</Typography></Paper>
+                            <Typography style={{fontWeight:'bold'}}variant='h4' align='center'>Goal Celebration Song</Typography></Paper>
                             <Paper style={{backgroundImage:'url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com442GOAL20CELEB.jpg)',transform:'rotateX(180deg)'}} className={classes.paper}>
                             <Typography variant='h5'>Goal Celebration Song</Typography>
-                            <Typography style={{fontWeight:'bold'}}variant='body2'>Fans got opportunity to choose a new goal song at the stadium after 8 years</Typography></Paper>
+                            <Typography className={classes.cardBackText}variant='body2' align='center'>Fans got opportunity to choose a new goal song at the stadium after 8 years</Typography></Paper>
                         </div>
                         </div>
                      </Grid>
@@ -291,10 +295,10 @@ function FanToken() {
                      <div className={classes.cardContainer}>
                     <div className={classes.card}>
                         <Paper style={{backgroundImage:'url(https://inter.fantoken.com/wp-content/uploads/2021/07/Bus_Design.png)',height:'100%'}} className={classes.paper}>
-                            <Typography style={{fontWeight:'bold'}}variant='h4'>Official Bus Design</Typography></Paper>
+                            <Typography style={{fontWeight:'bold'}}variant='h4' align='center'>Official Bus Design</Typography></Paper>
                             <Paper style={{backgroundImage:'url(https://inter.fantoken.com/wp-content/uploads/2021/07/Bus_Design.png)',transform:'rotateX(180deg)'}} className={classes.paper}>
                             <Typography variant='h5'>Official Bus Design</Typography>
-                            <Typography style={{fontWeight:'bold'}}variant='body2'>Choosing how the official team bus looks is not for everyone. Just for fan token holders.</Typography></Paper>
+                            <Typography className={classes.cardBackText}variant='body2' align='center'>Choosing how the official team bus looks is not for everyone. Just for fan token holders.</Typography></Paper>
                         </div>
                         </div>
                      </Grid>
@@ -302,10 +306,10 @@ function FanToken() {
                      <div className={classes.cardContainer}>
                     <div className={classes.card}>
                         <Paper style={{backgroundImage:'url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com332CAPTAIN20ARMBAND.jpg)',height:'100%'}} className={classes.paper}>
-                            <Typography style={{fontWeight:'bold'}}variant='h4'>The Captain's Armband</Typography></Paper>
+                            <Typography style={{fontWeight:'bold'}}variant='h4' align='center'>The Captain's Armband</Typography></Paper>
                             <Paper style={{backgroundImage:'url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com332CAPTAIN20ARMBAND.jpg)',transform:'rotateX(180deg)'}} className={classes.paper}>
                             <Typography variant='h5'>The Captain's Armband</Typography>
-                            <Typography style={{fontWeight:'bold'}}variant='body2'>Fans were asked to pick a message they would want to be embroidered in the iconic captain's armband</Typography></Paper>
+                            <Typography className={classes.cardBackText} variant='body2' align='center'>Fans were asked to pick a message they would want to be embroidered in the iconic captain's armband</Typography></Paper>
                         </div>
                         </div>
                      </Grid>
@@ -313,10 +317,10 @@ function FanToken() {
                      <div className={classes.cardContainer}>
                     <div className={classes.card}>
                         <Paper style={{backgroundImage:'url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com182KITDESIGN_ASSET.jpg)',height:'100%'}} className={classes.paper}>
-                            <Typography style={{fontWeight:'bold'}}variant='h4'>Jersey Design</Typography></Paper>
+                            <Typography style={{fontWeight:'bold'}}variant='h4' align='center'>Jersey Design</Typography></Paper>
                             <Paper style={{backgroundImage:'url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com182KITDESIGN_ASSET.jpg)',transform:'rotateX(180deg)'}} className={classes.paper}>
                             <Typography variant='h5'>Jersey Design</Typography>
-                            <Typography style={{fontWeight:'bold'}}variant='body2'>The Club and their technical partner reached out to fans to choose the kit design for the upcoming season</Typography></Paper>
+                            <Typography className={classes.cardBackText} variant='body2' align='center'>The Club and their technical partner reached out to fans to choose the kit design for the upcoming season</Typography></Paper>
                         </div>
                         </div>
                      </Grid>
@@ -324,10 +328,10 @@ function FanToken() {
                      <div className={classes.cardContainer}>
                     <div className={classes.card}>
                         <Paper style={{backgroundImage:'url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com234FIRSTXI.jpg)',height:'100%'}} className={classes.paper}>
-                            <Typography style={{fontWeight:'bold'}}variant='h4'>Starting line-up</Typography></Paper>
+                            <Typography style={{fontWeight:'bold'}}variant='h4' align='center'>Starting line-up</Typography></Paper>
                             <Paper style={{backgroundImage:'url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com234FIRSTXI.jpg)',transform:'rotateX(180deg)'}} className={classes.paper}>
                             <Typography variant='h5'>Starting line-up</Typography>
-                            <Typography style={{fontWeight:'bold'}}variant='body2'>Fans helped the team's manager to pick the first XI that would have made it to an official friendly match﻿</Typography></Paper>
+                            <Typography className={classes.cardBackText} variant='body2' align='center'>Fans helped the team's manager to pick the first XI that would have made it to an official friendly match﻿</Typography></Paper>
                         </div>
                         </div>
                      </Grid>
@@ -335,10 +339,10 @@ function FanToken() {
                      <div className={classes.cardContainer}>
                     <div className={classes.card}>
                         <Paper style={{backgroundImage:'url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com401DRESSSING20ROOM.jpg)',height:'100%'}} className={classes.paper}>
-                            <Typography style={{fontWeight:'bold'}}variant='h4'>Dressing room</Typography></Paper>
+                            <Typography style={{fontWeight:'bold'}}variant='h4' align='center'>Dressing room</Typography></Paper>
                             <Paper style={{backgroundImage:'url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com401DRESSSING20ROOM.jpg)',transform:'rotateX(180deg)'}} className={classes.paper}>
                             <Typography variant='h5'>Dressing room</Typography>
-                            <Typography style={{fontWeight:'bold'}}variant='body2'>Clubs asked their fans to motivate the team by putting up an inspirational message of their choice in the most sacred of locations</Typography></Paper>
+                            <Typography className={classes.cardBackText} variant='body2' align='center'>Clubs asked their fans to motivate the team by putting up an inspirational message of their choice in the most sacred of locations</Typography></Paper>
                         </div>
                         </div>
                      </Grid>
