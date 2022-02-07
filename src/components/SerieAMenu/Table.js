@@ -185,7 +185,7 @@ const useStyles = makeStyles((theme)=>({
              <p>Promotion - Champions League (Group Stage)</p>
             </div>
             <div className={classes.legendItem}>
-             <div className={classes.square} style={{                          backgroundColor:'#b66d84'}}>
+             <div className={classes.square} style={{backgroundColor:'#b66d84'}}>
              </div>
              <p>Promotion - Europa League (Group Stage)</p>
             </div>

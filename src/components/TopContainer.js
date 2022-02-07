@@ -204,98 +204,188 @@ const useStyles = makeStyles((theme)=>({
 function TopContainer() {
     const classes = useStyles()
     return (
-        <div className={classes.con}>
-            <Container className={classes.containerone}>
-                <div className={classes.back}>
-                <div className={classes.stadium}></div> 
-                <Grid container rowSpacing={1}
-                columnSpacing={1} className={classes.gridContainer}
-               >
-               
-    
-        <Grid item xs={12} sm={12} md={12} lg={12}
-        ><div className={classes.mainCardContainer}>
-          <Link href='mainNews' underline='none'>
-          <Paper style={{backgroundImage:'url(https://www.inter.it/binaries/content/gallery/internazionale/photos/2021/11/24/2021-11-24-19-30-20_407059.JPG/2021-11-24-19-30-20_407059.JPG/internazionale%3AcinemaApp)'}} className={classes.paper}>
-            <p className={classes.mainTitle} boxShadow={2}>
-            INTER REACH THE LAST 16: GROUP D STANDINGS
-            </p>
-       </Paper>
-       </Link>
+      <div className={classes.con}>
+        <Container className={classes.containerone}>
+          <div className={classes.back}>
+            <div className={classes.stadium}></div>
+            <Grid
+              container
+              rowSpacing={1}
+              columnSpacing={1}
+              className={classes.gridContainer}
+            >
+              <Grid item xs={12} sm={12} md={12} lg={12}>
+                <div className={classes.mainCardContainer}>
+                  <Link href="mainNews" underline="none">
+                    <Paper
+                      style={{
+                        backgroundImage:
+                          "url(https://www.inter.it/binaries/content/gallery/internazionale/photos/2021/11/24/2021-11-24-19-30-20_407059.JPG/2021-11-24-19-30-20_407059.JPG/internazionale%3AcinemaApp)",
+                      }}
+                      className={classes.paper}
+                    >
+                      <p className={classes.mainTitle} boxShadow={2}>
+                        INTER REACH THE LAST 16: GROUP D STANDINGS
+                      </p>
+                    </Paper>
+                  </Link>
+                </div>
+              </Grid>
+              <Grid
+                item
+                md={4}
+                lg={4}
+                className={classes.imagelistItemSmall}
+                // cols={2}
+                // rows={1}
+              >
+                <Link
+                  href="https://www.facebook.com/Inter"
+                  className={classes.linkh}
+                >
+                  <div className={classes.cardContainer}>
+                    <Paper
+                      style={{
+                        backgroundImage:
+                          "url(https://fcinter.pl/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRlWGRWU0dKV01rTXlOMmhhWkVWeVZUbHllbnBRYVdwUUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkRhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlabUlnYldGc2VTNXFjR2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjJaaUpUSXdiV0ZzZVM1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIyLTAyLTA3VDA5OjQ2OjQ3LjM1MloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--2d15f85d53b3f1762c1f60483ccbca56558fd9e4/fb%20maly.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22fb+maly.jpg%22%3B+filename%2A%3DUTF-8%27%27fb%2520maly.jpg)",
+                      }}
+                      className={classes.paper}
+                    ></Paper>
+                  </div>
+                </Link>
+              </Grid>
+              <Grid
+                item
+                md={4}
+                lg={4}
+                className={classes.imagelistItemSmall}
+                // cols={2}
+                //rows={1}
+              >
+                <Link href="https://twitter.com/Inter" underline="none">
+                  <div className={classes.cardContainer}>
+                    <Paper
+                      style={{
+                        backgroundImage:
+                          "url(https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcVExIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--937ec1302b76402c73fda8e181940f4e8646b6ce/twitter2.png)",
+                      }}
+                      className={classes.paper}
+                    ></Paper>
+                  </div>
+                </Link>
+              </Grid>
+              <Grid
+                item
+                md={4}
+                lg={4}
+                className={classes.imagelistItemSmall}
+                // cols={2}
+                // rows={1}
+              >
+                <div className={classes.cardContainer}>
+                  <Paper
+                    style={{
+                      backgroundImage:
+                        "url(https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbkF5IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--73bd9332e1ccf249d70cf9851eb682c0a0fce317/rgol-malyxq.gif)",
+                    }}
+                    className={classes.paper}
+                  ></Paper>
+                </div>
+              </Grid>
+            </Grid>
+          </div>
+        </Container>
+        <div className={classes.resultsContainer}>
+          <Grid
+            className={classes.results}
+            container
+            direction="row"
+            spacing={2}
+          >
+            <Grid className={classes.leftsite} item lg={4} sm={6} xs={12}>
+              <Grid item container direction="column" alignItems="center">
+                <ListItem style={{ justifyContent: "center" }}>
+                  <img src="https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0llIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--daa9c6ed836e1a7e8301ef676feab9d7677b3f52/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/sassuolo.png"></img>
+                </ListItem>
+                <ListItem style={{ justifyContent: "center" }}>
+                  SASSUOLO
+                </ListItem>
+              </Grid>
+              <Grid item className={classes.timeofplay}>
+                <ListItem style={{ justifyContent: "center" }}>
+                  Round 7
+                </ListItem>
+                <ListItem
+                  style={{ justifyContent: "center", fontSize: "40px" }}
+                >
+                  1:2
+                </ListItem>
+                <ListItem
+                  style={{ justifyContent: "center", color: "#bea900" }}
+                >
+                  02.10.2021
+                </ListItem>
+                <ListItem
+                  style={{ justifyContent: "center", color: "#bea900" }}
+                >
+                  20:45
+                </ListItem>
+              </Grid>
+              <Grid
+                item
+                container
+                direction="column"
+                style={{ alignItems: "center", justifyContent: "center" }}
+              >
+                <ListItem style={{ justifyContent: "center" }}>
+                  <img src="https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2d3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce6018a9cc74938350147bc60dd018680e15b5f1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/interr.png"></img>
+                </ListItem>
+                <ListItem style={{ justifyContent: "center" }}>INTER</ListItem>
+              </Grid>
+            </Grid>
+            <Grid className={classes.rightsite} item lg={4} sm={6} xs={12}>
+              <Grid
+                item
+                container
+                direction="column"
+                style={{ justifyContent: "center", alignItems: "center" }}
+              >
+                <ListItem style={{ justifyContent: "center" }}>
+                  <img src="https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmdlIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e2bcd6f35995396d2d1da24efc1e096864c66e6a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/lazio.png"></img>
+                </ListItem>
+                <ListItem style={{ justifyContent: "center" }}>LAZIO</ListItem>
+              </Grid>
+              <Grid item className={classes.timeofplay}>
+                <ListItem style={{ justifyContent: "center" }}>
+                  Round 8
+                </ListItem>
+                <ListItem
+                  style={{ justifyContent: "center", fontSize: "40px" }}
+                >
+                  -:-
+                </ListItem>
+                <ListItem
+                  style={{ justifyContent: "center", color: "#bea625" }}
+                >
+                  16.10.2021
+                </ListItem>
+                <ListItem
+                  style={{ justifyContent: "center", color: "#bea625" }}
+                >
+                  18:00
+                </ListItem>
+              </Grid>
+              <Grid item container direction="column">
+                <ListItem style={{ justifyContent: "center" }}>
+                  <img src="https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2d3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce6018a9cc74938350147bc60dd018680e15b5f1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/interr.png"></img>
+                </ListItem>
+                <ListItem style={{ justifyContent: "center" }}>INTER</ListItem>
+              </Grid>
+            </Grid>
+          </Grid>
         </div>
-        </Grid>
-        <Grid item  md={4} lg={4} className={classes.imagelistItemSmall}
-       // cols={2} 
-       // rows={1}
-       ><Link href='https://www.facebook.com/Inter' className={classes.linkh}>
-         <div className={classes.cardContainer}>
-         <Paper style={{backgroundImage:'url(https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3dwIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--136870637a6b6ea2dd06c8aa5dde47e62880f97b/twitter.png)'}} className={classes.paper}>
-       </Paper>
-       </div>
-       </Link>
-        </Grid>
-        <Grid item  md={4} lg={4} className={classes.imagelistItemSmall}
-       // cols={2} 
-        //rows={1}
-        ><Link href='https://twitter.com/Inter'underline='none'>
-          <div className={classes.cardContainer}>
-          <Paper style={{backgroundImage:'url(https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcVUwIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c2163d0caa6561942ca0c09e5d907bc35ba125c5/fb%20maly.jpg)'}} className={classes.paper}
-          >
-          </Paper>
-          </div>
-          </Link>
-        </Grid>
-        <Grid item md={4} lg={4} className={classes.imagelistItemSmall}
-       // cols={2} 
-       // rows={1}
-       ><div className={classes.cardContainer}>
-         <Paper style={{backgroundImage:'url(https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbkF5IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--73bd9332e1ccf249d70cf9851eb682c0a0fce317/rgol-malyxq.gif)'}} className={classes.paper}
-          >
-          </Paper>
-          </div>
-        </Grid>
-    </Grid>
-    </div>
-    </Container>
-    <div className={classes.resultsContainer} >
-    <Grid  className={classes.results} container direction='row' spacing={2}>
-      <Grid className={classes.leftsite} item lg={4} sm={6} xs={12}>
-        <Grid item container direction='column' alignItems='center'>
-        <ListItem style={{justifyContent:'center'}}><img src='https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0llIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--daa9c6ed836e1a7e8301ef676feab9d7677b3f52/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/sassuolo.png'></img></ListItem>
-        <ListItem style={{justifyContent:'center'}}>SASSUOLO</ListItem>
-        </Grid>
-        <Grid item className={classes.timeofplay}>
-        <ListItem style={{justifyContent:'center'}}>Round 7</ListItem>
-        <ListItem style={{justifyContent:'center',fontSize:'40px'}}>1:2</ListItem>
-        <ListItem style={{justifyContent:'center',color:'#bea900'}}>02.10.2021</ListItem>
-        <ListItem style={{justifyContent:'center',color:'#bea900'}}>20:45</ListItem>
-        </Grid>
-        <Grid item container direction='column'
-        style={{alignItems:'center',justifyContent:'center'}}>
-        <ListItem style={{justifyContent:'center'}}><img src='https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2d3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce6018a9cc74938350147bc60dd018680e15b5f1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/interr.png'></img></ListItem> 
-        <ListItem style={{justifyContent:'center'}}>INTER</ListItem>
-        </Grid>
-    </Grid>
-    <Grid className={classes.rightsite} item lg={4} sm={6} xs={12}>
-        <Grid item container direction='column' style={{justifyContent:'center',alignItems:'center'}}>
-        <ListItem style={{justifyContent:'center'}}><img src='https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmdlIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e2bcd6f35995396d2d1da24efc1e096864c66e6a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/lazio.png'></img></ListItem>  
-        <ListItem style={{justifyContent:'center'}}>LAZIO</ListItem>
-        </Grid>
-        <Grid item className={classes.timeofplay}>
-        <ListItem style={{justifyContent:'center'}}>Round 8</ListItem>
-        <ListItem style={{justifyContent:'center',fontSize:'40px'}}>-:-</ListItem>
-        <ListItem style={{justifyContent:'center',color:'#bea625'}}>16.10.2021</ListItem>
-        <ListItem style={{justifyContent:'center',color:'#bea625'}}>18:00</ListItem>
-        </Grid>
-        <Grid item container direction='column'>
-        <ListItem style={{justifyContent:'center'}}><img src='https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2d3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce6018a9cc74938350147bc60dd018680e15b5f1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/interr.png'></img></ListItem> 
-        <ListItem style={{justifyContent:'center'}}>INTER</ListItem>
-        </Grid>
-    </Grid>
-    </Grid>
-    </div>
-        </div>           
-    )
+      </div>
+    );
 }
 
 export default TopContainer
