@@ -1,3 +1,55 @@
+
+# FC Inter Milan website created in React with help of Material UI
+
+This project helps you find the newest information about Inter Milan football club
+
+
+## Authors
+
+- [@tomrud88](https://www.github.com/tomrud88)
+
+
+## In this project you can find
+- club results in Serie A and Champions League
+- info about coach and coaching staff members
+- team players and they pictures
+- info about the transfers in last transfer window
+- Serie A and Champions League table
+- top scorers in Serie A 
+- anthem text of Inter Milan
+- info about Fan Tokens, what they are,what advances you have when you own them and 
+  links to the socios.com when you can buy the fan tokens.
+
+
+
+## API Reference
+
+#### Get Seria A fixtures
+
+```http
+  GET /api/competitions/SA/matches
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `competitions` | `string` | **Required**. competitions to fetch |
+| `SA` | `string` | **Required**. Serie A to fetch |
+| `matches` | `string` | **Required**. matches to fetch |
+
+#### Get Serie A standings
+
+```http
+  GET /api/competitions/SA/standings
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `competitions` | `string` | **Required**. competitions to fetch |
+| `SA` | `string` | **Required**. Serie A to fetch |
+| `standings` | `string` | **Required**. standings to fetch |
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -39,32 +91,4 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
