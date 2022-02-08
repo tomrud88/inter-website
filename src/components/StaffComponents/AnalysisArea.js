@@ -51,75 +51,77 @@ const useStyles = makeStyles((theme)=>({
 function AnalysisArea() {
     const classes = useStyles()
     return (
-         <Container className={classes.outerContainer}>
+      <Container className={classes.outerContainer}>
         <Container className={classes.titleContainer}>
-        <Typography
-        variant='h5'
-        className={classes.title}>ANALYSIS AREA</Typography>
+          <Typography variant="h5" className={classes.title}>
+            ANALYSIS AREA
+          </Typography>
         </Container>
         <Grid container className={classes.mainContainer}>
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/img/435083-170.jpg'
-                        title='Lorenzon'
-                        />
-                        <CardContent>
-                            <Typography variant='h5'
-                            className={classes.name}>
-                            FILIPPO LORENZON</Typography>
-                            <Typography variant='h5'
-                            className={classes.name}>Head of match analysis</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid> 
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/img/435081-170.jpg'
-                        title='Muratore'
-                        />
-                        <CardContent>
-                            <Typography variant='h5'
-                            className={classes.name}>
-                            MARCELLO MURATORE</Typography>
-                            <Typography variant='h5'
-                            className={classes.name}>Match analyst</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid> 
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/img/435107-170.jpg'
-                        title='Toninato'
-                        />
-                        <CardContent>
-                            <Typography variant='h5'
-                            className={classes.name}>
-                            GIACOMO TONINATO</Typography>
-                            <Typography variant='h5'
-                            className={classes.name}>Match analyst</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid>  
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://www.inter.it/img/435083-170.jpg
+"
+                  title="Lorenzon"
+                />
+                <CardContent>
+                  <Typography variant="h5" className={classes.name}>
+                    FILIPPO LORENZON
+                  </Typography>
+                  <Typography variant="h5" className={classes.name}>
+                    Head of match analysis
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://www.inter.it/img/435069-170.jpg"
+                  title="Muratore"
+                />
+                <CardContent>
+                  <Typography variant="h5" className={classes.name}>
+                    MARCELLO MURATORE
+                  </Typography>
+                  <Typography variant="h5" className={classes.name}>
+                    Match analyst
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://www.inter.it/img/435107-170.jpg
+"
+                  title="Toninato"
+                />
+                <CardContent>
+                  <Typography variant="h5" className={classes.name}>
+                    GIACOMO TONINATO
+                  </Typography>
+                  <Typography variant="h5" className={classes.name}>
+                    Match analyst
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
         </Grid>
-        </Container>
-    )
+      </Container>
+    );
 }
 export default AnalysisArea
