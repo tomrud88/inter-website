@@ -239,15 +239,12 @@ function TopContainer() {
                 // cols={2}
                 // rows={1}
               >
-                <Link
-                  href="https://www.facebook.com/Inter"
-                  className={classes.linkh}
-                >
+                <Link href="https://www.facebook.com/Inter">
                   <div className={classes.cardContainer}>
                     <Paper
                       style={{
                         backgroundImage:
-                          "url(https://fcinter.pl/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRlWGRWU0dKV01rTXlOMmhhWkVWeVZUbHllbnBRYVdwUUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkRhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlabUlnYldGc2VTNXFjR2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSjJaaUpUSXdiV0ZzZVM1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZBPT0iLCJleHAiOiIyMDIyLTAyLTA3VDA5OjQ2OjQ3LjM1MloiLCJwdXIiOiJibG9iX2tleSJ9fQ==--2d15f85d53b3f1762c1f60483ccbca56558fd9e4/fb%20maly.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22fb+maly.jpg%22%3B+filename%2A%3DUTF-8%27%27fb%2520maly.jpg)",
+                          "url(https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcVUwIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c2163d0caa6561942ca0c09e5d907bc35ba125c5/fb%20maly.jpg)",
                       }}
                       className={classes.paper}
                     ></Paper>
