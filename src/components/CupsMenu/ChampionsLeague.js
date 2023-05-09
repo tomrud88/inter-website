@@ -101,7 +101,7 @@ function ChampionsLeage() {
 
     useEffect(() => {
         const fetchFixtures = async() =>{
-            const response = await fetch('https://api.football-data.org/v2/competitions/CL/matches?group=GROUP_D',{
+            const response = await fetch('https://api.football-data.org/v2/competitions/CL/matches?group=GROUP_C',{
                 'method':'GET',
                 'headers':{
                     "X-Auth-Token": "3cb5b9dd8f50443e97d7c53804bd5634"
