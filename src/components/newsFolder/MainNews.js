@@ -29,29 +29,69 @@ const useStyles = makeStyles((theme)=>({
 export default function MainNews() {
     const classes = useStyles()
   return (
-      <Container className={classes.mainContainer}>
-    <Card className={classes.mainCard}>
-        <Typography gutterBottom variant="h4" component="div" style={{marginTop:'10px',fontWeight:'bold'}}>
-        INTER REACH THE LAST 16: GROUP D STANDINGS
+    <Container className={classes.mainContainer}>
+      <Card className={classes.mainCard}>
+        <Typography
+          gutterBottom
+          variant="h4"
+          component="div"
+          style={{ marginTop: "10px", fontWeight: "bold" }}
+        >
+          INTER BEAT ROMA 2 - 0 IN THE CAPITAL
         </Typography>
-      <CardMedia
-        className={classes.SimoneImg}
-        component="img"
-        height="640"
-        image="https://www.inter.it/binaries/content/gallery/internazionale/photos/2021/11/24/2021-11-24-19-30-20_407059.JPG/2021-11-24-19-30-20_407059.JPG/internazionale%3AcinemaApp"
-        alt="Simone Inzaghi"
-      />
-      <CardContent>
-        <Typography variant="body1" color="text.secondary" style={{marginBottom:'20px'}}>
-        Inter have reached the Champions League round of 16. The 2-0 victory over Shakhtar at San Siro coupled with Real Madrid beating Sheriff Tiraspol saw Simone Inzaghi's team reach the knockout stages of Europe’s premier competition. It’s the first time the Nerazzurri have reached the Champions League round of 16 since the 2011/12 season, when they were knocked out by Marseille.
-        </Typography>
-<Typography style={{marginBottom:'20px'}}>
-After losing their opening match against Real Madrid and then drawing 0-0 against Shakhtar in Kyiv, Inter have racked up three consecutive wins. They overcame Sheriff 3-1 both home and away before beating Shakhtar 2-0 last night at San Siro. The victory over Roberto De Zerbi's team along with Real Madrid's triumph over Sheriff allowed the Nerazzurri to reach the knockout stages.</Typography>
-<Typography style={{marginBottom:'10px'}}>
-First place in Group D will be determined by the outcome of the match at the Santiago Bernabeu on 7 December.
-        </Typography>
-      </CardContent>
-    </Card>
+        <CardMedia
+          className={classes.SimoneImg}
+          component="img"
+          height="640"
+          image="https://intermilan.bynder.com/transform/b44ab1b8-ed8e-42f0-a9b7-864ba8389830/20230506200403_1081158573?quality=100&io=transform:fill,width:1586"
+          alt="Simone Inzaghi"
+        />
+        <CardContent>
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            style={{ marginBottom: "20px" }}
+          >
+            We keep pushing. Two goals, another clean sheet, another win on the
+            road. A fourth consecutive league win, a fifth victory in a row in
+            all competitions, and lots of cohesion, determination, selflessness
+            and brilliant ideas. Inter produced a really solid and clinical
+            display. It finished 2-0 in Rome, with Dimarco opening the scoring
+            in the first half and Lukaku sealing it after the restart. Three
+            vital points ahead of the Champions League semi-final first leg.
+          </Typography>
+          <Typography style={{ marginBottom: "20px" }}>
+            There was a mix of potentially dangerous ingredients: today's game
+            was a vital one in the race for the top four, and it came just
+            before the Champions League semi-finals. Nevertheless, Inter were
+            excellent and full of running, playing with clear heads. Brozovic
+            was the architect and dominated the midfield area, always looking to
+            combine with his teammates. He found them everywhere, right from the
+            start of the match. He had Dumfries and Dimarco to pick out down the
+            flanks, while Barella and Calhanoglu were always there to provide an
+            option. Things were working well for Inter, even if Roma - beset
+            with absences but with the desire to do well - initially made a
+            bright start.
+          </Typography>
+          <Typography style={{ marginBottom: "10px" }}>
+            Roma were relying heavily on set-pieces and individual inspiration.
+            However, the Nerazzurri defenders stood firm, leaving Belotti with
+            no space with his back to goal. Then, when there was the
+            opportunity, Inter looked to strike on the break, with Barella
+            heavily involved when the team countered. At the back, Inter had to
+            dig in, and they were also grateful to Onana. Indeed, when Roma were
+            at their most dangerous, the Nerazzurri shot-stopper produced a
+            fantastic stop to thwart Ibanez. Inzaghi's changes helped combat the
+            hosts' pressing. Then, Lautaro regained possession in the final
+            third following Ibanez's mistake and sent Lukaku through on goal
+            with only Rui Patricio to beat. Romelu's finish was powerful and
+            precise and put the game to bed. The Nerazzurri almost added a third
+            late on through Lautaro, who was denied by the crossbar. The
+            interruptions continued, but Inzaghi's men were the ones smiling at
+            the end of stoppage time. A vital Inter victory!
+          </Typography>
+        </CardContent>
+      </Card>
     </Container>
   );
 }

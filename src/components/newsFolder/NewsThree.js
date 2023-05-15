@@ -29,44 +29,87 @@ const useStyles = makeStyles((theme)=>({
 export default function NewsThree() {
     const classes = useStyles()
   return (
-      <Container className={classes.mainContainer}>
-    <Card className={classes.mainCard}>
-        <Typography gutterBottom variant="h4" component="div" style={{marginTop:'10px',fontWeight:'bold'}}>
-        INZAGHI: "CHARACTER, GRIT AND DETERMINATION NEEDED AT THE OLIMPICO"
+    <Container className={classes.mainContainer}>
+      <Card className={classes.mainCard}>
+        <Typography
+          gutterBottom
+          variant="h4"
+          component="div"
+          style={{ marginTop: "10px", fontWeight: "bold" }}
+        >
+          25 YEARS AGO: INTER LIFTED THE UEFA CUP IN PARIS
         </Typography>
-      <CardMedia
-        className={classes.SimoneImg}
-        component="img"
-        height="640"
-        image="https://www.inter.it/binaries/content/gallery/internazionale/photos/2021/08/20/2021-08-20-15-32-06_382145.jpg/2021-08-20-15-32-06_382145.jpg/internazionale%253Acinema"
-        alt="Simone Inzaghi"
-      />
-      <CardContent>
-      <Typography variant="body1" color="text.secondary" style={{marginBottom:'20px'}}>
-      APPIANO GENTILE – Simone Inzaghi held a press conference on Friday afternoon to discuss Inter's visit to Jose Mourinho's Roma at the Stadio Olimpico on Saturday.
-        </Typography>
-<Typography style={{marginBottom:'20px',fontWeight:'bold'}}>
-What sort of game are you expecting?</Typography>
-<Typography style={{marginBottom:'10px'}}>
-“It''s one of the biggest games we have in this run of fixtures. We'll be up against an excellent team with great players so we must be very careful – we'll need a real Inter performance.”
-        </Typography>
-        <Typography style={{marginBottom:'20px',fontWeight:'bold'}}>
-        Where do you think Lautaro Martinez can improve?</Typography>
-        <Typography style={{marginBottom:'10px'}}>
-        “He has to keep doing what he's doing. He's very young and has lots of room for improvement. I'm very happy with him and the other forwards we have. They're all doing well and helping out when we don't have the ball. Lautaro has scored in the last three matches and long may he keep it up!”
-        </Typography>
-        <Typography style={{marginBottom:'20px',fontWeight:'bold'}}>
-        What's your opinion of Jose Mourinho?</Typography>
-        <Typography style={{marginBottom:'10px'}}>
-        “It will be nice to meet him as I've never come up against him before. I know this is a special match for him so we'll need to be even more careful. We all know how capable he is and what he's achieved at the clubs he's worked for.”
-        </Typography>
-        <Typography style={{marginBottom:'20px',fontWeight:'bold'}}>
-        Do you expect to have any of the injured players back for this game?</Typography>
-        <Typography style={{marginBottom:'10px'}}>
-        “Andrea Ranocchia and Matteo Darmian definitely won't be involved and it's unlikely [Stefan] de Vrij and [Aleksandar] Kolarov will be either. I think we'll have them in the squad for Madrid or possibly Cagliari. I need to assess the others. [Alessandro] Bastoni's temperature had gone down by yesterday but he hasn't trained yet. He seems to be better but I'll need to look at them all individually today.”
-        </Typography>
-      </CardContent>
-    </Card>
+        <CardMedia
+          className={classes.SimoneImg}
+          component="img"
+          height="640"
+          image="https://intermilan.bynder.com/transform/fa948e06-20a9-4364-9101-c51ea45a2a86/AC01648-Bergomi-Giuseppe?quality=100&io=transform:fill,width:1920"
+          alt="Inter celebration"
+        />
+        <CardContent>
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            style={{ marginBottom: "20px" }}
+          >
+            25 years ago, but it seems like yesterday. 25 years ago, but the
+            feelings are still there today, identical. And for those who weren't
+            present, or not yet born, the photos and videos from that evening
+            bring it all back: the voices of those arriving, still crisp and
+            clear, to the Parc des Princes, the stage for one Inter's greatest
+            moments in history.
+          </Typography>
+          <Typography style={{ marginBottom: "20px" }}>
+            25 years ago, 6 May 1998. That incredible run could not have
+            finished any other way; it could not have been a finer ending, in an
+            all-Italian final, the first ever one on the Uefa Cup, with every
+            Interista looking for revenge after the previous year's defeat to
+            Schalke.
+          </Typography>
+          <Typography style={{ marginBottom: "10px" }}>
+            t was a glorious night: Lazio 0-3 Inter. Zamorano's goal started it
+            all off, Zanetti's hit into the top corner with his right, Ronaldo's
+            dance in his one-on-one with Marchegiani. It was the Nerazzurri's
+            third Uefa Cup in its history and the first in Moratti's reign, with
+            the sweet and gentil smile of Gigi Simoni, who only ten days prior
+            had lost for the first time in the league campaign.
+          </Typography>
+          <Typography style={{ marginBottom: "20px"}}>
+            His squad of players from '98 won with style and pride, because the
+            final was a masterpiece; because the celebrations were wild; because
+            it was a joy to watch 'O Fenomeno' with the Brazilian flag jumping
+            up and down happy together with Beppe Bergomi.
+          </Typography>
+          <Typography style={{ marginBottom: "10px" }}>
+            In Milan, Nerazzurri supporters gathered to watch the game in Piazza
+            del Duomo on the big screen. Following the match, Massimo Moratti
+            was help up on the players' shoulders, before dedicating the victory
+            to hhis father, Angelo: "He won league titles and European Cups so
+            my thought is with him. The fans deserves this, it is Gigi Simoni's
+            Cup; he has led the team with tenacity and intelligence."
+          </Typography>
+          <Typography style={{ marginBottom: "20px"}}>
+            When you mention the 1998 Uefa Cup, timeless images suddenly spring
+            up to mind, like bright, shining stars in a Black and Blue sky.
+            There's the hooped shirts, unimaginable goals by Ronaldo in the
+            frozen mud in Moscow; there's the perfect ending at Parc des
+            Princes. The "boys of '98": they still call themselves that now, the
+            boys of Gigi Simoni.
+          </Typography>
+          <Typography style={{ marginBottom: "10px" }}>
+            Ronaldo, the one and only Ronaldo. The first win in Neuchatel, then
+            the fightback over Lyon. Another French team and another comeback: a
+            2-0 defeat in Strasbourg, the famous 3-0 win at San Siro with goals
+            from Ronaldo, Zanetti and Simeone. The quarters were revenge for the
+            1997 final, beating Schalke through West's goal in extra-time. In
+            the semis, Ronaldo drew up one of his most stunning goals in the mud
+            of Moscow. In the final in Paris, (the first one-off game) Inter
+            dominated the game against Lazio: peaches from Zamorano, Zanetti and
+            Ronaldo Inter their third Uefa Cup in its history, and its first
+            trophy in the Moratti era.
+          </Typography>
+        </CardContent>
+      </Card>
     </Container>
   );
 }

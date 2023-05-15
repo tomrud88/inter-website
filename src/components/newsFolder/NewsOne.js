@@ -29,50 +29,66 @@ const useStyles = makeStyles((theme)=>({
 export default function NewsOne() {
     const classes = useStyles()
   return (
-      <Container className={classes.mainContainer}>
-    <Card className={classes.mainCard}>
-        <Typography gutterBottom variant="h4" component="div" style={{marginTop:'10px',fontWeight:'bold'}}>
-        ROMA V INTER: EVERYTHING YOU NEED TO KNOW
+    <Container className={classes.mainContainer}>
+      <Card className={classes.mainCard}>
+        <Typography
+          gutterBottom
+          variant="h4"
+          component="div"
+          style={{ marginTop: "10px", fontWeight: "bold" }}
+        >
+          INTER VS. AC MILAN TICKETS. SALES BEGIN FOR INTER CLUB MEMBERS ON
+          MONDAY 8 MAY
         </Typography>
-      <CardMedia
-        className={classes.SimoneImg}
-        component="img"
-        height="640"
-        image="https://www.inter.it/binaries/content/gallery/internazionale/photos/2021/11/29/2021-11-29-14-17-24_408369.JPG/2021-11-29-14-17-24_408369.JPG/internazionale%253Acinema"
-        alt="Simone Inzaghi"
-      />
-      <CardContent>
-        <Typography variant="body1" color="text.secondary" style={{marginBottom:'20px'}}>
-        MILAN – Roma meet Inter on Saturday at 18:00 CET: the Nerazzurri will visit the Stadio Olimpico in Matchday 16 of Serie A 2021/22. Simone Inzaghi’s team come into the game fresh from their victory against Spezia, having amassed 34 points so far; and with 36 goals for and 15 against, they boast the league’s most potent attack and second most miserly defence. On the other hand, coming off the back of defeat by Bologna, Jose Mourinho’s Roma have 25 points after 15 matches, having scored 24 and conceded 16. 
-        </Typography>
-        <Typography variant='h6'>HEAD-TO-HEADS</Typography>
-<Typography style={{marginBottom:'20px'}}>
-Saturday’s match will be the 177th top-flight meeting between Roma and Inter: the Nerazzurri have 73 wins, compared to 49 for the Giallorossi, with 54 draws.
-
-Roma v Inter clashes have produced 511 goals, the most in Serie A history and at least 38 more than any other head-to-head. Inter have achieved more wins in the top flight (73) against the Giallorossi and Bologna than any other team.
-
-Inter are unbeaten in eight Serie A matches against Roma (2W, 6D), the longest ongoing winless streak for the Giallorossi against any team in the league. The Nerazzurri won their last Serie A outing against Roma and are looking to secure back-to-back league victories against the Giallorossi for the first time since 2015.
-
-The most frequent score between Roma and Inter in Serie A is 0-0 (21 matches); however, only one of the last 14 meetings between the two (in December 2019) has ended goalless.</Typography>
-<Typography variant='h6'>FORM BOOK</Typography>
-<Typography style={{marginBottom:'10px'}}>
-Inter have run out 2-0 winners in each of their last two Serie A fixtures. The Nerazzurri haven’t won three games on the spin without shipping a goal since the back end of the 2019/20 season. If Simone Inzaghi’s side scores for the 18th game in a row, it would match the team’s longest Serie A goalscoring run on the road, which began in October 1950 and lasted until September 1951.
-
-Roma have lost six of their opening 15 matches in a Serie A season for the first time since 2011/12 and have not lost seven out of their first 16 games since 2008/09. Only Fiorentina (zero) have drawn fewer times than Roma (one) in the 2021/22 Serie A campaign. Inter’s tally currently sits on four.
-Inter (258) and Roma (264) are the two teams that have had the most efforts on goal in 2021/22. The Nerazzurri have the best attack in the division with 36 goals, meaning the club has reached this tally in back-to-back campaigns, having previously not managed to do so since 1961/62.
-        </Typography>
-        <Typography variant='h6'>PLAYER FOCUS</Typography>
-        <Typography style={{marginBottom:'20px'}}>
-        Before signing for Inter, Edin Dzeko scored 85 goals in 199 Serie A appearances for Roma. Aleksandar Kolarov also used to ply his trade in the capital, netting 17 goals in the top flight in a century of Roma appearances.
-
-Roma are the team that Lautaro Martinez has faced the most times (six) and racked up the most minutes against (364) in Serie A without finding the net against them.
-
-Among the sides that Hakan Calhanoglu has faced at least eight times in Serie A, Roma are the team against which he has registered the fewest goal involvements, with just one goal from the penalty spot in June 2020.
-
-Roma are among Arturo Vidal’s favourite two Serie A victims, with the Chilean bagging four goals against Roma and capital rivals Lazio, with his first brace in the Italian top flight coming against the Giallorossi in April 2012.
-</Typography>   
-      </CardContent>
-    </Card>
+        <CardMedia
+          className={classes.SimoneImg}
+          component="img"
+          height="640"
+          image="https://intermilan.bynder.com/transform/5426fe37-cac6-4de3-b0ea-8a473093cccd/20230419215456_78210789?quality=100&io=transform:fill,width:1280,height:1280"
+          alt="Inter Milan stadium"
+        />
+        <CardContent>
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            style={{ marginBottom: "20px" }}
+          >
+            MILAN – FC Internazionale Milano can announce that the ticket-sale
+            period for season-ticket holders, for the game Inter vs. AC Milan,
+            has now ended. Phase 3, dedicated to Inter Club members, will begin
+            on Monday 8 May.
+          </Typography>
+          <Typography variant="h6">
+            PHASE 3 – ONLY 22/23 INTER CLUB MEMBERS
+          </Typography>
+          <Typography style={{ marginBottom: "20px" }}>
+            From 14:30 CEST until midnight on Monday 8 May (subject to
+            availability), sales will be reserved to Inter Club members, who
+            will be able to buy up to two tickets per order, provided that
+            membership is for the 2022/23 season. The online selling system will
+            check at the time of purchase that buyer corresponds with an active
+            and valid 2022/23 Inter Club membership. Purchased tickets during
+            this phase can only be transferred and given up to another 22/23
+            Inter Club member.
+          </Typography>
+          <Typography variant="h6">
+            PHASE 4 – ONLY ‘SIAMO NOI’ CARD HOLDERS
+          </Typography>
+          <Typography style={{ marginBottom: "10px" }}>
+            From 14.30 CEST on Tuesday 9 May until midnight on Sunday 7 May,
+            priority will turn to Siamo Noi card holders who signed up to the
+            scheme before Tuesday 18 April. Subject to availability, up to two
+            tickets may be bought, provided that both persons are Siamo Noi card
+            holders.
+          </Typography>
+          <Typography variant="h6">GENERAL SALE</Typography>
+          <Typography style={{ marginBottom: "20px" }}>
+            Due to the overwhelming demand for tickets and with the goal of
+            reserving tickets for regular attendees, a general sales period is
+            currently not planned.
+          </Typography>
+        </CardContent>
+      </Card>
     </Container>
   );
 }

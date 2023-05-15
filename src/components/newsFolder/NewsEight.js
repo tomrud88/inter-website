@@ -29,31 +29,41 @@ const useStyles = makeStyles((theme)=>({
 export default function NewsEight() {
     const classes = useStyles()
   return (
-      <Container className={classes.mainContainer}>
-    <Card className={classes.mainCard}>
-        <Typography gutterBottom variant="h4" component="div" style={{marginTop:'10px',fontWeight:'bold'}}>
-        INTER CAMPUS SUPPORTING PEOPLE WITH DISABILITIES
+    <Container className={classes.mainContainer}>
+      <Card className={classes.mainCard}>
+        <Typography
+          gutterBottom
+          variant="h4"
+          component="div"
+          style={{ marginTop: "10px", fontWeight: "bold" }}
+        >
+          MEET AND GREET WITH THE NERAZZURRI PARTNERS IN ROME 
         </Typography>
-      <CardMedia
-        className={classes.SimoneImg}
-        component="img"
-        height="640"
-        image="https://www.inter.it/binaries/content/gallery/internazionale/photos/2021/12/03/ic-giocoalcentro-2020-051.jpg/ic-giocoalcentro-2020-051.jpg/internazionale%253Acinema"
-        alt="Simone Inzaghi"
-      />
-      <CardContent>
-        <Typography variant="body1" color="text.secondary" style={{marginBottom:'20px'}}>
-        Around 15% of the world's population, approximately one billion people, have a disability of some sort and face discrimination and barriers that prevent them from fully participating in social life. It is for these people that the United Nations, in 1981, proclaimed the International Day of Persons with Disabilities, celebrated annually on 3 December, with the aim of promoting understanding of disability issues and support for the dignity, rights and well-being of persons with disabilities. 
-        </Typography>
-<Typography style={{marginBottom:'20px'}}>
-Inter Campus has for several years been supporting children with intellectual disabilities, offering inclusive football programmes to help them develop the skills needed to play and have fun, while learning to relate with other children – with and without disabilities – on the pitch.
-
-At the two Special schools in Inter Campus Poland, children train with our coaches/educators on a weekly basis and take part in tournaments with children without disabilities, offering them an opportunity to show off the skills they have acquired – giving them further joy.</Typography>
-<Typography style={{marginBottom:'10px'}}>
-In Italy there are two inclusive football initiatives: a permanent one with a group of children from l'Abilità Onlus Association who take part in a weekly programme, and another linked to Gioco al Centro, inaugurated with Parco Inclusivo, offering playing sessions for two or four children at a time on a safe pitch set up for the occasion.
-        </Typography>
-      </CardContent>
-    </Card>
+        <CardMedia
+          className={classes.SimoneImg}
+          component="img"
+          height="640"
+          image="https://intermilan.bynder.com/transform/86cb233a-6e2f-4d63-ae77-475f871586c9/20230505220824_1657084555?quality=100&io=transform:fill,width:1920"
+          alt="Inter Partners"
+        />
+        <CardContent>
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            style={{ marginBottom: "20px" }}
+          >
+            To mark the away fixture against Roma on matchday 34 in Serie A,
+            Inter players took part in a special Meet and Greet evening with
+            several Nerazzurri partners.
+          </Typography>
+          <Typography style={{ marginBottom: "20px" }}>
+            Guests from Attal, Cerba, Kopron, La Molisana, Locauto, Nike, San
+            Bernardo, Socios and Volvo had the opportunity to meet Dumfries, de
+            Vrij, Asllani and Bellanova for an exclusive autograph signing and
+            photo session.
+          </Typography>
+        </CardContent>
+      </Card>
     </Container>
   );
 }

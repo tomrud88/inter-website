@@ -26,8 +26,8 @@ const useStyles = makeStyles((theme)=>({
    useEffect(()=>{
        setLoading(true)
        const fetchTable = async () =>{
-   const response = await fetch("http://api.football-data.org/v2/competitions/SA/scorers", {
-	"method": "GET",
+   const response = await fetch("http://api.football-data.org/v4/competitions/SA/scorers", {
+	
 	"headers": {
 		"X-Auth-Token": "3cb5b9dd8f50443e97d7c53804bd5634"
 	}
@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme)=>({
                     id:key,
                     name:scorers[key].player.name,
                     team:scorers[key].team.name,
-                    goals:scorers[key].numberOfGoals,
+                    goals:scorers[key].goals,
                 })
             }
             console.log(loadedData)

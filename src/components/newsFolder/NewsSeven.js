@@ -29,33 +29,62 @@ const useStyles = makeStyles((theme)=>({
 export default function NewsSeven() {
     const classes = useStyles()
   return (
-      <Container className={classes.mainContainer}>
-    <Card className={classes.mainCard}>
-        <Typography gutterBottom variant="h4" component="div" style={{marginTop:'10px',fontWeight:'bold'}}>
-        DUMFRIES: "IT WAS SO GOOD TO PLAY IN FRONT OF THE FANS"
+    <Container className={classes.mainContainer}>
+      <Card className={classes.mainCard}>
+        <Typography
+          gutterBottom
+          variant="h4"
+          component="div"
+          style={{ marginTop: "10px", fontWeight: "bold" }}
+        >
+          DZEKO'S BRACE AND THE JOY OF THE STARS FROM HELLAS VS. INTER
         </Typography>
-      <CardMedia
-        className={classes.SimoneImg}
-        component="img"
-        height="640"
-        image="https://www.inter.it/binaries/content/gallery/internazionale/photos/2021/12/01/2021-12-01-17-56-02_408699.JPG/2021-12-01-17-56-02_408699.JPG/internazionale%3AcinemaApp"
-        alt="Simone Inzaghi"
-      />
-      <CardContent>
-        <Typography variant="body1" color="text.secondary" style={{marginBottom:'20px'}}>
-        MILAN – Denzel Dumfries got the nod to start in the right wing-back berth for the first time since the clash with Udinese in October. The Dutchman clocked plenty of miles after putting in a tireless performance that included some key defensive ball recoveries. All in all, the wing-back was pleased with his contribution, as he told Inter TV after the match.
-        </Typography>
-<Typography style={{marginBottom:'20px'}}>
-“The most important thing was to win this game. I think we scored two good goals including a good penalty by Lautaro Martinez.
-
-“I think it had been a long time since I started and I also played the full 90 minutes, so I was very happy to play again today. It was very good to play in front of the fans.</Typography>
-<Typography style={{marginBottom:'10px'}}>
-“I feel good. I think there were ups and downs in the first few months. I played some good matches and others that were not really good. I’m honest with myself. I know I can play better, but I’m also human. I try to improve and I feel really good now. 
-
-“My team-mates are helping me very much, especially Stefan de Vrij, but also Ivan Perisic and Edin Dzeko. It’s really important for me to settle into the team because I don’t speak Italian yet. The fans didn’t see my qualities yet, so I will show more and more.”
-        </Typography>
-      </CardContent>
-    </Card>
+        <CardMedia
+          className={classes.SimoneImg}
+          component="img"
+          height="640"
+          image="https://intermilan.bynder.com/transform/3ca1a854-6e95-407a-b2d1-9a9e33302888/20230503213012_1605916524?quality=100&io=transform:fill,width:1920"
+          alt="Edin Dzeko"
+        />
+        <CardContent>
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            style={{ marginBottom: "20px" }}
+          >
+            “It was beautiful evening, we had fun and played really well. The
+            goal? It was a matter of time, sometimes forwards don't score goals
+            but you have to stay calm, because it will come like it did today
+            and the important thing is that the team is doing well. These are
+            never easy games but today we put in a great performance, we had a
+            great session in training yesterday and we told ourselves that if we
+            did the same today we would have a good chance of getting the result
+            we wanted. Before the goal came we had lots of chances, it's true
+            that in the past we have lost games that we shouldn't have lost, but
+            when you play every three days it's not easy. Now there's not long
+            left and we have to continue playing like this because we're
+            starting to show how good we really are. Every game we’ve got left
+            now is very important, they are all worth a lot, today we come home
+            with the three points but from tomorrow we have to think about Roma.
+            We must deliver another strong performance.” Edin Dzeko
+          </Typography>
+          <Typography style={{ marginBottom: "20px" }}>
+            “I came on with a lot of desire, playing with these teammates makes
+            everything easier, it was a great night. Everyone is always helping
+            me a lot, when I came on they told me to play with a clear frame of
+            mind. The coach? He gave me some instructions about free kicks and
+            corners and wished me good luck. ” Mattia Zanotti
+          </Typography>
+          <Typography style={{ marginBottom: "10px" }}>
+            “This is never an easy stadium to come to, today we started off on
+            the right foot, we were aggressive and we showed everything we had
+            practised during the week and we are coming home with three
+            well-deserved points. I'm doing well, I played 70 minutes against
+            Empoli, I came on today, I'm always ready to give it my all. ” Raoul
+            Bellanova
+          </Typography>
+        </CardContent>
+      </Card>
     </Container>
   );
 }

@@ -29,32 +29,55 @@ const useStyles = makeStyles((theme)=>({
 export default function NewsFour() {
     const classes = useStyles()
   return (
-      <Container className={classes.mainContainer}>
-    <Card className={classes.mainCard}>
-        <Typography gutterBottom variant="h4" component="div" style={{marginTop:'10px',fontWeight:'bold'}}>
-        PERISIC WINS LENOVO PLAYER OF THE MONTH FOR NOVEMBER
+    <Container className={classes.mainContainer}>
+      <Card className={classes.mainCard}>
+        <Typography
+          gutterBottom
+          variant="h4"
+          component="div"
+          style={{ marginTop: "10px", fontWeight: "bold" }}
+        >
+          ROMA VS. INTER: PREVIOUS MEETINGS, STATS AND FUN FACTS
         </Typography>
-      <CardMedia
-        className={classes.SimoneImg}
-        component="img"
-        height="640"
-        image="https://www.inter.it/binaries/content/gallery/internazionale/photos/2021/12/02/2021-12-02-12-06-03_409509.jpg/2021-12-02-12-06-03_409509.jpg/internazionale%3Acorpo"
-        alt="Simone Inzaghi"
-      />
-      <CardContent>
-        <Typography variant="body1" color="text.secondary" style={{marginBottom:'20px'}}>
-        MILAN – Ivan Perisic is the LENOVO Player of the Month for November! Nerazzurri fans chose the Croatian winger by voting for him on Twitter, Instagram and Weibo.
-        </Typography>
-<Typography style={{marginBottom:'20px'}}>
-Perisic made five appearances in Serie A and the Champions League in November, starting the Milan derby and wins against Napoli, Shakhtar and Venezia, and coming on as a substitute against Sheriff Tiraspol. </Typography>
-<Typography style={{marginBottom:'10px'}}>
-His goal against Napoli was his 44th in Serie A, putting him level with Igor Budan as the Croatian to have scored the most goals in the Italian top flight.
-        </Typography>
-        <Typography style={{marginBottom:'10px'}}>
-        Perisic was a star performer in the win over Shakhtar that secured Inter's place in the last 16 with a match to spare. He featured in the build-up to Edin Dzeko's opener then sent over an inch-perfect delivery for the Bosnian to head in the second – his first assist for Inter in the Champions League.
-        </Typography>        
-      </CardContent>
-    </Card>
+        <CardMedia
+          className={classes.SimoneImg}
+          component="img"
+          height="640"
+          image="https://intermilan.bynder.com/transform/ff1fe6c3-b32f-4464-936b-3c4fc259934f/20230425173723_762041711-crop?quality=100&io=transform:fill,width:1920"
+          alt="Simone Inzaghi"
+        />
+        <CardContent>
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            style={{ marginBottom: "20px" }}
+          >
+            Inter face Roma on Saturday 6 May at 18:00 CEST for the 180th time
+            in Serie A. The Nerazzurri have collected 75 wins to the
+            Giallorossi's 50: against no other side have Inter earned more wins
+            in the Italian league. Roma are also the team that Inter have scored
+            the most goals against in Serie A: 291.
+          </Typography>
+          <Typography style={{ marginBottom: "20px" }}>
+            Since the start of the 2021/22 Serie A season, Inter have scored at
+            least three goals in 24 league fixtures: no other side has a better
+            record in the same period, with Napoli second (20 games).{" "}
+          </Typography>
+          <Typography style={{ marginBottom: "10px" }}>
+            In 2023, no other striker in Serie A has been involved in more goals
+            than Lautaro Martínez in all competitions. The Argentinian has
+            grabbed 15 goals and provided three assists, for a total of 18, the
+            same as Victor Osimhen.
+          </Typography>
+          <Typography style={{ marginBottom: "10px" }}>
+            Roma are the team that Marcelo Brozovic has been involved in the
+            most number of goals in Serie A: the Croatian midfielder totals
+            seven contributions, with two goals and five assists. In his last
+            three Serie A games, Brozovic have served up three goalscoring
+            passes.
+          </Typography>
+        </CardContent>
+      </Card>
     </Container>
   );
 }

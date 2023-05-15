@@ -220,12 +220,12 @@ function TopContainer() {
                     <Paper
                       style={{
                         backgroundImage:
-                          "url(https://www.inter.it/binaries/content/gallery/internazionale/photos/2021/11/24/2021-11-24-19-30-20_407059.JPG/2021-11-24-19-30-20_407059.JPG/internazionale%3AcinemaApp)",
+                          "url(https://intermilan.bynder.com/transform/95b7ae3c-3276-4443-9b91-2fc4941e65df/20230506195830_1656481945?quality=100&io=transform:fill,width:1586)",
                       }}
                       className={classes.paper}
                     >
                       <p className={classes.mainTitle} boxShadow={2}>
-                        INTER REACH THE LAST 16: GROUP D STANDINGS
+                        INTER BEAT ROMA 2 - 0 IN THE CAPITAL
                       </p>
                     </Paper>
                   </Link>

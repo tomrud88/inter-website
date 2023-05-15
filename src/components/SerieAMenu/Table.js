@@ -49,12 +49,15 @@ const useStyles = makeStyles((theme)=>({
    useEffect(()=>{
        setLoading(true)
        const fetchTable = async () =>{
-   const response = await fetch("https://api.football-data.org/v2/competitions/SA/standings", {
-	"method": "GET",
-	"headers": {
-		"X-Auth-Token": "3cb5b9dd8f50443e97d7c53804bd5634"
-	}
-})   
+   const response = await fetch(
+     "https://api.football-data.org/v4/competitions/SA/standings",
+     {
+       method: "GET",
+       headers: {
+           "X-Auth-Token": "3cb5b9dd8f50443e97d7c53804bd5634",
+       },
+     }
+   );   
      const responseData = await response.json()
      
      const standings = responseData.standings;
@@ -70,7 +73,7 @@ const useStyles = makeStyles((theme)=>({
                     id:key,
                     name:table[key].team.name,
                     position:table[key].position,
-                    logo:table[key].team.crestUrl,
+                    logo:table[key].team.crest,
                     games:table[key].playedGames,
                     won:table[key].won,
                     draw:table[key].draw,

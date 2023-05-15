@@ -81,7 +81,7 @@ function Fixtures() {
     useEffect(() => {
         setLoading(true)
         const fetchFixtures = async() =>{
-            const response = await fetch('https://api.football-data.org/v2/competitions/SA/matches',{
+            const response = await fetch('https://api.football-data.org/v4/competitions/SA/matches',{
                 'method':'GET',
                 'headers':{
                     "X-Auth-Token": "3cb5b9dd8f50443e97d7c53804bd5634"
