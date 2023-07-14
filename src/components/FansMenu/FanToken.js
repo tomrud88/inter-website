@@ -1,6 +1,6 @@
 import { Button, Container,makeStyles, Typography,Box,Grid,Paper, List, ListItem, Link } from '@material-ui/core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCarrot,faGift } from '@fortawesome/free-solid-svg-icons';
+
+
 import { Autorenew,RecordVoiceOver } from '@material-ui/icons';
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -576,10 +576,7 @@ function FanToken() {
                 </Typography>
               </ListItem>
               <ListItem>
-                <FontAwesomeIcon
-                  style={{ fontSize: "35px", marginRight: "30px" }}
-                  icon={faGift}
-                ></FontAwesomeIcon>
+               
                 <Typography variant="body1">
                   Turn your dreams into reality with fantastic rewards
                 </Typography>
