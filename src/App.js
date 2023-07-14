@@ -26,8 +26,7 @@ import NewsFive from './components/newsFolder/NewsFive';
 import NewsSix from './components/newsFolder/NewsSix';
 import NewsSeven from './components/newsFolder/NewsSeven';
 import NewsEight from './components/newsFolder/NewsEight';
-import LoginModal from './components/LoginModal';
-import {useState, useContext} from 'react'
+import { useState, useContext } from 'react';
 import zIndex from '@material-ui/core/styles/zIndex';
 import { makeStyles } from '@material-ui/core';
 import ProfileForm from './components/ProfileForm';
