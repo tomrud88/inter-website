@@ -11,7 +11,6 @@ const useStyles = makeStyles((theme)=>({
    padding: '0px',
   },
     containerone:{
-        
         minWidth:'100vw',
         height:'850px',
         position:'relative',
