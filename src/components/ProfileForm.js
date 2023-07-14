@@ -2,7 +2,7 @@ import { makeStyles }from '@material-ui/core'
 import React from 'react';
 import { useContext,useRef } from 'react';
 import AuthContext from '../store/auth-context';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 const useStyles = makeStyles((theme)=>({
@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme)=>({
 const ProfileForm = () => {
     const classes = useStyles();
 
-    const history = useHistory()
+    const history = useNavigate()
     const newPasswordInputRef = useRef();
 
     const authCtx = useContext(AuthContext)
