@@ -126,7 +126,7 @@ const useStyles = makeStyles((theme)=>({
                   <TableRow
                   key={table.key}
                   >
-                      {(table.position < 5) ?
+                      {(table.position < 5 && table.playedGames>0) ?
                      <TableCell  style={{backgroundColor:'green'}}>
                          {table.position}
                     </TableCell>:
