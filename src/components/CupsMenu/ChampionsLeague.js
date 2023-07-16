@@ -101,12 +101,17 @@ function ChampionsLeage() {
 
     useEffect(() => {
         const fetchFixtures = async() =>{
-            const response = await fetch('https://api.football-data.org/v2/competitions/CL/matches?group=GROUP_C',{
-                'method':'GET',
-                'headers':{
-                    "X-Auth-Token": "3cb5b9dd8f50443e97d7c53804bd5634"
-                }
-            })
+            const response = await fetch(
+              "https://cors-anywhere.herokuapp.com/https://api.football-data.org/v4/competitions/CL/matches?group=GROUP_C",
+              {
+                method: "GET",
+                headers: {
+                  "X-Auth-Token": "3cb5b9dd8f50443e97d7c53804bd5634",
+                  Origin:
+                    "https://api.football-data.org/v4/competitions/CL/matches?group=GROUP_C",
+                },
+              }
+            );
             const responseData = await response.json()
 
             
@@ -122,8 +127,8 @@ function ChampionsLeage() {
                     id:key,
                     homeTeam:matches[key].homeTeam.name,
                     awayTeam:matches[key].awayTeam.name,
-                    scoreHomeTeam:matches[key].score.fullTime.homeTeam,
-                    scoreAwayTeam:matches[key].score.fullTime.awayTeam,
+                    scoreHomeTeam:matches[key].score.fullTime.home,
+                    scoreAwayTeam:matches[key].score.fullTime.away,
                     round:matches[key].matchday,
                     date:matches[key].utcDate
                 })
@@ -132,18 +137,21 @@ function ChampionsLeage() {
         }
         const fetchTable = async () =>{
             setLoading(true);
-            const responses = await fetch("https://api.football-data.org/v2/competitions/CL/standings", {
-             "method": "GET",
-             "headers": {
-                 "X-Auth-Token": "3cb5b9dd8f50443e97d7c53804bd5634"
-             }
-         })   
+            const responses = await fetch(
+              "https://cors-anywhere.herokuapp.com/https://api.football-data.org/v4/competitions/CL/standings",
+              {
+                method: "GET",
+                headers: {
+                  "X-Auth-Token": "3cb5b9dd8f50443e97d7c53804bd5634",
+                },
+              }
+            );   
               const responseDat = await responses.json()
               
-              const standing = responseDat.standings[5];
+              const standing = responseDat.standings[2];
               console.log(standing)
          
-              const table = responseDat.standings[5].table;
+              const table = responseDat.standings[2].table;
               console.log(table)
              
               
