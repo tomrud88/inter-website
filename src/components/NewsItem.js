@@ -38,6 +38,7 @@ function NewsItem({item}) {
                  <CardMedia
                    className={classes.cardPicture}
                    component='img'
+                   loading="lazy"
                    height='360'
                    image={item.picture}
                    />

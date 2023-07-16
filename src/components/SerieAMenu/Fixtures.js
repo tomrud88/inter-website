@@ -82,16 +82,18 @@ function Fixtures() {
         setLoading(true)
         const fetchFixtures = async() =>{
             const response = await fetch(
-              "https://api.football-data.org/v4/competitions/SA/matches",
+              `https://cors-anywhere.herokuapp.com/https://api.football-data.org/v4/competitions/SA/matches`,
               {
                 method: "GET",
                 headers: {
-                  "X-Auth-Token": "3cb5b9dd8f50443e97d7c53804bd5634",
+                    "X-Auth-Token": "3cb5b9dd8f50443e97d7c53804bd5634",
+                  Origin:
+                    "https://api.football-data.org/v4/competitions/SA/matches",  
                 },
               }
             );
             const responseData = await response.json()
-            
+            console.log(responseData)
             const matches = responseData.matches
             console.log(matches)
 

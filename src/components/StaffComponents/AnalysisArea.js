@@ -66,6 +66,7 @@ function AnalysisArea() {
                   className={classes.media}
                   image="https://www.inter.it/img/435083-170.jpg
 "
+                  loading="lazy"
                   title="Lorenzon"
                 />
                 <CardContent>
@@ -86,6 +87,7 @@ function AnalysisArea() {
                   component="img"
                   className={classes.media}
                   image="https://www.inter.it/img/435069-170.jpg"
+                  loading="lazy"
                   title="Muratore"
                 />
                 <CardContent>
@@ -107,6 +109,7 @@ function AnalysisArea() {
                   className={classes.media}
                   image="https://www.inter.it/img/435107-170.jpg
 "
+                  loading="lazy"
                   title="Toninato"
                 />
                 <CardContent>

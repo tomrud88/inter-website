@@ -267,10 +267,12 @@ function FanToken() {
                 <img
                   className={classes.imglinks}
                   src=".\fanToken-AppStore.png"
+                  loading="lazy"
                 ></img>
                 <img
                   className={classes.imglinks}
                   src=".\fanToken-googlePlay.png"
+                  loading="lazy"
                 ></img>
               </div>
             </div>
@@ -278,6 +280,7 @@ function FanToken() {
               <img
                 className={classes.mainImg}
                 src=".\fanToken-mobilePicture.png"
+                loading="lazy"
               />
             </div>
           </div>
@@ -508,8 +511,7 @@ function FanToken() {
                   </Paper>
                   <Paper
                     style={{
-                      backgroundImage:
-                        `url(/interfantoken-dressingRoom.jpg)`,
+                      backgroundImage: `url(/interfantoken-dressingRoom.jpg)`,
                       transform: "rotateX(180deg)",
                     }}
                     className={classes.paper}

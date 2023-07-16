@@ -301,7 +301,10 @@ function TopContainer() {
             <Grid className={classes.leftsite} item lg={4} sm={6} xs={12}>
               <Grid item container direction="column" alignItems="center">
                 <ListItem style={{ justifyContent: "center" }}>
-                  <img src="https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0llIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--daa9c6ed836e1a7e8301ef676feab9d7677b3f52/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/sassuolo.png"></img>
+                  <img
+                    src="https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0llIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--daa9c6ed836e1a7e8301ef676feab9d7677b3f52/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/sassuolo.png"
+                    loading="lazy"
+                  ></img>
                 </ListItem>
                 <ListItem style={{ justifyContent: "center" }}>
                   SASSUOLO
@@ -334,7 +337,10 @@ function TopContainer() {
                 style={{ alignItems: "center", justifyContent: "center" }}
               >
                 <ListItem style={{ justifyContent: "center" }}>
-                  <img src="https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2d3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce6018a9cc74938350147bc60dd018680e15b5f1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/interr.png"></img>
+                  <img
+                    src="https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2d3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce6018a9cc74938350147bc60dd018680e15b5f1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/interr.png"
+                    loading="lazy"
+                  ></img>
                 </ListItem>
                 <ListItem style={{ justifyContent: "center" }}>INTER</ListItem>
               </Grid>
@@ -347,7 +353,10 @@ function TopContainer() {
                 style={{ justifyContent: "center", alignItems: "center" }}
               >
                 <ListItem style={{ justifyContent: "center" }}>
-                  <img src="https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmdlIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e2bcd6f35995396d2d1da24efc1e096864c66e6a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/lazio.png"></img>
+                  <img
+                    src="https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmdlIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e2bcd6f35995396d2d1da24efc1e096864c66e6a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/lazio.png"
+                    loading="lazy"
+                  ></img>
                 </ListItem>
                 <ListItem style={{ justifyContent: "center" }}>LAZIO</ListItem>
               </Grid>
@@ -373,7 +382,10 @@ function TopContainer() {
               </Grid>
               <Grid item container direction="column">
                 <ListItem style={{ justifyContent: "center" }}>
-                  <img src="https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2d3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce6018a9cc74938350147bc60dd018680e15b5f1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/interr.png"></img>
+                  <img
+                    src="https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2d3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce6018a9cc74938350147bc60dd018680e15b5f1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/interr.png"
+                    loading="lazy"
+                  ></img>
                 </ListItem>
                 <ListItem style={{ justifyContent: "center" }}>INTER</ListItem>
               </Grid>

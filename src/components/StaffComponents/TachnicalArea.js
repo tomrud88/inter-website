@@ -69,6 +69,7 @@ function TechnicalArea() {
                   component="img"
                   className={classes.media}
                   image="https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGN6IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5734209aec135f5aeedf6fd7cded7ed5209b4701/Screenshot_2.jpg"
+                  loading="lazy"
                   title="Farris"
                 />
                 <CardContent>
@@ -89,6 +90,7 @@ function TechnicalArea() {
                   component="img"
                   className={classes.media}
                   image="https://fcinter.pl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGd6IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0100f0c961cba9d83b6ee474e985b1ceb7765025/Screenshot_3.jpg"
+                  loading="lazy"
                   title="Cecchi"
                 />
                 <CardContent>
@@ -109,6 +111,7 @@ function TechnicalArea() {
                   component="img"
                   className={classes.media}
                   image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBeq4bBCYuirL4SwHqP_hO5KmTZVYTSbgegg&usqp=CAU"
+                  loading="lazy"
                   title="Cerasaro"
                 />
                 <CardContent>
@@ -129,6 +132,7 @@ function TechnicalArea() {
                   component="img"
                   className={classes.media}
                   image="https://www.inter.it/img/435115-170.jpg"
+                  loading="lazy"
                   title="Rocchini"
                 />
                 <CardContent>
@@ -149,6 +153,7 @@ function TechnicalArea() {
                   component="img"
                   className={classes.media}
                   image="https://media.gettyimages.com/photos/fabio-ripert-fc-internazionale-fitness-coach-looks-on-during-the-a-picture-id1340101770?s=612x612"
+                  loading="lazy"
                   title="Ripert"
                 />
                 <CardContent>
@@ -169,6 +174,7 @@ function TechnicalArea() {
                   component="img"
                   className={classes.media}
                   image="https://sortitoutsi.net/uploads/media/o6RcqKzOiv8Vwl2GsLp2ktQkA9aKSvrnasHf2rsV.jpg"
+                  loading="lazy"
                   title="Spicciariello"
                 />
                 <CardContent>
@@ -189,6 +195,7 @@ function TechnicalArea() {
                   component="img"
                   className={classes.media}
                   image="https://media.gettyimages.com/photos/gianluca-zappala-fc-internazionale-goalkeeping-coach-during-the-warm-picture-id1336885337"
+                  loading="lazy"
                   title="Zappala"
                 />
                 <CardContent>
@@ -209,6 +216,7 @@ function TechnicalArea() {
                   component="img"
                   className={classes.media}
                   image="https://img.a.transfermarkt.technology/portrait/header/2239-1461576232.jpg?lm=1"
+                  loading="lazy"
                   title="Bonauti"
                 />
                 <CardContent>
@@ -229,6 +237,7 @@ function TechnicalArea() {
                   component="img"
                   className={classes.media}
                   image="https://i1.rgstatic.net/ii/profile.image/997920413335552-1614934175484_Q512/Andrea-Belli-2.jpg"
+                  loading="lazy"
                   title="Belli"
                 />
                 <CardContent>
