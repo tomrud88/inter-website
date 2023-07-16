@@ -266,19 +266,19 @@ function FanToken() {
               <div className={classes.downloadLinks}>
                 <img
                   className={classes.imglinks}
-                  src="https://inter.fantoken.com/wp-content/uploads/2021/08/App_Store_Button-1-2.png"
+                  src=".\fanToken-AppStore.png"
                 ></img>
                 <img
                   className={classes.imglinks}
-                  src="https://inter.fantoken.com/wp-content/uploads/2021/08/Google_Play_Button-1-2.png"
+                  src=".\fanToken-googlePlay.png"
                 ></img>
               </div>
             </div>
             <div className={classes.rightSite}>
               <img
                 className={classes.mainImg}
-                src="https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com879player-inter2.png"
-              ></img>
+                src=".\fanToken-mobilePicture.png"
+              />
             </div>
           </div>
         </Container>
@@ -302,8 +302,7 @@ function FanToken() {
                 <div className={classes.card}>
                   <Paper
                     style={{
-                      backgroundImage:
-                        "url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com442GOAL20CELEB.jpg)",
+                      backgroundImage: `url(/fantoken-celebration.jpg)`,
                       height: "100%",
                     }}
                     className={classes.paper}
@@ -318,8 +317,7 @@ function FanToken() {
                   </Paper>
                   <Paper
                     style={{
-                      backgroundImage:
-                        "url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com442GOAL20CELEB.jpg)",
+                      backgroundImage: `url(/fantoken-celebration.jpg)`,
                       transform: "rotateX(180deg)",
                     }}
                     className={classes.paper}
@@ -343,8 +341,7 @@ function FanToken() {
                 <div className={classes.card}>
                   <Paper
                     style={{
-                      backgroundImage:
-                        "url(https://inter.fantoken.com/wp-content/uploads/2021/07/Bus_Design.png)",
+                      backgroundImage: `url(/Bus_Design.png)`,
                       height: "100%",
                     }}
                     className={classes.paper}
@@ -359,8 +356,7 @@ function FanToken() {
                   </Paper>
                   <Paper
                     style={{
-                      backgroundImage:
-                        "url(https://inter.fantoken.com/wp-content/uploads/2021/07/Bus_Design.png)",
+                      backgroundImage: `url(/Bus_Design.png)`,
                       transform: "rotateX(180deg)",
                     }}
                     className={classes.paper}
@@ -383,8 +379,7 @@ function FanToken() {
                 <div className={classes.card}>
                   <Paper
                     style={{
-                      backgroundImage:
-                        "url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com332CAPTAIN20ARMBAND.jpg)",
+                      backgroundImage: `url(/interfantoken-armbound.jpg)`,
                       height: "100%",
                     }}
                     className={classes.paper}
@@ -399,8 +394,7 @@ function FanToken() {
                   </Paper>
                   <Paper
                     style={{
-                      backgroundImage:
-                        "url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com332CAPTAIN20ARMBAND.jpg)",
+                      backgroundImage: `url(/interfantoken-armbound.jpg)`,
                       transform: "rotateX(180deg)",
                     }}
                     className={classes.paper}
@@ -423,8 +417,7 @@ function FanToken() {
                 <div className={classes.card}>
                   <Paper
                     style={{
-                      backgroundImage:
-                        "url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com182KITDESIGN_ASSET.jpg)",
+                      backgroundImage: `url(/interfantoken-jersey.jpg)`,
                       height: "100%",
                     }}
                     className={classes.paper}
@@ -439,8 +432,7 @@ function FanToken() {
                   </Paper>
                   <Paper
                     style={{
-                      backgroundImage:
-                        "url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com182KITDESIGN_ASSET.jpg)",
+                      backgroundImage: `url(/interfantoken-jersey.jpg)`,
                       transform: "rotateX(180deg)",
                     }}
                     className={classes.paper}
@@ -463,8 +455,7 @@ function FanToken() {
                 <div className={classes.card}>
                   <Paper
                     style={{
-                      backgroundImage:
-                        "url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com234FIRSTXI.jpg)",
+                      backgroundImage: `url(/interfantoken-startingLineup.jpg)`,
                       height: "100%",
                     }}
                     className={classes.paper}
@@ -479,8 +470,7 @@ function FanToken() {
                   </Paper>
                   <Paper
                     style={{
-                      backgroundImage:
-                        "url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com234FIRSTXI.jpg)",
+                      backgroundImage: `url(/interfantoken-startingLineup.jpg)`,
                       transform: "rotateX(180deg)",
                     }}
                     className={classes.paper}
@@ -503,8 +493,7 @@ function FanToken() {
                 <div className={classes.card}>
                   <Paper
                     style={{
-                      backgroundImage:
-                        "url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com401DRESSSING20ROOM.jpg)",
+                      backgroundImage: `url(/interfantoken-dressingRoom.jpg)`,
                       height: "100%",
                     }}
                     className={classes.paper}
@@ -520,7 +509,7 @@ function FanToken() {
                   <Paper
                     style={{
                       backgroundImage:
-                        "url(https://inter.fantoken.com/wp-content/uploads/2021/07/interfantoken.com401DRESSSING20ROOM.jpg)",
+                        `url(/interfantoken-dressingRoom.jpg)`,
                       transform: "rotateX(180deg)",
                     }}
                     className={classes.paper}
@@ -576,7 +565,6 @@ function FanToken() {
                 </Typography>
               </ListItem>
               <ListItem>
-               
                 <Typography variant="body1">
                   Turn your dreams into reality with fantastic rewards
                 </Typography>

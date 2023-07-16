@@ -51,77 +51,76 @@ const useStyles = makeStyles((theme)=>({
 function GoalKeepers() {
     const classes = useStyles()
     return (
-         <Container className={classes.outerContainer}>
+      <Container className={classes.outerContainer}>
         <Container className={classes.titleContainer}>
-        <Typography
-        variant='h5'
-        className={classes.title}>GOALKEEPERS</Typography>
+          <Typography variant="h5" className={classes.title}>
+            GOALKEEPERS
+          </Typography>
         </Container>
         <Grid container className={classes.mainContainer}>
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard} >
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/html/img/giocatori/testine/2021-22/G0898.jpg'
-                        title='Samir'
-                        />
-                        <CardContent>
-                            <Typography
-                            className={classes.name} variant='h5'>
-                            SAMIR HANDANOVIC</Typography>
-                            <Typography
-                            className={classes.name} variant='h5'>1</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid>
-            <Grid item  lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/html/img/giocatori/testine/2021-22/G0759.jpg'
-                        title='Samir'
-                        />
-                        <CardContent>
-                            <Typography 
-                            className={classes.name}variant='h5'>
-                            ALEX CORDAZ</Typography>
-                            <Typography 
-                            className={classes.name}
-                            variant='h5'>21</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid>
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/html/img/giocatori/testine/2021-22/G0972.jpg'
-                        title='Samir'
-                        />
-                        <CardContent>
-                            <Typography variant='h5'
-                            className={classes.name}>
-                            IONUT RADU</Typography>
-                            <Typography variant='h5'
-                            className={classes.name}>97</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid> 
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://web.archive.org/web/20221007132214mp_/https://www.inter.it/en/teams/first-team/samir-handanovic"
+                  title="Samir"
+                />
+                <CardContent>
+                  <Typography className={classes.name} variant="h5">
+                    SAMIR HANDANOVIC
+                  </Typography>
+                  <Typography className={classes.name} variant="h5">
+                    1
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://www.inter.it/html/img/giocatori/testine/2021-22/G0759.jpg"
+                  title="Samir"
+                />
+                <CardContent>
+                  <Typography className={classes.name} variant="h5">
+                    ALEX CORDAZ
+                  </Typography>
+                  <Typography className={classes.name} variant="h5">
+                    21
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://www.inter.it/html/img/giocatori/testine/2021-22/G0972.jpg"
+                  title="Samir"
+                />
+                <CardContent>
+                  <Typography variant="h5" className={classes.name}>
+                    IONUT RADU
+                  </Typography>
+                  <Typography variant="h5" className={classes.name}>
+                    97
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
         </Grid>
-        </Container>
-    )
+      </Container>
+    );
 }
 
 export default GoalKeepers
