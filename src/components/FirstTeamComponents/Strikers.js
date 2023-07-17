@@ -51,115 +51,95 @@ const useStyles = makeStyles((theme)=>({
 function Strikers() {
     const classes = useStyles()
     return (
-         <Container className={classes.outerContainer}>
+      <Container className={classes.outerContainer}>
         <Container className={classes.titleContainer}>
-        <Typography
-        variant='h5'
-        className={classes.title}>STRIKERS</Typography>
+          <Typography variant="h5" className={classes.title}>
+            STRIKERS
+          </Typography>
         </Container>
         <Grid container className={classes.mainContainer}>
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/html/img/giocatori/testine/2021-22/G1036.jpg'
-                        title='Sanchez'
-                        />
-                        <CardContent>
-                            <Typography variant='h5'
-                            className={classes.name}>
-                            ALEXIS SANCHEZ</Typography>
-                            <Typography variant='h5'
-                            className={classes.name}>7</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid> 
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/html/img/giocatori/testine/2021-22/G1099.jpg'
-                        title="Dzeko"
-                        />
-                        <CardContent>
-                            <Typography variant='h5'
-                            className={classes.name}>
-                          EDIN DZEKO</Typography>
-                            <Typography variant='h5'
-                            className={classes.name}>9</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid> 
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/html/img/giocatori/testine/2021-22/G1012.jpg'
-                        title='Martinez'
-                        />
-                        <CardContent>
-                            <Typography variant='h5'
-                            className={classes.name}>
-                            LAUTARO MARTINEZ</Typography>
-                            <Typography variant='h5'
-                            className={classes.name}>10</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid> 
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/html/img/giocatori/testine/2021-22/G1102.jpg'
-                        title='Correa'
-                        />
-                        <CardContent>
-                            <Typography variant='h5'
-                            className={classes.name}>
-                            JOAQUIN CORREA</Typography>
-                            <Typography variant='h5'
-                            className={classes.name}>19</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid> 
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/html/img/giocatori/testine/2021-22/G1050.jpg'
-                        title='Satriano'
-                        />
-                        <CardContent>
-                            <Typography variant='h5'
-                            className={classes.name}>
-                            MARTIN SATRIANO</Typography>
-                            <Typography variant='h5'
-                            className={classes.name}>48</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid>  
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://www.footballdatabase.eu/images/photos/players/a_70/70663.jpg"
+                  title="Lukaku"
+                />
+                <CardContent>
+                  <Typography variant="h5" className={classes.name}>
+                    ROMELU LUKAKU
+                  </Typography>
+                  <Typography variant="h5" className={classes.name}>
+                    90
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://www.footballdatabase.eu/images/photos/players/a_20/20112.jpg"
+                  title="Dzeko"
+                />
+                <CardContent>
+                  <Typography variant="h5" className={classes.name}>
+                    EDIN DZEKO
+                  </Typography>
+                  <Typography variant="h5" className={classes.name}>
+                    9
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://www.footballdatabase.eu/images/photos/players/a_279/279784.jpg"
+                  title="Martinez"
+                />
+                <CardContent>
+                  <Typography variant="h5" className={classes.name}>
+                    LAUTARO MARTINEZ
+                  </Typography>
+                  <Typography variant="h5" className={classes.name}>
+                    10
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://www.footballdatabase.eu/images/photos/players/a_168/168273.jpg"
+                  title="Correa"
+                />
+                <CardContent>
+                  <Typography variant="h5" className={classes.name}>
+                    JOAQUIN CORREA
+                  </Typography>
+                  <Typography variant="h5" className={classes.name}>
+                    19
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
         </Grid>
-        </Container>
-    )
+      </Container>
+    );
 }
 export default Strikers

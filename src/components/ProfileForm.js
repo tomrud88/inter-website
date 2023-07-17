@@ -85,7 +85,7 @@ const ProfileForm = () => {
         <form className={classes.form} onSubmit={submitHandler}>
             <div className={classes.control}>
                 <label htmlFor='new-password'>New Password</label>
-                <input style={{height:'25px',width:'250px',border:'1px solid #001ea0',borderRadius:'5px',marginTop:'5px'}} type='password' id='new-password' minLength='7' ref={newPasswordInputRef}/>
+                        <input style={{ height: '25px', width: '250px', border: '1px solid #001ea0', borderRadius: '5px', marginTop: '5px',paddingLeft:'5px' }}  type='password' id='new-password' minLength='7' ref={newPasswordInputRef}/>
             </div>
             <div className={classes.action}>
                 <button style={{padding:'10px 20px',borderRadius:'10px',background:'#001ea0',color:'white'}}>Change Password</button>

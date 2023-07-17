@@ -51,216 +51,196 @@ const useStyles = makeStyles((theme)=>({
 function Midfielders() {
     const classes = useStyles()
     return (
-         <Container className={classes.outerContainer}>
+      <Container className={classes.outerContainer}>
         <Container className={classes.titleContainer}>
-        <Typography
-        variant='h5'
-        className={classes.title}>MIDFIELDERS</Typography>
+          <Typography variant="h5" className={classes.title}>
+            MIDFIELDERS
+          </Typography>
         </Container>
         <Grid container className={classes.mainContainer}>
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard} >
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/html/img/giocatori/testine/2021-22/G1100.jpg'
-                        title='Dumfries'
-                        />
-                        <CardContent>
-                            <Typography
-                            className={classes.name} variant='h5'>
-                            DENZEL DUMFRIES</Typography>
-                            <Typography
-                            className={classes.name} variant='h5'>2</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid>
-            <Grid item  lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/html/img/giocatori/testine/2021-22/G0989.jpg'
-                        title='Gagliardini'
-                        />
-                        <CardContent>
-                            <Typography 
-                            className={classes.name}variant='h5'>
-                            ROBERTO GAGLIARDINI</Typography>
-                            <Typography 
-                            className={classes.name}
-                            variant='h5'>5</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid>
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/html/img/giocatori/testine/2021-22/G0998.jpg'
-                        title='Vecino'
-                        />
-                        <CardContent>
-                            <Typography variant='h5'
-                            className={classes.name}>
-                            MATIAS VECINO</Typography>
-                            <Typography variant='h5'
-                            className={classes.name}>8</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid> 
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/html/img/giocatori/testine/2021-22/G1030.jpg'
-                        title='Sensi'
-                        />
-                        <CardContent>
-                            <Typography variant='h5'
-                            className={classes.name}>
-                            STEFANO SENSI</Typography>
-                            <Typography variant='h5'
-                            className={classes.name}>12</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid> 
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/html/img/giocatori/testine/2021-22/G0968.jpg'
-                        title="Perisic"
-                        />
-                        <CardContent>
-                            <Typography variant='h5'
-                            className={classes.name}>
-                            IVAN PERISIC</Typography>
-                            <Typography variant='h5'
-                            className={classes.name}>14</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid> 
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/html/img/giocatori/testine/2021-22/G1095.jpg'
-                        title='Calhanoglu'
-                        />
-                        <CardContent>
-                            <Typography variant='h5'
-                            className={classes.name}>
-                            HAKAN CALHANOGLU</Typography>
-                            <Typography variant='h5'
-                            className={classes.name}>20</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid> 
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/html/img/giocatori/testine/2021-22/G1045.jpg'
-                        title='Vidal'
-                        />
-                        <CardContent>
-                            <Typography variant='h5'
-                            className={classes.name}>
-                            ARTURO VIDAL</Typography>
-                            <Typography variant='h5'
-                            className={classes.name}>22</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid> 
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/html/img/giocatori/testine/2021-22/G1031.jpg'
-                        title='Barela'
-                        />
-                        <CardContent>
-                            <Typography variant='h5'
-                            className={classes.name}>
-                            NIKOLO BARELA</Typography>
-                            <Typography variant='h5'
-                            className={classes.name}>95</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid>  
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/html/img/giocatori/testine/2021-22/G1041.jpg'
-                        title='Eriksen'
-                        />
-                        <CardContent>
-                            <Typography variant='h5'
-                            className={classes.name}>
-                            CHRISTIAN ERIKSEN</Typography>
-                            <Typography variant='h5'
-                            className={classes.name}>24</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid>  
-            <Grid item lg={2} md={2.5} sm={3} xs={5}>
-                <Card className={classes.fCard}>
-                    <CardActionArea>
-                        <CardMedia
-                        component='img'
-                        className={classes.media}
-                        image=
-                        'https://www.inter.it/html/img/giocatori/testine/2021-22/G0959.jpg'
-                        title='Brozovic'
-                        />
-                        <CardContent>
-                            <Typography variant='h5'
-                            className={classes.name}>
-                            MARCELO BROZOVIC</Typography>
-                            <Typography variant='h5'
-                            className={classes.name}>77</Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </Grid>  
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://www.footballdatabase.eu/images/photos/players/a_263/263679.jpg"
+                  title="Dumfries"
+                />
+                <CardContent>
+                  <Typography className={classes.name} variant="h5">
+                    DENZEL DUMFRIES
+                  </Typography>
+                  <Typography className={classes.name} variant="h5">
+                    2
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://www.footballdatabase.eu/images/photos/players/a_185/185404.jpg"
+                  title="Gagliardini"
+                />
+                <CardContent>
+                  <Typography className={classes.name} variant="h5">
+                    ROBERTO GAGLIARDINI
+                  </Typography>
+                  <Typography className={classes.name} variant="h5">
+                    5
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://www.footballdatabase.eu/images/photos/players/a_29/29904.jpg"
+                  title="Mikhitarian"
+                />
+                <CardContent>
+                  <Typography variant="h5" className={classes.name}>
+                    HENRIKH MIKHITARIAN
+                  </Typography>
+                  <Typography variant="h5" className={classes.name}>
+                    22
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://www.footballdatabase.eu/images/photos/players/a_223/223558.jpg"
+                  title="Gosens"
+                />
+                <CardContent>
+                  <Typography variant="h5" className={classes.name}>
+                    ROBIN GOSENS
+                  </Typography>
+                  <Typography variant="h5" className={classes.name}>
+                    8
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://www.footballdatabase.eu/images/photos/players/a_483/483505.jpg"
+                  title="Carboni"
+                />
+                <CardContent>
+                  <Typography variant="h5" className={classes.name}>
+                    VALENTIN CARBONI
+                  </Typography>
+                  <Typography variant="h5" className={classes.name}>
+                    45
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://www.footballdatabase.eu/images/photos/players/a_158/158977.jpg"
+                  title="Calhanoglu"
+                />
+                <CardContent>
+                  <Typography variant="h5" className={classes.name}>
+                    HAKAN CALHANOGLU
+                  </Typography>
+                  <Typography variant="h5" className={classes.name}>
+                    20
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://www.footballdatabase.eu/images/photos/players/a_439/439143.jpg"
+                  title="Asslani"
+                />
+                <CardContent>
+                  <Typography variant="h5" className={classes.name}>
+                    KRISTJAN ASSLANI
+                  </Typography>
+                  <Typography variant="h5" className={classes.name}>
+                    14
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://www.footballdatabase.eu/images/photos/players/a_252/252538.jpg"
+                  title="BarelLa"
+                />
+                <CardContent>
+                  <Typography variant="h5" className={classes.name}>
+                    NICOLO BARELLA
+                  </Typography>
+                  <Typography variant="h5" className={classes.name}>
+                    23
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+         
+          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+            <Card className={classes.fCard}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  className={classes.media}
+                  image="https://www.footballdatabase.eu/images/photos/players/a_112/112559.jpg"
+                  title="Brozovic"
+                />
+                <CardContent>
+                  <Typography variant="h5" className={classes.name}>
+                    MARCELO BROZOVIC
+                  </Typography>
+                  <Typography variant="h5" className={classes.name}>
+                    77
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
         </Grid>
-        </Container>
-    )
+      </Container>
+    );
 }
 export default Midfielders

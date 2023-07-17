@@ -131,7 +131,7 @@ function TechnicalArea() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://www.inter.it/img/435115-170.jpg"
+                  image="https://sortitoutsi.net/uploads/media/89uGGN5MZPtBTecuxQWF7Wy2ZIzpULaA0Dn3mmaR.jpg"
                   loading="lazy"
                   title="Rocchini"
                 />

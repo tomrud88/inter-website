@@ -64,7 +64,7 @@ function GoalKeepers() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://web.archive.org/web/20221007132214mp_/https://www.inter.it/en/teams/first-team/samir-handanovic"
+                  image="https://www.footballdatabase.eu/images/photos/players/a_11/11916.jpg"
                   title="Samir"
                 />
                 <CardContent>
@@ -84,7 +84,7 @@ function GoalKeepers() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://www.inter.it/html/img/giocatori/testine/2021-22/G0759.jpg"
+                  image="https://www.footballdatabase.eu/images/photos/players/a_7/7515.jpg"
                   title="Samir"
                 />
                 <CardContent>
@@ -104,15 +104,15 @@ function GoalKeepers() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://www.inter.it/html/img/giocatori/testine/2021-22/G0972.jpg"
-                  title="Samir"
+                  image="https://www.footballdatabase.eu/images/photos/players/a_244/244843.jpg"
+                  title="Onana"
                 />
                 <CardContent>
                   <Typography variant="h5" className={classes.name}>
-                    IONUT RADU
+                    ANDRE ONANA
                   </Typography>
                   <Typography variant="h5" className={classes.name}>
-                    97
+                    24
                   </Typography>
                 </CardContent>
               </CardActionArea>
