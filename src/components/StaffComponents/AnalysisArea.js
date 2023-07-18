@@ -63,6 +63,7 @@ function AnalysisArea() {
               <CardActionArea>
                 <CardMedia
                   component="img"
+                  height="300px"
                   className={classes.media}
                   image="https://media.licdn.com/dms/image/C4D03AQHEkfRtquOBBQ/profile-displayphoto-shrink_800_800/0/1635352270248?e=2147483647&v=beta&t=PZdY_iCIP7iSX-CbD7aJv31XtNGq0JcwJjTieC2fnOA
 "
@@ -85,6 +86,7 @@ function AnalysisArea() {
               <CardActionArea>
                 <CardMedia
                   component="img"
+                  height="300px"
                   className={classes.media}
                   image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiMyqnvUNXtaOPpgVTPNLScv5S_LyzygyU5OqNGcXmuB8p18xXXrXWGrvBzCEYYFx5oYI&usqp=CAU"
                   loading="lazy"
@@ -106,6 +108,7 @@ function AnalysisArea() {
               <CardActionArea>
                 <CardMedia
                   component="img"
+                  height="300px"
                   className={classes.media}
                   image="https://media.licdn.com/dms/image/C4D03AQGlMWmBxxIGOg/profile-displayphoto-shrink_800_800/0/1601635949794?e=2147483647&v=beta&t=d2LJf42-HmMbWLO9NP8fZmbIqs_yaIJuNvaZYIUnd9k
 "

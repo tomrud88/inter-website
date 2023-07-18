@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme)=>({
        setLoading(true)
        const fetchTable = async () =>{
    const response = await fetch(
-     "https://cors-anywhere.herokuapp.com/https://api.football-data.org/v4/competitions/SA/standings",
+     "https://cors-anywhere.herokuapp.com/https://api.football-data.org/v4/competitions/SA/standings?season=2022",
      {
        method: "GET",
        headers: {
@@ -126,7 +126,7 @@ const useStyles = makeStyles((theme)=>({
                   <TableRow
                   key={table.key}
                   >
-                      {(table.position < 5 && table.playedGames>0) ?
+                      {(table.position < 5 ) ?
                      <TableCell  style={{backgroundColor:'green'}}>
                          {table.position}
                     </TableCell>:

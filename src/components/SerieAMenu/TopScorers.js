@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme)=>({
    useEffect(()=>{
        setLoading(true)
        const fetchTable = async () =>{
-           const response = await fetch("https://cors-anywhere.herokuapp.com/https://api.football-data.org/v4/competitions/SA/scorers",
+           const response = await fetch("https://cors-anywhere.herokuapp.com/https://api.football-data.org/v4/competitions/SA/scorers?season=2022",
     {
      method: "GET",  
 	"headers": {
