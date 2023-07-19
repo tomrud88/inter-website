@@ -1,2 +1,1 @@
-/fixtures /https://api.football-data.org/v4/competitions/SA/matches 200
-/* /index.html 200
+/fixtures/ https://api.football-data.org/v4/competitions/SA/matches/:splat 200
