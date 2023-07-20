@@ -77,28 +77,31 @@ const useStyles = makeStyles((theme) => ({
       useEffect(() => {
         setLoading(true);
         const fetchFixtures = async () => {
-          const response = await fetch(
-            "/api/fetchFixtures",
-          );
-          const responseData = await response.json();
-          console.log(responseData);
-          const matches = responseData.matches;
-          console.log(matches);
+          try {
+            const response = await fetch("./api/fetchFixtures");
+            const responseData = await response.json();
+            console.log(responseData);
+            const matches = responseData.matches;
+            console.log(matches);
 
-          const loadedData = [];
+            const loadedData = [];
 
-          for (const key in matches) {
-            loadedData.push({
-              id: key,
-              homeTeam: matches[key].homeTeam.name,
-              awayTeam: matches[key].awayTeam.name,
-              scoreHomeTeam: matches[key].score.fullTime.homeTeam,
-              scoreAwayTeam: matches[key].score.fullTime.awayTeam,
-              round: matches[key].matchday,
-            });
+            for (const key in matches) {
+              loadedData.push({
+                id: key,
+                homeTeam: matches[key].homeTeam.name,
+                awayTeam: matches[key].awayTeam.name,
+                scoreHomeTeam: matches[key].score.fullTime.homeTeam,
+                scoreAwayTeam: matches[key].score.fullTime.awayTeam,
+                round: matches[key].matchday,
+              });
+            }
+            setFixtures(loadedData);
+            setLoading(false);
+          } catch (error) {
+            console.error("Error fetching fixtures:", error);
+            setLoading(false);
           }
-          setFixtures(loadedData);
-          setLoading(false);
         };
         fetchFixtures();
       }, []);
