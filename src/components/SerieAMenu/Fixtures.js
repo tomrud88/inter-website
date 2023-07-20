@@ -81,19 +81,18 @@ const useStyles = makeStyles((theme) => ({
             const response = await fetch(`/api/fetchFixtures`);
             const responseData = await response.json();
             console.log(responseData);
-            const matches = responseData.matches;
-            console.log(matches);
+            
 
             const loadedData = [];
 
-            for (const key in matches) {
+            for (const key in responseData) {
               loadedData.push({
                 id: key,
-                homeTeam: matches[key].homeTeam.name,
-                awayTeam: matches[key].awayTeam.name,
-                scoreHomeTeam: matches[key].score.fullTime.homeTeam,
-                scoreAwayTeam: matches[key].score.fullTime.awayTeam,
-                round: matches[key].matchday,
+                homeTeam: responseData[key].homeTeam.name,
+                awayTeam: responseData[key].awayTeam.name,
+                scoreHomeTeam: responseData[key].score.fullTime.homeTeam,
+                scoreAwayTeam: responseData[key].score.fullTime.awayTeam,
+                round: responseData[key].matchday,
               });
             }
             setFixtures(loadedData);
