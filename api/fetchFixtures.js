@@ -1,4 +1,4 @@
-module.exports = async () => {
+module.exports = async (req,res) => {
   try {
     const response = await fetch(
       "https://api.football-data.org/v4/competitions/SA/matches",
