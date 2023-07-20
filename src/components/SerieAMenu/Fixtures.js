@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
         setLoading(true);
         const fetchFixtures = async () => {
           try {
-            const response = await fetch("./api/fetchFixtures");
+            const response = await fetch(`/api/fetchFixtures`);
             const responseData = await response.json();
             console.log(responseData);
             const matches = responseData.matches;
