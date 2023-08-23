@@ -124,26 +124,6 @@ function Midfielders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://www.footballdatabase.eu/images/photos/players/a_223/223558.jpg"
-                  title="Gosens"
-                />
-                <CardContent>
-                  <Typography variant="h5" className={classes.name}>
-                    ROBIN GOSENS
-                  </Typography>
-                  <Typography variant="h5" className={classes.name}>
-                    8
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-          <Grid item lg={2} md={2.5} sm={3} xs={5}>
-            <Card className={classes.fCard}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  className={classes.media}
                   image="https://www.footballdatabase.eu/images/photos/players/a_483/483505.jpg"
                   title="Carboni"
                 />
@@ -213,27 +193,6 @@ function Midfielders() {
                   </Typography>
                   <Typography variant="h5" className={classes.name}>
                     23
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-         
-          <Grid item lg={2} md={2.5} sm={3} xs={5}>
-            <Card className={classes.fCard}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  className={classes.media}
-                  image="https://www.footballdatabase.eu/images/photos/players/a_112/112559.jpg"
-                  title="Brozovic"
-                />
-                <CardContent>
-                  <Typography variant="h5" className={classes.name}>
-                    MARCELO BROZOVIC
-                  </Typography>
-                  <Typography variant="h5" className={classes.name}>
-                    77
                   </Typography>
                 </CardContent>
               </CardActionArea>
