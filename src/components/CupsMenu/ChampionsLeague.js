@@ -131,10 +131,10 @@ function ChampionsLeage() {
             const responses = await fetch("/api/fetchClStandings");   
               const responseDat = await responses.json()
               
-              const standing = responseDat.standings[2];
+              const standing = responseDat.standings[3];
               console.log(standing)
          
-              const table = responseDat.standings[2].table;
+              const table = responseDat.standings[3].table;
               console.log(table)
              
               

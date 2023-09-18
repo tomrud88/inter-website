@@ -90,8 +90,8 @@ const useStyles = makeStyles((theme) => ({
                 id: key,
                 homeTeam: responseData[key].homeTeam.name,
                 awayTeam: responseData[key].awayTeam.name,
-                scoreHomeTeam: responseData[key].score.fullTime.homeTeam,
-                scoreAwayTeam: responseData[key].score.fullTime.awayTeam,
+                scoreHomeTeam: responseData[key].score.fullTime.home,
+                scoreAwayTeam: responseData[key].score.fullTime.away,
                 round: responseData[key].matchday,
               });
             }
@@ -132,7 +132,7 @@ const useStyles = makeStyles((theme) => ({
                       )}
                     </div>
                     <div className={classes.result}>
-                      <p>{fixture.score.fullTime.home}</p>
+                      <p>{fixture.scoreHomeTeam}</p>
                       <p>:</p>
                       <p>{fixture.scoreAwayTeam}</p>
                     </div>
