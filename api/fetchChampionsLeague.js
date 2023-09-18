@@ -1,7 +1,7 @@
 module.exports = async (req, res) => {
   try {
     const response = await fetch(
-      "https://api.football-data.org/v4/competitions/CL/matches?group=GROUP_C",
+      "https://api.football-data.org/v4/competitions/CL/matches?group=GROUP_D",
       {
         method: "GET",
         headers: {

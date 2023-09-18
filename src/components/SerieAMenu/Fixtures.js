@@ -132,7 +132,7 @@ const useStyles = makeStyles((theme) => ({
                       )}
                     </div>
                     <div className={classes.result}>
-                      <p>{fixture.scoreHomeTeam}</p>
+                      <p>{fixture.score.fullTime.home}</p>
                       <p>:</p>
                       <p>{fixture.scoreAwayTeam}</p>
                     </div>
