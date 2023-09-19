@@ -24,28 +24,35 @@ const useStyles = makeStyles((theme)=>({
 }))
 
 const rows = [
-    createData('Romelu','Lukaku','Chelsea FC','115 mln EURO','definitive'),
-    createData('Achraf','Hakimi','Paris Saint-Germain','60 mln EURO','definitive'),
-    createData('Mateo','Politano','SSC Napoli','19 mln EURO','definitive'),
-    createData('Antonio','Candreva','Sampdoria','2.5 mln EURO','definitive'),
-    createData('Rigoberto','Rivas','Reggina','0.55 mln EURO','definitive'),
-    createData('Jao','Mario','Benfica','0','free Transfer'),
-    createData('Radja','Nainggolan','Royal Antwerpia','0','free transfer'),
-    createData('Ashley','Young','Aston Villa','0','free transfer'),
-    createData('Sebastian','Esposito','FC Basel','0','loan transfer'),
-    createData('Andrea','Pinamonti','FC Empoli','0','loan transfer'),
-    createData('Zinho','Vanheusden','FC Genoa','0','loan transfer')
+    createData('Andre','Onana','Manchester United','52.5 mln EURO','definitive'),
+    createData('Marcelo','Brozovic','Al-Nassr','18 mln EURO','definitive'),
+    createData('Robin','Gosens','Union Berlin','13 mln EURO','definitive'),
+    createData('Valentino','Lazaro','Torino','4 mln EURO','definitive'),
+    createData('Giovanni','Fabbian','Bologna','5 mln EURO','definitive'),
+    createData('Milan','Skriniar','PSG','0','free Transfer'),
+    createData('Edin','Dzeko','Fenerbahce','0','free transfer'),
+    createData('Danilo','Dambrosio','AC Monza','0','free transfer'),
+    createData('Sebastian','Esposito','Sampdoria','0','loan transfer'),
+    createData('Valentin','Carboni','AC Monza','0','loan transfer'),
+    createData('Zinho','Vanheusden','Standard Liege','0','loan transfer')
 
 ]
 
 const rowsOut = [
-    createData('Zinho','Vanheusden','Standard Liege','16 mln EURO','definitive'),
-    createData('Denzel','Dumfries','PSV Eindhoven','12.5 mln EURO','definitive'),
-    createData('Joaquin','Correa','Lazio Roma','5 mln EURO','loan'),
-    createData('Matteo','Darmian','Parma','2.5 mln EURO','definitive'),
-    createData('Hakan','Calhanoglu','AC Milan','0','free transfer'),
-    createData('Edin','Dzeko','AS Roma','0','free transfer')
-]
+  createData("Yann", "Sommer", "Bayern", "6.75 mln EURO", "definitive"),
+  createData("Davide", "Frattesi", "Sassuolo", "27 mln EURO", "definitive"),
+  createData("Carlos", "Augusto", "AC Monza", "4.5 mln EURO", "loan"),
+  createData("Marko", "Arnautovic", "Bologna", "8.0 mln EURO", "definitive"),
+  createData(
+    "Marcus",
+    "Thuram",
+    "Borussia Moenchengladbach",
+    "0",
+    "free transfer"
+  ),
+  createData("Alexis", "Sanchez", "Olimpique Marsyllia", "0", "free transfer"),
+  createData("Davy", "Klassen", "Ajax Amsterdam", "0", "free transfer"),
+];
 
 function Transfers() {
     const classes = useStyles()

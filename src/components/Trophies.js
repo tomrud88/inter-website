@@ -100,7 +100,7 @@ function Trophies() {
                       <img src='https://fcinter.pl/assets/coppa-cba988eb8e81c2de83d038bf39a97835498bc44bd4b5f4ffbc6fbeae5f0bd09e.png'></img>
                   </div>
                   <Typography className={classes.trophieItemnumber} variant='h4'>
-                      7X
+                      8X
                   </Typography>
                   <Typography variant='body1' style={{color:'white',fontWeight:'bold'}}>
                       COPPA ITALIA
