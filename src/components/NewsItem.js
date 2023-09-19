@@ -40,7 +40,8 @@ function NewsItem({item}) {
                    component='img'
                    loading="lazy"
                    height='360'
-                   image={item.picture}
+                            image={item.picture}
+                            alt={item.alt}
                    />
                    <CardContent className={classes.cardTitleArea}>
                        <Typography variant='h5' component='div'>

@@ -209,8 +209,6 @@ function TopContainer() {
             <div className={classes.stadium}></div>
             <Grid
               container
-              rowSpacing={1}
-              columnSpacing={1}
               className={classes.gridContainer}
             >
               <Grid item xs={12} sm={12} md={12} lg={12}>
@@ -223,7 +221,7 @@ function TopContainer() {
                       }}
                       className={classes.paper}
                     >
-                      <p className={classes.mainTitle} boxShadow={2}>
+                      <p className={classes.mainTitle} >
                         A THUMPING DERBY WIN!
                       </p>
                     </Paper>
@@ -238,7 +236,8 @@ function TopContainer() {
                 // cols={2}
                 // rows={1}
               >
-                <Link href="https://www.facebook.com/Inter">
+                <Link href="https://www.facebook.com/Inter"
+                aria-label='Go to inter facebook page'>
                   <div className={classes.cardContainer}>
                     <Paper
                       style={{
@@ -258,7 +257,7 @@ function TopContainer() {
                 // cols={2}
                 //rows={1}
               >
-                <Link href="https://twitter.com/Inter" underline="none">
+                <Link href="https://twitter.com/Inter" underline="none" aria-label='Go to inter twitter profile'>
                   <div className={classes.cardContainer}>
                     <Paper
                       style={{
@@ -304,6 +303,7 @@ function TopContainer() {
                   <img
                     src="https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2d3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce6018a9cc74938350147bc60dd018680e15b5f1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/interr.png"
                     loading="lazy"
+                    alt="Inter emblem"
                   ></img>
                 </ListItem>
                 <ListItem style={{ justifyContent: "center" }}>INTER</ListItem>
@@ -338,6 +338,7 @@ function TopContainer() {
                   <img
                     src="https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc2dlIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2437e7ed1540f941985b34a5adebf6d7ddc1f43d/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/milan.png"
                     loading="lazy"
+                    alt="AC Milan emblem"
                   ></img>
                 </ListItem>
                 <ListItem style={{ justifyContent: "center" }}>
@@ -356,9 +357,12 @@ function TopContainer() {
                   <img
                     src="https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcW8rIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e5b1e1ac6fdc7b47a7cb8e9b75a78f08777bee23/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/obraz_2023-09-02_152435043.png"
                     loading="lazy"
+                    alt="Real Sociedad emblem"
                   ></img>
                 </ListItem>
-                <ListItem style={{ justifyContent: "center" }}>REAL SOCIEDAD</ListItem>
+                <ListItem style={{ justifyContent: "center" }}>
+                  REAL SOCIEDAD
+                </ListItem>
               </Grid>
               <Grid item className={classes.timeofplay}>
                 <ListItem style={{ justifyContent: "center" }}>
@@ -385,6 +389,7 @@ function TopContainer() {
                   <img
                     src="https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2d3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce6018a9cc74938350147bc60dd018680e15b5f1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/interr.png"
                     loading="lazy"
+                    alt="Inter emblem"
                   ></img>
                 </ListItem>
                 <ListItem style={{ justifyContent: "center" }}>INTER</ListItem>

@@ -101,7 +101,7 @@ function Topbar() {
            <AppBar position="static">
         <Toolbar className={classes.toolbar}>
         <IconButton className={classes.smallMenu}
-            size="large"
+            size="medium"
             edge="start"
             color="inherit"
             aria-label="menu"
@@ -111,10 +111,10 @@ function Topbar() {
             <Menu />
             </IconButton>
             <Link href='/' underline='none'>
-              <img className={classes.logo}src='https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2d3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce6018a9cc74938350147bc60dd018680e15b5f1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/interr.png'/>
+                        <img className={classes.logo} src='https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2d3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce6018a9cc74938350147bc60dd018680e15b5f1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/interr.png'
+                        alt='inter emblem'/>          
            </Link>
-            
-          <Typography variant='h9' component='div' className={classes.menuoptions} sx={{flexGrow:1}}>
+          <Typography variant='h6' component='div' className={classes.menuoptions} sx={{flexGrow:1}}>
               <div className={classes.menuItem}>
                  <Link href='/' underline='none'
                  style={{color:'white'}}><Home/></Link>

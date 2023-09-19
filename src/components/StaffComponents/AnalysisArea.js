@@ -69,6 +69,7 @@ function AnalysisArea() {
 "
                   loading="lazy"
                   title="Lorenzon"
+                  alt="Lorenzon"
                 />
                 <CardContent>
                   <Typography variant="h5" className={classes.name}>
@@ -91,6 +92,7 @@ function AnalysisArea() {
                   image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiMyqnvUNXtaOPpgVTPNLScv5S_LyzygyU5OqNGcXmuB8p18xXXrXWGrvBzCEYYFx5oYI&usqp=CAU"
                   loading="lazy"
                   title="Muratore"
+                  alt="Muratore"
                 />
                 <CardContent>
                   <Typography variant="h5" className={classes.name}>
@@ -114,6 +116,7 @@ function AnalysisArea() {
 "
                   loading="lazy"
                   title="Toninato"
+                  alt="Toninato"
                 />
                 <CardContent>
                   <Typography variant="h5" className={classes.name}>

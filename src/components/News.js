@@ -36,7 +36,8 @@ export default function News(props){
                     id:key,
                     title:responseData[key].title,
                     picture: responseData[key].picture,
-                    date:responseData[key].date
+                    date: responseData[key].date,
+                    alt:responseData[key].alt
                 })
             }
             setNews(loadedNews)
@@ -53,10 +54,10 @@ export default function News(props){
             color={'#001ea0'}
             loading={loading}
             />: 
-        <Grid id={props.id} container justify='center' className={classes.mainCon}>
+        <Grid id={props.id} container justifyContent='center' className={classes.mainCon}>
             <Grid container lg={8} sm={10} xs={11}
             spacing={2}
-            justify='center' className='mainGrid'>
+            justifyContent='center' className='mainGrid'>
             {news.map(item =>(
                
                <Grid item key={item.id}xs={12} sm={10} md={6} lg={6}>

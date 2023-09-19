@@ -299,7 +299,7 @@ function FanToken() {
           </Typography>
         </Container>
         <div className={classes.gridContainer} id="gridContainer">
-          <Grid container rowSpacing={1} columnSpacing={1}>
+          <Grid container>
             <Grid item xs={12} sm={6} lg={4}>
               <div className={classes.cardContainer}>
                 <div className={classes.card}>
