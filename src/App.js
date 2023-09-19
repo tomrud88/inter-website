@@ -68,8 +68,8 @@ function App() {
           <Route path="/id4" element={<NewsFour/>} />
           <Route path="/id5" element={<NewsFive/>} />
           <Route path="/id6" element={<NewsSix/>} />
-          <Route path="/id7" component={<NewsSeven/>} />
-          <Route path="/id8" component={<NewsEight/>} />
+          <Route path="/id7" element={<NewsSeven/>} />
+          <Route path="/id8" element={<NewsEight/>} />
         </Routes>
       </div>
     </Router>

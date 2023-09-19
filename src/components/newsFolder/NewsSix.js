@@ -29,33 +29,50 @@ const useStyles = makeStyles((theme)=>({
 export default function NewsSix() {
     const classes = useStyles()
   return (
-      <Container className={classes.mainContainer}>
-    <Card className={classes.mainCard}>
-        <Typography gutterBottom variant="h4" component="div" style={{marginTop:'10px',fontWeight:'bold'}}>
-        CALHANOGLU ON TARGET FOR THIRD GAME IN A ROW
+    <Container className={classes.mainContainer}>
+      <Card className={classes.mainCard}>
+        <Typography
+          gutterBottom
+          variant="h4"
+          component="div"
+          style={{ marginTop: "10px", fontWeight: "bold" }}
+        >
+          2023 BALLON D'OR:BARRELLA AND LAUTARO AMONG THE NOMINEES
         </Typography>
-      <CardMedia
-        className={classes.SimoneImg}
-        component="img"
-        height="640"
-        image="https://i.internethaber.com/storage/files/images/2021/08/21/e9vdfkexoaye9n3-TIIP.jpg"
-        alt="Simone Inzaghi"
-      />
-      <CardContent>
-        <Typography variant="body1" color="text.secondary" style={{marginBottom:'20px'}}>
-        VENICE – Hakan Calhanoglu registered his fourth goal of the season and found the net for the third Serie A game in a row against Venezia on Saturday evening with a stunning right-footed strike from long range that left Sergio Romero helpless.
-        </Typography>
-<Typography style={{marginBottom:'20px'}}>
-Four goals in 12 games matches the midfielder’s goalscoring tally from the entirety of last season and scoring for three consecutive games was a first in his professional career in Serie A and the Bundesliga. Here’s what Calhanoglu told Inter TV after the game:</Typography>
-<Typography style={{marginBottom:'10px'}}>
-“I scored a great goal and I’m thrilled. Shooting from long range is in my repertoire.” The stats certainly back him up, as only Lionel Messi (61) has scored more goals from outside the box than Calhanoglu (26, the same as Christian Eriksen) in the top five European leagues since the start of the 2013/14 season. “Let’s not exaggerate. Messi is a phenomenon!”
-
-Calha continued: “I don’t mind if I’ve scored, what matters is the three points and it wasn’t at all easy here in this small stadium with a fiery atmosphere. We only finished the game off at the end, but at least for tonight, we’re closer to Milan and Napoli.
-
-“We showed the right mentality. We’re pleased about that and the fact that we head back to Milan with three key points. Next up is a key clash with Spezia. We’ll have to recover well and prepare as well as we can.”
-        </Typography>
-      </CardContent>
-    </Card>
+        <CardMedia
+          className={classes.SimoneImg}
+          component="img"
+          height="640"
+          image="https://intermilan.bynder.com/transform/e20c9a56-9e2c-40cc-8437-d534a2632d81/20230819210217_594450717-crop?quality=100&io=transform:fill,width:1280,height:1280&format=webp"
+          alt="Barella and Lautaro"
+        />
+        <CardContent>
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            style={{ marginBottom: "20px" }}
+          >
+             Nicolò Barella and Lautaro Martinez are the two Nerazzurri
+            players who have made the nominees list for the 2023 Ballon d'Or,
+            the prestigious annual award presented by French news magazine
+            France Football.
+          </Typography>
+          <Typography style={{ marginBottom: "20px" }}>
+            The Italian midfielder and Argentinian striker enjoyed a fantastic
+            2022/23 campaign, helping Simone Inzaghi's men reach the Champions
+            League final in Istanbul. The Nerazzurri ended up winning two
+            trophies: the Supercoppa Italiana following a 3-0 victory over AC
+            Milan in Riyadh and the Coppa Italia after beating Fiorentina in
+            Rome.
+          </Typography>
+          <Typography style={{ marginBottom: "10px" }}>
+            It was a season that also saw Lautaro achieve the extraordinary feat
+            of becoming a World Champion with Argentina in Qatar. Meanwhile,
+            Nicolò Barella was named as the best midfielder of the 2022/23
+            season by Lega Serie A thanks to his fantastic performances.
+          </Typography>
+        </CardContent>
+      </Card>
     </Container>
   );
 }

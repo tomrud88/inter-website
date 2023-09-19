@@ -37,14 +37,14 @@ export default function NewsFour() {
           component="div"
           style={{ marginTop: "10px", fontWeight: "bold" }}
         >
-          ROMA VS. INTER: PREVIOUS MEETINGS, STATS AND FUN FACTS
+          ZANETTI 50:HAPPY BIRTHDAY, JAVIER!
         </Typography>
         <CardMedia
           className={classes.SimoneImg}
           component="img"
           height="640"
-          image="https://intermilan.bynder.com/transform/ff1fe6c3-b32f-4464-936b-3c4fc259934f/20230425173723_762041711-crop?quality=100&io=transform:fill,width:1920"
-          alt="Simone Inzaghi"
+          image="https://intermilan.bynder.com/transform/f210f510-564c-41cd-af30-16dad5a943cb/FC-Internazionale-v-Genoa-CFC-Serie-A?quality=100&io=transform:fill,width:1280,height:1280&format=webp"
+          alt="Javier Zanetti"
         />
         <CardContent>
           <Typography
@@ -52,29 +52,31 @@ export default function NewsFour() {
             color="text.secondary"
             style={{ marginBottom: "20px" }}
           >
-            Inter face Roma on Saturday 6 May at 18:00 CEST for the 180th time
-            in Serie A. The Nerazzurri have collected 75 wins to the
-            Giallorossi's 50: against no other side have Inter earned more wins
-            in the Italian league. Roma are also the team that Inter have scored
-            the most goals against in Serie A: 291.
+            MILANO - Happy birthday to Javier Zanetti. Inter’s Vice President
+            turns 50 years old today, 28 of those he has spent with the
+            Nerazzurri.
           </Typography>
           <Typography style={{ marginBottom: "20px" }}>
-            Since the start of the 2021/22 Serie A season, Inter have scored at
-            least three goals in 24 league fixtures: no other side has a better
-            record in the same period, with Napoli second (20 games).{" "}
+            Born in Buenos Aires on 10 August 1973, Zanetti joined Inter in the
+            summer of 1995 as a young Argentian who would leave an indelible
+            mark on this Club. From his debut against Vicenza on 27 August 1995
+            to his final farewell to football against Lazio on 10 May 2014,
+            Zanetti made 858 appearances, scored 21 goals, featured for a total
+            of 73,284 minutes and bagged 16 trophies: one Champions League, one
+            Club World Cup, on UEFA Cup, five league titles, four Coppa Italia
+            titles and four Supercups.
           </Typography>
           <Typography style={{ marginBottom: "10px" }}>
-            In 2023, no other striker in Serie A has been involved in more goals
-            than Lautaro Martínez in all competitions. The Argentinian has
-            grabbed 15 goals and provided three assists, for a total of 18, the
-            same as Victor Osimhen.
+            To that he has now added one Scudetto, two Coppa Italia and two
+            Supercoppa titles during his tenure as the Club’s Vice President. In
+            2018, Zanetti was also inducted into the Inter Hall of Fame, the
+            first defender in Club history to be awarded that honour.
           </Typography>
           <Typography style={{ marginBottom: "10px" }}>
-            Roma are the team that Marcelo Brozovic has been involved in the
-            most number of goals in Serie A: the Croatian midfielder totals
-            seven contributions, with two goals and five assists. In his last
-            three Serie A games, Brozovic have served up three goalscoring
-            passes.
+            To celebrate him reaching his half-century, we’ve collected 50
+            photos that tell the incredible Inter story of our current Vice
+            President; on behalf of the entire Nerazzurri family, we would like
+            to wish him all the best on his birthday!
           </Typography>
         </CardContent>
       </Card>

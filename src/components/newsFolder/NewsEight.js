@@ -37,13 +37,13 @@ export default function NewsEight() {
           component="div"
           style={{ marginTop: "10px", fontWeight: "bold" }}
         >
-          MEET AND GREET WITH THE NERAZZURRI PARTNERS IN ROME 
+          UEFA CHAMPIONS LEAGUE 23/24, INTER'S GROUP STAGE SQUAD LIST
         </Typography>
         <CardMedia
           className={classes.SimoneImg}
           component="img"
           height="640"
-          image="https://intermilan.bynder.com/transform/86cb233a-6e2f-4d63-ae77-475f871586c9/20230505220824_1657084555?quality=100&io=transform:fill,width:1920"
+          image="https://intermilan.bynder.com/transform/d73b1891-420a-44a9-b20b-476286ea8384/1633711673?quality=100&io=transform:fill,width:1920&format=webp"
           alt="Inter Partners"
         />
         <CardContent>
@@ -52,16 +52,37 @@ export default function NewsEight() {
             color="text.secondary"
             style={{ marginBottom: "20px" }}
           >
-            To mark the away fixture against Roma on matchday 34 in Serie A,
-            Inter players took part in a special Meet and Greet evening with
-            several Nerazzurri partners.
+            The Nerazzurri players who will be able to play against Real
+            Sociedad, Benfica and Red Bull Salzburg
           </Typography>
           <Typography style={{ marginBottom: "20px" }}>
-            Guests from Attal, Cerba, Kopron, La Molisana, Locauto, Nike, San
-            Bernardo, Socios and Volvo had the opportunity to meet Dumfries, de
-            Vrij, Asllani and Bellanova for an exclusive autograph signing and
-            photo session.
+            MILANO - As per regulation, FC Internazionale Milano has submitted
+            the list of Nerazzurri players who will be involved in the 2023/24
+            Champions League group stage to UEFA.
           </Typography>
+          <Typography>1. Yann SOMMER</Typography>
+          <Typography>2. Denzel DUMFRIES</Typography>
+          <Typography>6. Stefan DE VRIJ</Typography>
+          <Typography>7. Juan CUADRADO</Typography>
+          <Typography>8. Marco ARNAUTOVIC</Typography>
+          <Typography>9. Marcus THURAM</Typography>
+          <Typography>10. LAUTARO Martinez</Typography>
+          <Typography>12. Raffaele DI GENNARO</Typography>
+          <Typography>14. Davy KLAASSEN</Typography>
+          <Typography>15. Francesco ACERBI</Typography>
+          <Typography>16. Davide FRATTESI</Typography>
+          <Typography>20. Hakan CALHANOGLU</Typography>
+          <Typography>21. Kristjan ASLLANI</Typography>
+          <Typography>22. Henrikh MKHITARYAN</Typography>
+          <Typography>23. Nicolò BARELLA</Typography>
+          <Typography>28. Benjamin PAVARD</Typography>
+          <Typography>30. CARLOS AUGUSTO</Typography>
+          <Typography>31. Yann BISSECK</Typography>
+          <Typography>32. Federico DIMARCO</Typography>
+          <Typography>36. Matteo DARMIAN</Typography>
+          <Typography>70. Alexis SANCHEZ</Typography>
+          <Typography>77. Emil AUDERO</Typography>
+          <Typography>95. Alessandro BASTONI</Typography>
         </CardContent>
       </Card>
     </Container>

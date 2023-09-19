@@ -37,14 +37,14 @@ export default function NewsTwo() {
           component="div"
           style={{ marginTop: "10px", fontWeight: "bold" }}
         >
-          LUKAKU AND DARMIAN: "A BIG PERFORMANCE, WE NEED TO KEEP IT UP"
+          INZAGHI:"A HUGE DERBY, COMPLIMENTS TO THE BOYS"
         </Typography>
         <CardMedia
           className={classes.SimoneImg}
           component="img"
           height="640"
-          image="https://cdn-2.tstatic.net/kaltara/foto/bank/images/Selebrasi-gol-Romelu-Lukaku-AS-Roma-vs-Inter-Milan-050523.jpg"
-          alt="Romelu Lukaku"
+          image="https://intermilan.bynder.com/transform/06fcdc23-0eb1-4b1a-aa4d-40de0f000a28/FC-Internazionale-v-AC-Milan-Serie-A-TIM?quality=100&io=transform:fill,width:1920&format=webp"
+          alt="Simone Inzaghi"
         />
         <CardContent>
           <Typography
@@ -52,37 +52,46 @@ export default function NewsTwo() {
             color="text.secondary"
             style={{ marginBottom: "20px" }}
           >
-            A third consecutive away win for Inter, who came away with three
-            points in Rome thanks to a focused, mature and determined display.
-            Romelu Lukaku, who scored the Nerazzurri's second, spoke after the
-            match, as did Matteo Darmian. This is what they had to say:
+            The words of Simone Inzaghi after the 5-1 derby win: “I am happy for
+            our fans, now we look to the next games”
+          </Typography>
+          <Typography style={{ marginBottom: "20px"}}>
+            San Siro is once again Nerazzurro: Inter wins the first derby
+            beating AC Milan 5-1 with a brace from Mkhitaryan and goals from
+            Thuram, Calhanoglu, and Frattesi. Simone Inzaghi commented at the
+            end of the match:
           </Typography>
           <Typography style={{ marginBottom: "20px", fontWeight: "bold" }}>
-            “I’m delighted with the team’s performance. We’re growing and
-            reaching a really high level, but we need to carry on working. It’s
-            an important moment for the team. We know what our situation is and
-            what we’re playing for, and we need to make the most of every
-            moment. Today, we showed that we’re a really mature team. We’ve got
-            many players who have done important things, and this is how you win
-            games.”
+            “We have had a great start to the season and played a huge derby. We
+            were always focused, we scored in the right moments, and the players
+            that came on from the bench did really well, so compliments to the
+            boys. We know it is only a good beginning but I we are happy for our
+            fans. Now we have to prepare ourselves for the next games to come. I
+            watch my boys, and what they give in training, I was a bit worried
+            for this game because in the first three matchdays, we had an entire
+            week to prepare, but for this one I had various players returning to
+            the squad 24 hours beforehand, but I knew they know how to play
+            these kinds of games and they've shown me this once again. It makes
+            me happy for our club, our society, and our president, we know that
+            it is extremely important and what the derby represents. The last
+            derbies we won brought us a trophy and the chance to play in a huge
+            final, and this game has given us momentarily the top spot of the
+            table, but we are only on matchday 4 and the league is long. Having
+            depth in the squad is important now that we are about to play every
+            three days and there will be space for everyone. Today I praised the
+            entire team. There weren't any signs of Leao's goal, maybe we had to
+            dribble better in the first half but it's a derby, we have players
+            that gave a lot, physically and mentally, and the players that came
+            on from the bench helped us greatly. Thuram? Marotta and Ausilio
+            wanted to take him last winter, I also spoke to Deschamps who spoke
+            well of him. He is a good lad, with a lot of qualities that
+            immediately made us like him. Good for him and good for the Club. We
+            changed 12 players, it's not inconsequential. Last season gave us
+            clarity, we must go on this way, we are happy with the start but we
+            have to be ready because we know that the challenges start now. ”
           </Typography>
           <Typography style={{ marginBottom: "10px" }}>
-            Romelu Lukaku
-          </Typography>
-          <Typography style={{ marginBottom: "20px", fontWeight: "bold" }}>
-            “We’re doing well and almost everyone is available. We need to carry
-            on in this manner. The remainder of the season will be difficult,
-            but we’re ready to play all the matches that await us across the
-            league, Coppa Italia and Champions League. We were composed and
-            focused today and managed to come away with an important win. The
-            Champions League? We’re ready and will prepare for the match in the
-            best way possible in the next few days. We know that we’ll have to
-            produce a very focused performance. I feel the confidence of my
-            teammates and the staff, and this motivates me to always give my
-            all.”
-          </Typography>
-          <Typography style={{ marginBottom: "10px" }}>
-            Matteo Darmian
+            Simone Inzaghi
           </Typography>
         </CardContent>
       </Card>

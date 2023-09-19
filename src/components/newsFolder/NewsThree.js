@@ -37,14 +37,15 @@ export default function NewsThree() {
           component="div"
           style={{ marginTop: "10px", fontWeight: "bold" }}
         >
-          25 YEARS AGO: INTER LIFTED THE UEFA CUP IN PARIS
+          THURAM, THE DERBY GOAL AND THE SOUND OF SAN SIRO: "I WILL REVEL IN
+          THIS MOMENT:REALLY HAPPY ABOUT THE GOAL"
         </Typography>
         <CardMedia
           className={classes.SimoneImg}
           component="img"
           height="640"
-          image="https://intermilan.bynder.com/transform/fa948e06-20a9-4364-9101-c51ea45a2a86/AC01648-Bergomi-Giuseppe?quality=100&io=transform:fill,width:1920"
-          alt="Inter celebration"
+          image="https://intermilan.bynder.com/transform/570ab8cd-a274-4453-9fb8-c2c17256b859/FC-Internazionale-v-AC-Milan-Serie-A-TIM?quality=100&io=transform:fill,width:1280,height:1280&format=webp"
+          alt="Thuram celebration"
         />
         <CardContent>
           <Typography
@@ -52,61 +53,36 @@ export default function NewsThree() {
             color="text.secondary"
             style={{ marginBottom: "20px" }}
           >
-            25 years ago, but it seems like yesterday. 25 years ago, but the
-            feelings are still there today, identical. And for those who weren't
-            present, or not yet born, the photos and videos from that evening
-            bring it all back: the voices of those arriving, still crisp and
-            clear, to the Parc des Princes, the stage for one Inter's greatest
-            moments in history.
+            The words of the Nerazzurri forward at the end of his first Milano
+            derby
           </Typography>
           <Typography style={{ marginBottom: "20px" }}>
-            25 years ago, 6 May 1998. That incredible run could not have
-            finished any other way; it could not have been a finer ending, in an
-            all-Italian final, the first ever one on the Uefa Cup, with every
-            Interista looking for revenge after the previous year's defeat to
-            Schalke.
+            A force of nature that rocked the Milano derby: Marcus Thuram made
+            his derby debut with a devastating goal. The demonstration of power
+            and personality, topped off with the extraordinary goal he scored to
+            make it 2-0. At the end of the match, the French forward spoke to
+            DAZN and Inter TV:
           </Typography>
-          <Typography style={{ marginBottom: "10px" }}>
-            t was a glorious night: Lazio 0-3 Inter. Zamorano's goal started it
-            all off, Zanetti's hit into the top corner with his right, Ronaldo's
-            dance in his one-on-one with Marchegiani. It was the Nerazzurri's
-            third Uefa Cup in its history and the first in Moratti's reign, with
-            the sweet and gentil smile of Gigi Simoni, who only ten days prior
-            had lost for the first time in the league campaign.
-          </Typography>
-          <Typography style={{ marginBottom: "20px"}}>
-            His squad of players from '98 won with style and pride, because the
-            final was a masterpiece; because the celebrations were wild; because
-            it was a joy to watch 'O Fenomeno' with the Brazilian flag jumping
-            up and down happy together with Beppe Bergomi.
-          </Typography>
-          <Typography style={{ marginBottom: "10px" }}>
-            In Milan, Nerazzurri supporters gathered to watch the game in Piazza
-            del Duomo on the big screen. Following the match, Massimo Moratti
-            was help up on the players' shoulders, before dedicating the victory
-            to hhis father, Angelo: "He won league titles and European Cups so
-            my thought is with him. The fans deserves this, it is Gigi Simoni's
-            Cup; he has led the team with tenacity and intelligence."
-          </Typography>
-          <Typography style={{ marginBottom: "20px"}}>
-            When you mention the 1998 Uefa Cup, timeless images suddenly spring
-            up to mind, like bright, shining stars in a Black and Blue sky.
-            There's the hooped shirts, unimaginable goals by Ronaldo in the
-            frozen mud in Moscow; there's the perfect ending at Parc des
-            Princes. The "boys of '98": they still call themselves that now, the
-            boys of Gigi Simoni.
-          </Typography>
-          <Typography style={{ marginBottom: "10px" }}>
-            Ronaldo, the one and only Ronaldo. The first win in Neuchatel, then
-            the fightback over Lyon. Another French team and another comeback: a
-            2-0 defeat in Strasbourg, the famous 3-0 win at San Siro with goals
-            from Ronaldo, Zanetti and Simeone. The quarters were revenge for the
-            1997 final, beating Schalke through West's goal in extra-time. In
-            the semis, Ronaldo drew up one of his most stunning goals in the mud
-            of Moscow. In the final in Paris, (the first one-off game) Inter
-            dominated the game against Lazio: peaches from Zamorano, Zanetti and
-            Ronaldo Inter their third Uefa Cup in its history, and its first
-            trophy in the Moratti era.
+          <Typography style={{ marginBottom: "10px",fontWeight:'bold' }}>
+            “Every goal at San Siro is special: I heard a beautiful sound, the
+            sound of our fans. I am very happy, my teammates also celebrated a
+            lot with me. I am happy that I scored in my first derby, just like
+            Ronaldo, my idol as a kid. I hoped to start this well with Inter: I
+            am happy to be able to play with these champions in one of the most
+            important clubs in Europe; I will revel in the moment. I train to be
+            stronger every day, I want to be able to continue like this. For the
+            goal I scored, Denzel was there to lead the counterattack: the ball
+            went too far but I saw that I was on my own with the defender in
+            front of me and I thought that maybe the moment to shoot had
+            arrived. For me, it is very easy to play with Lautaro because I
+            understand the game: he is one of the best forwards in the world and
+            I can learn a lot from him. With two strikers like us, I know very
+            well that we have to attack the goal as fast as possible and I like
+            this. I celebrated Frattesi's goal a lot because I sent him a
+            message this week after his brace with the National team saying that
+            he had to do that with Inter too, and he did. Inter has always been
+            in my mind since I was injured two years ago: it never left me, I
+            worked a lot to still have the trust of the Club.”
           </Typography>
         </CardContent>
       </Card>
