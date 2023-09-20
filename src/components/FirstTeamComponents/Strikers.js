@@ -59,7 +59,7 @@ function Strikers() {
           </Typography>
         </Container>
         <Grid container className={classes.mainContainer}>
-          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={5}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
@@ -79,7 +79,7 @@ function Strikers() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={5}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
@@ -99,7 +99,7 @@ function Strikers() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={5}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
@@ -119,7 +119,7 @@ function Strikers() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={2.5} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={5}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
