@@ -244,11 +244,11 @@ function FanToken() {
                 <Typography variant="h2">are here</Typography>
               </div>
               <div className={classes.lsSectionTwo}>
-                <Typography variant="">
+                <p>
                   The $INTER Fan Token will give you the power to help the
                   Nerazzurri make the right decisions, access VIP experiences,
                   earn official products, and more.
-                </Typography>
+                </p>
               </div>
               <div className={classes.buttonSection}>
                 <Button
@@ -281,6 +281,7 @@ function FanToken() {
                 className={classes.mainImg}
                 src=".\fanToken-mobilePicture.png"
                 loading="lazy"
+                alt='inter players'
               />
             </div>
           </div>
@@ -537,6 +538,7 @@ function FanToken() {
             <img
               className={classes.logo}
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/2048px-FC_Internazionale_Milano_2021.svg.png"
+              alt='inter emblem'
             ></img>
           </div>
           <div
@@ -552,6 +554,7 @@ function FanToken() {
                 <img
                   style={{ width: "35px", height: "35px", marginRight: "30px" }}
                   src="https://www.socios.com/wp-content/uploads/2019/11/Favicon-1-300x300.png"
+                  alt='socios emblem'
                 />
                 <Typography variant="body1">
                   Own a share of influence of your team

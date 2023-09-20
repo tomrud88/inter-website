@@ -49,7 +49,6 @@ export default function NewsFive() {
         <CardContent>
           <Typography
             variant="body1"
-            color="text.secondary"
             style={{ marginBottom: "20px" }}
           >
             Wins for Albania and the Netherlands in Euro 2024 qualifying

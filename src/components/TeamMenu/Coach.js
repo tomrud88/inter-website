@@ -49,7 +49,7 @@ export default function Coach() {
         <CardContent>
           <Typography
             variant="body1"
-            color="text.secondary"
+            color="textSecondary"
             style={{ marginBottom: "20px" }}
           >
             Destined for the ball. When you grow up in a small village close to

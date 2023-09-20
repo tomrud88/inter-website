@@ -48,8 +48,7 @@ export default function NewsSix() {
         />
         <CardContent>
           <Typography
-            variant="body1"
-            color="text.secondary"
+            variant="body"
             style={{ marginBottom: "20px" }}
           >
              Nicolò Barella and Lautaro Martinez are the two Nerazzurri

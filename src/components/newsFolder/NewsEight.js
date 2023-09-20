@@ -49,7 +49,6 @@ export default function NewsEight() {
         <CardContent>
           <Typography
             variant="body1"
-            color="text.secondary"
             style={{ marginBottom: "20px" }}
           >
             The Nerazzurri players who will be able to play against Real

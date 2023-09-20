@@ -39,7 +39,8 @@ function Anthem() {
             <h4>Inter Milan has 2 anthems. One of them is <span style={{fontWeight:'bold'}}>"C'e Solo Inter"</span> and second <span style={{fontWeight:'bold'}}>"Pazza Inter Amala"</span></h4>
             <p>For a long time "Pazza Inter Amala" was played before the home games because the song displayed the DNA of madness and pure adrenaline of the old team.
             </p>
-            <img className={classes.firstImg} src='https://upload.wikimedia.org/wikipedia/commons/d/d3/Inter_fans_2008%283%29.jpg'/>
+                <img className={classes.firstImg} src='https://upload.wikimedia.org/wikipedia/commons/d/d3/Inter_fans_2008%283%29.jpg'
+                alt='inter fans'/>
             <p>
                 Two years ago the club decided to change the old song and replace it by the "C'e Solo L'Inter" which is a historical anthem written by Elio.
             </p>

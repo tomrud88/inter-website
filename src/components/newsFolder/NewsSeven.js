@@ -49,7 +49,6 @@ export default function NewsSeven() {
         <CardContent>
           <Typography
             variant="body1"
-            color="text.secondary"
             style={{ marginBottom: "20px" }}
           >
             The coach has officially extended his contract with the Nerazzurri

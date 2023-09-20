@@ -49,7 +49,6 @@ export default function MainNews() {
         <CardContent>
           <Typography
             variant="body1"
-            color="text.secondary"
             style={{ marginBottom: "20px" }}
           >
             There are nights you never want to end. There are years, like in

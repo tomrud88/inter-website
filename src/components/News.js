@@ -47,29 +47,35 @@ export default function News(props){
         
     },[])
     return (
-        <div>
-            {loading ? 
-            <ClipLoader
-            size={150}
-            color={'#001ea0'}
-            loading={loading}
-            />: 
-        <Grid id={props.id} container justifyContent='center' className={classes.mainCon}>
-            <Grid container lg={8} sm={10} xs={11}
-            spacing={2}
-            justifyContent='center' className='mainGrid'>
-            {news.map(item =>(
-               
-               <Grid item key={item.id}xs={12} sm={10} md={6} lg={6}>
-                   <NewsItem item={item}/>
+      <div>
+        {loading ? (
+          <ClipLoader size={150} color={"#001ea0"} loading={loading} />
+        ) : (
+          <Grid
+            id={props.id}
+            container
+            justifyContent="center"
+            className={classes.mainCon}
+          >
+            <Grid
+              container
+              lg={8}
+              sm={10}
+              xs={11}
+              spacing={2}
+              justifyContent="center"
+              className="mainGrid"
+            >
+              {news.map((item) => (
+                <Grid item key={item.id} xs={12} sm={10} md={6} lg={6}>
+                  <NewsItem item={item} />
                 </Grid>
-                
-            ))}
+              ))}
             </Grid>
-        </Grid>
-        }
-        </div>
-    )
+          </Grid>
+        )}
+      </div>
+    );
 }
 
 

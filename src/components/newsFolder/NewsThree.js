@@ -50,7 +50,6 @@ export default function NewsThree() {
         <CardContent>
           <Typography
             variant="body1"
-            color="text.secondary"
             style={{ marginBottom: "20px" }}
           >
             The words of the Nerazzurri forward at the end of his first Milano

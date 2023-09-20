@@ -49,7 +49,6 @@ export default function NewsFour() {
         <CardContent>
           <Typography
             variant="body1"
-            color="text.secondary"
             style={{ marginBottom: "20px" }}
           >
             MILANO - Happy birthday to Javier Zanetti. Inter’s Vice President

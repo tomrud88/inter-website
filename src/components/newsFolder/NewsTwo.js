@@ -49,7 +49,6 @@ export default function NewsTwo() {
         <CardContent>
           <Typography
             variant="body1"
-            color="text.secondary"
             style={{ marginBottom: "20px" }}
           >
             The words of Simone Inzaghi after the 5-1 derby win: “I am happy for

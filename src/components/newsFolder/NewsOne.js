@@ -49,7 +49,6 @@ export default function NewsOne() {
         <CardContent>
           <Typography
             variant="body1"
-            color="text.secondary"
             style={{ marginBottom: "20px" }}
           >
             Inter and Nike have released the Nerazzurri’s Third Kit for the
