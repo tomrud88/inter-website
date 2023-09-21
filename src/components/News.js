@@ -10,9 +10,6 @@ const useStyles = makeStyles((theme)=>({
        justifyContent:'center',
        alignItems:'center',
        minWidth:'100vw'
-   },
-   mainGrid:{
-        
    }
 }));
 
@@ -49,12 +46,13 @@ export default function News(props){
     return (
       <div>
         {loading ? (
-          <ClipLoader size={150} color={"#001ea0"} loading={loading} />
+          <Grid className={classes.mainCon} container>
+            <ClipLoader size={150} color={"#001ea0"} loading={loading} />
+          </Grid>
         ) : (
           <Grid
             id={props.id}
             container
-            justifyContent="center"
             className={classes.mainCon}
           >
             <Grid

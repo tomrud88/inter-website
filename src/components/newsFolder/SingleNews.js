@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
+import { ClipLoader } from "react-spinners";
 
 const useStyles = makeStyles((theme)=>({
     mainCard:{
@@ -24,6 +25,10 @@ const useStyles = makeStyles((theme)=>({
     image:{
         objectFit:'cover',
         objectPosition:'top'
+    },
+    spinner: {
+        justifyContent: 'center',
+        alignItems:'center'
     }
 }))
    
@@ -65,38 +70,46 @@ export default function SingleNews() {
         fetchNewsById(itemId)
     }, [])
     console.log(singleNews)
-  return (
-    <Container className={classes.mainContainer}>
-      <Card className={classes.mainCard}>
-        <Typography
-          gutterBottom
-          variant="h4"
-          component="div"
-          style={{ marginTop: "10px", fontWeight: "bold" }}
-        >
-          {singleNews.title}
-        </Typography>
-        <CardMedia
-          className={classes.image}
-          component="img"
-          height="640"
-          image={singleNews.picture}
-          alt={singleNews.alt}
-        />
-        <CardContent>
-          <Typography variant="body1" style={{ marginBottom: "20px" }}>
-            {singleNews.text1}
-          </Typography>
-          <Typography style={{ marginBottom: "20px" }}>
-            {" "}
-            {singleNews.text2}
-          </Typography>
-          <Typography style={{ marginBottom: "10px" }}>
-            {" "}
-            {singleNews.text3}
-          </Typography>
-        </CardContent>
-      </Card>
-    </Container>
-  );
+    return (
+      <div>
+        {loading ? (
+          <Container className={classes.mainContainer}>
+            <ClipLoader size={150} color={"#001ea0"} loading={loading} />
+          </Container>
+        ) : (
+          <Container className={classes.mainContainer}>
+            <Card className={classes.mainCard}>
+              <Typography
+                gutterBottom
+                variant="h4"
+                component="div"
+                style={{ marginTop: "10px", fontWeight: "bold" }}
+              >
+                {singleNews.title}
+              </Typography>
+              <CardMedia
+                className={classes.image}
+                component="img"
+                height="640"
+                image={singleNews.picture}
+                alt={singleNews.alt}
+              />
+              <CardContent>
+                <Typography variant="body1" style={{ marginBottom: "20px" }}>
+                  {singleNews.text1}
+                </Typography>
+                <Typography style={{ marginBottom: "20px" }}>
+                  {" "}
+                  {singleNews.text2}
+                </Typography>
+                <Typography style={{ marginBottom: "10px" }}>
+                  {" "}
+                  {singleNews.text3}
+                </Typography>
+              </CardContent>
+            </Card>
+          </Container>
+        )}
+      </div>
+    );
 }

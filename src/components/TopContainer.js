@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme)=>({
         marginTop:'30px'  
     },
     back:{
-        backgroundImage:`url(/san-siro.jpg)`,
+        backgroundImage:`url(/san-siro.webp)`,
         opacity:1,
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -217,7 +217,7 @@ function TopContainer() {
                     <Paper
                       style={{
                         backgroundImage:
-                          "url(https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdWcrIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--71891dcf268d728152e12e1d6035be478f6a7d4a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lNT0RJd2VEUXlOZ1k2QmtWVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--6f7ab879268c37617416433ce61c8b9f71f53e84/obraz_2023-09-17_011658204.png)",
+                          `url(/inter-derby-win.webp)`,
                       }}
                       className={classes.paper}
                     >
