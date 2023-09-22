@@ -97,67 +97,93 @@ function Topbar() {
     const open = Boolean(anchor)
 
     return (
-        <div>
-           <AppBar position="static">
-        <Toolbar className={classes.toolbar}>
-        <IconButton className={classes.smallMenu}
-            size="medium"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-            onClick={()=>setOpent(!opent)}
-          >
-            <Menu />
+      <div>
+        <AppBar position="static">
+          <Toolbar className={classes.toolbar}>
+            <IconButton
+              className={classes.smallMenu}
+              size="medium"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 2 }}
+              onClick={() => setOpent(!opent)}
+            >
+              <Menu />
             </IconButton>
-            <Link href='/' underline='none'>
-                        <img className={classes.logo} src='https://fcinter.pl/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa2d3IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce6018a9cc74938350147bc60dd018680e15b5f1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lLTnpWNE56VUdPZ1pGVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--94c6a9ec7dad8ed5d3d2adaecf783da9c3dc17fa/interr.png'
-                        alt='inter emblem'/>          
-           </Link>
-          <Typography variant='h6' component='div' className={classes.menuoptions} sx={{flexGrow:1}}>
+            <Link href="/" underline="none">
+              <img
+                className={classes.logo}
+                src="/emblem-inter.webp"
+                alt="inter emblem"
+              />
+            </Link>
+            <Typography
+              variant="h6"
+              component="div"
+              className={classes.menuoptions}
+              sx={{ flexGrow: 1 }}
+            >
               <div className={classes.menuItem}>
-                 <Link href='/' underline='none'
-                 style={{color:'white'}}><Home/></Link>
-              </div>
-              <div className={classes.menuItem}>
-                  <Link href='#' underline='none'>
-                 <Team/>
-                 </Link>
-              </div>
-              <div className={classes.menuItem}>
-                 <Link href='#' underline='none'>
-                <SerieA/>
+                <Link href="/" underline="none" style={{ color: "white" }}>
+                  <Home />
                 </Link>
               </div>
               <div className={classes.menuItem}>
-                  <Link href='#' underline='none'>
-                  <Cups/>
-                  </Link>
+                <Link href="#" underline="none">
+                  <Team />
+                </Link>
               </div>
               <div className={classes.menuItem}>
-                  <Link href='#' underline='none'>
-                  <ForFans/>
-                  </Link>
+                <Link href="#" underline="none">
+                  <SerieA />
+                </Link>
               </div>
-              
+              <div className={classes.menuItem}>
+                <Link href="#" underline="none">
+                  <Cups />
+                </Link>
+              </div>
+              <div className={classes.menuItem}>
+                <Link href="#" underline="none">
+                  <ForFans />
+                </Link>
+              </div>
+
               {isLoggedIn && (
-              <div className={classes.menuItem}>
-                  <Link href='/profile' underline='none'>
-                     <p style={{fontWeight:'bold',fontSize:'17px',color:'white'}}>PROFILE</p>
+                <div className={classes.menuItem}>
+                  <Link href="/profile" underline="none">
+                    <p
+                      style={{
+                        fontWeight: "bold",
+                        fontSize: "17px",
+                        color: "white",
+                      }}
+                    >
+                      PROFILE
+                    </p>
                   </Link>
-              </div>)}
-              </Typography>
-          {isLoggedIn && (
-          <Button onClick={logoutHandler} color="inherit">Logout</Button>)} 
-      {!isLoggedIn && (
-      <LoginModal open={isOpen} onClose={()=> setIsOpen(false)}/>)}
-      {!isLoggedIn && (
-         <Button onClick={()=> setIsOpen(true)} color="inherit">Login</Button>)}
-        </Toolbar>
-      </AppBar>
-      {opent && <DrawerComponent changeOpen={opent => setOpent(opent)}/>}
-        </div>
-    )
+                </div>
+              )}
+            </Typography>
+            {isLoggedIn && (
+              <Button onClick={logoutHandler} color="inherit">
+                Logout
+              </Button>
+            )}
+            {!isLoggedIn && (
+              <LoginModal open={isOpen} onClose={() => setIsOpen(false)} />
+            )}
+            {!isLoggedIn && (
+              <Button onClick={() => setIsOpen(true)} color="inherit">
+                Login
+              </Button>
+            )}
+          </Toolbar>
+        </AppBar>
+        {opent && <DrawerComponent changeOpen={(opent) => setOpent(opent)} />}
+      </div>
+    );
 }
 
 export default Topbar

@@ -65,7 +65,7 @@ function GoalKeepers() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/0b09313d-0d76-460f-8029-01c676fcd94d/Sommer_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Sommer.webp"
                   title="Sommer"
                 />
                 <CardContent>
@@ -85,7 +85,7 @@ function GoalKeepers() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/ecf4a2a9-92a5-425a-b2c9-2f9054aef74a/Audero_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Audero.webp"
                   title="Audero"
                 />
                 <CardContent>
@@ -105,7 +105,7 @@ function GoalKeepers() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/61c883e9-3e25-4ec5-8265-f849f383991d/Di_Gennaro_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Di_Gennaro.webp"
                   title="Di Gennaro"
                 />
                 <CardContent>

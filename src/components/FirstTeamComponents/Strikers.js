@@ -65,7 +65,7 @@ function Strikers() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/b750c0fb-a0f8-403d-a4b6-6193d3ac5a50/Arnautovic_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Arnautovic.webp"
                   title="Arnautovic"
                 />
                 <CardContent>
@@ -85,7 +85,7 @@ function Strikers() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/a61aa1ba-0b31-42bf-b17f-91fa22403259/Thuram_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Thuram.webp"
                   title="Thuram"
                 />
                 <CardContent>
@@ -105,7 +105,7 @@ function Strikers() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/f1758b6c-1ea9-4532-940d-c00236ebaa51/Lautaro_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Lautaro.webp"
                   title="Martinez"
                 />
                 <CardContent>
@@ -125,7 +125,7 @@ function Strikers() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/495031e1-57ae-4adc-ab27-5ea2c8e8492d/Sanchez_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Sanchez.webp"
                   title="Sanchez"
                 />
                 <CardContent>

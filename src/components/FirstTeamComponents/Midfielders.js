@@ -65,7 +65,7 @@ function Midfielders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/0c809a7e-fa44-4f18-b36d-2157cd3818d8/Dumfries_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Dumfries_.webp"
                   title="Dumfries"
                 />
                 <CardContent>
@@ -85,7 +85,7 @@ function Midfielders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/697f9114-8f73-47b4-a2a0-cc96aac0845c/Sensi_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Sensi.webp"
                   title="Sensi"
                 />
                 <CardContent>
@@ -105,7 +105,7 @@ function Midfielders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/bafe2ed3-f4d8-4d9a-b1ad-c501738587fb/Mkhitaryan_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Mkhitaryan.webp"
                   title="Mikhitarian"
                 />
                 <CardContent>
@@ -125,7 +125,7 @@ function Midfielders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/52c23e89-c5c0-4835-8c86-7cdc9f40a117/Cuadrado_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Cuadrado.webp"
                   title="Cuadrado"
                 />
                 <CardContent>
@@ -145,7 +145,7 @@ function Midfielders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/d7b5dcaa-2689-4d0f-a617-57a785c98326/Calhanoglu_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Calhanoglu.webp"
                   title="Calhanoglu"
                 />
                 <CardContent>
@@ -165,7 +165,7 @@ function Midfielders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/df23fa53-3cd2-4d67-963e-061c87c52024/Asllani_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Asllani.webp"
                   title="Asslani"
                 />
                 <CardContent>
@@ -185,7 +185,7 @@ function Midfielders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/3e5faf8e-a0d8-4c59-a0b6-f303c6000951/Berella_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Berella.webp"
                   title="BarelLa"
                 />
                 <CardContent>
@@ -205,7 +205,7 @@ function Midfielders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/95e37edc-d299-4d21-8e55-63fb699ee0da/Klaassen_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Klaassen.webp"
                   title="Klassen"
                 />
                 <CardContent>
@@ -225,7 +225,7 @@ function Midfielders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/54365dfd-a3cc-421e-a58d-b6db189bf506/Frattesi_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Frattesi.webp"
                   title="Frattesi"
                 />
                 <CardContent>
@@ -245,7 +245,7 @@ function Midfielders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/8ca24fa0-2184-4b30-97f6-4131eaba15e2/Carlos_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Carlos.webp"
                   title="Carlos Augusto"
                 />
                 <CardContent>
@@ -265,7 +265,7 @@ function Midfielders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/2e52e61b-9b97-45e8-8a73-62716beed387/Agoume_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Agoume.webp"
                   title="Agoume"
                 />
                 <CardContent>

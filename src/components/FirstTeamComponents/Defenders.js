@@ -64,7 +64,7 @@ function Defenders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/83294804-df59-4a92-9882-e03037587462/De_vrij_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/De_vrij.webp"
                   title="DE VRIJ"
                 />
                 <CardContent>
@@ -84,7 +84,7 @@ function Defenders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/def73bbf-9dfb-4502-b51b-0ac7ee8cdcd6/Acerbi_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Acerbi.webp"
                   title="Acerbi"
                 />
                 <CardContent>
@@ -104,7 +104,7 @@ function Defenders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/dd090506-1b00-4131-b283-c7436d73532b/Pavard_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Pavard.webp"
                   title="Pavard"
                 />
                 <CardContent>
@@ -124,7 +124,7 @@ function Defenders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/eb3886fe-2f2a-4acf-975b-a6c02c5e9b5b/Dimarco_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Dimarco.webp"
                   title="Dimarco"
                 />
                 <CardContent>
@@ -144,7 +144,7 @@ function Defenders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/f5c8ea25-188e-4ccd-add2-5dad79670ac0/Bisseck_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Bisseck.webp"
                   title="Bisseck"
                 />
                 <CardContent>
@@ -164,7 +164,7 @@ function Defenders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/e3f490ea-5bbc-41e8-a02a-1d5b3f61a83d/Darmian_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Darmian.webp"
                   title="Darmian"
                 />
                 <CardContent>
@@ -184,7 +184,7 @@ function Defenders() {
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="https://intermilan.bynder.com/transform/474c1a82-8003-47b1-89bb-291bc6166c07/Bastoni_2x?quality=100&io=transform:fill,width:1152,height:1383&format=webp"
+                  image="/Bastoni.webp"
                   title="Bastoni"
                 />
                 <CardContent>
