@@ -3,7 +3,10 @@ import {Card, CardActionArea, CardMedia, makeStyles,Grid, CardContent, Typograph
 
 const useStyles = makeStyles((theme) => ({
   media: {
-    width: "100%",
+    minHeight: "190px",
+    minWidth: "120px",
+    maxHeight: "330px",
+    maxWidth: "280px",
   },
   mainContainer: {
     minWidth: "100%",
@@ -58,13 +61,14 @@ function Defenders() {
           </Typography>
         </Container>
         <Grid container className={classes.mainContainer}>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/De_vrij.webp"
+                  image="/De_vrij.small.webp"
+                  loading="lazy"
                   title="DE VRIJ"
                 />
                 <CardContent>
@@ -78,13 +82,14 @@ function Defenders() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Acerbi.webp"
+                  image="/Acerbi.small.webp"
+                  loading="lazy"
                   title="Acerbi"
                 />
                 <CardContent>
@@ -98,13 +103,14 @@ function Defenders() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Pavard.webp"
+                  src="/Pavard.small.webp"
+                  loading="lazy"
                   title="Pavard"
                 />
                 <CardContent>
@@ -118,13 +124,14 @@ function Defenders() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Dimarco.webp"
+                  image="/Dimarco.small.webp"
+                  loading="lazy"
                   title="Dimarco"
                 />
                 <CardContent>
@@ -138,13 +145,14 @@ function Defenders() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Bisseck.webp"
+                  image="/Bisseck.small.webp"
+                  loading="lazy"
                   title="Bisseck"
                 />
                 <CardContent>
@@ -158,13 +166,14 @@ function Defenders() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Darmian.webp"
+                  image="/Darmian.small.webp"
+                  loading="lazy"
                   title="Darmian"
                 />
                 <CardContent>
@@ -178,13 +187,14 @@ function Defenders() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Bastoni.webp"
+                  image="/Bastoni.small.webp"
+                  loading="lazy"
                   title="Bastoni"
                 />
                 <CardContent>

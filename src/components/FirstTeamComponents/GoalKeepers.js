@@ -3,7 +3,10 @@ import {Card, CardActionArea, CardMedia, makeStyles,Grid, CardContent, Typograph
 
 const useStyles = makeStyles((theme) => ({
   media: {
-    width: "100%",
+    minHeight: "190px",
+    minWidth: "120px",
+    maxHeight: "330px",
+    maxWidth: "280px",
   },
   mainContainer: {
     minWidth: "100%",
@@ -59,13 +62,13 @@ function GoalKeepers() {
           </Typography>
         </Container>
         <Grid container className={classes.mainContainer}>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Sommer.webp"
+                  src="/Sommer.small.webp"
                   title="Sommer"
                 />
                 <CardContent>
@@ -79,13 +82,13 @@ function GoalKeepers() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Audero.webp"
+                  src="/Audero.small.webp"
                   title="Audero"
                 />
                 <CardContent>
@@ -99,13 +102,13 @@ function GoalKeepers() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Di_Gennaro.webp"
+                  src="/Di_Gennaro.small.webp"
                   title="Di Gennaro"
                 />
                 <CardContent>

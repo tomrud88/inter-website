@@ -3,7 +3,10 @@ import {Card, CardActionArea, CardMedia, makeStyles,Grid, CardContent, Typograph
 
 const useStyles = makeStyles((theme) => ({
   media: {
-    width: "100%",
+    minHeight: "190px",
+    minWidth: "120px",
+    maxHeight: "330px",
+    maxWidth: "280px",
   },
   mainContainer: {
     minWidth: "100%",
@@ -59,13 +62,14 @@ function Midfielders() {
           </Typography>
         </Container>
         <Grid container className={classes.mainContainer}>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Dumfries_.webp"
+                  image="/Dumfries.small.webp"
+                  loading="lazy"
                   title="Dumfries"
                 />
                 <CardContent>
@@ -79,13 +83,14 @@ function Midfielders() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Sensi.webp"
+                  image="/Sensi.small.webp"
+                  loading="lazy"
                   title="Sensi"
                 />
                 <CardContent>
@@ -99,13 +104,14 @@ function Midfielders() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Mkhitaryan.webp"
+                  image="/Mkhitaryan.small.webp"
+                  loading="lazy"
                   title="Mikhitarian"
                 />
                 <CardContent>
@@ -119,13 +125,14 @@ function Midfielders() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Cuadrado.webp"
+                  image="/Cuadrado.small.webp"
+                  loading="lazy"
                   title="Cuadrado"
                 />
                 <CardContent>
@@ -139,13 +146,14 @@ function Midfielders() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Calhanoglu.webp"
+                  image="/Calhanoglu.small.webp"
+                  loading="lazy"
                   title="Calhanoglu"
                 />
                 <CardContent>
@@ -159,13 +167,14 @@ function Midfielders() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Asllani.webp"
+                  image="/Asllani.small.webp"
+                  loading="lazy"
                   title="Asslani"
                 />
                 <CardContent>
@@ -179,13 +188,14 @@ function Midfielders() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Berella.webp"
+                  image="/Berella.small.webp"
+                  loading="lazy"
                   title="BarelLa"
                 />
                 <CardContent>
@@ -199,13 +209,14 @@ function Midfielders() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Klaassen.webp"
+                  image="/Klaassen.small.webp"
+                  loading="lazy"
                   title="Klassen"
                 />
                 <CardContent>
@@ -219,13 +230,14 @@ function Midfielders() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Frattesi.webp"
+                  image="/Frattesi.small.webp"
+                  loading="lazy"
                   title="Frattesi"
                 />
                 <CardContent>
@@ -239,13 +251,14 @@ function Midfielders() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Carlos.webp"
+                  image="/Carlos.small.webp"
+                  loading="lazy"
                   title="Carlos Augusto"
                 />
                 <CardContent>
@@ -259,13 +272,14 @@ function Midfielders() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Agoume.webp"
+                  image="/Agoume.small.webp"
+                  loading="lazy"
                   title="Agoume"
                 />
                 <CardContent>

@@ -3,7 +3,10 @@ import {Card, CardActionArea, CardMedia, makeStyles,Grid, CardContent, Typograph
 
 const useStyles = makeStyles((theme) => ({
   media: {
-    width: "100%",
+    minHeight: "190px",
+    minWidth: "120px",
+    maxHeight: "330px",
+    maxWidth: "280px",
   },
   mainContainer: {
     minWidth: "100%",
@@ -59,13 +62,14 @@ function Strikers() {
           </Typography>
         </Container>
         <Grid container className={classes.mainContainer}>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Arnautovic.webp"
+                  image="/Arnautovic.small.webp"
+                  loading="lazy"
                   title="Arnautovic"
                 />
                 <CardContent>
@@ -79,13 +83,14 @@ function Strikers() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Thuram.webp"
+                  image="/Thuram.small.webp"
+                  loading="lazy"
                   title="Thuram"
                 />
                 <CardContent>
@@ -99,13 +104,14 @@ function Strikers() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Lautaro.webp"
+                  image="/Lautaro.small.webp"
+                  loading="lazy"
                   title="Martinez"
                 />
                 <CardContent>
@@ -119,13 +125,14 @@ function Strikers() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   className={classes.media}
-                  image="/Sanchez.webp"
+                  image="/Sanchez.small.webp"
+                  loading="lazy"
                   title="Sanchez"
                 />
                 <CardContent>
