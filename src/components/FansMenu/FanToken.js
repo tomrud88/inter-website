@@ -24,11 +24,15 @@ const useStyles = makeStyles((theme) => ({
     margin: "50px 0 0 0",
     display: "flex",
     justifyContent: "center",
-    backgroundImage: "url(https://mocah.org/thumbs/546515-Emblem-Soccer.jpg)",
+    backgroundImage: "url(/Emblem-fantoken.webp)",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    [theme.breakpoints.down("sm")]: {
+      backgroundImage: "url(/Emblem-fantoken.small2.webp)",
+    },
     [theme.breakpoints.down("xs")]: {
       height: "120vh",
+      backgroundImage: "url(/Emblem-fantoken.small2.webp)",
     },
   },
   topContainer: {
@@ -61,6 +65,9 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "flex-start",
     color: "white",
     fontWeight: "500",
+    [theme.breakpoints.down("xs")]: {
+      marginTop: "50px",
+    },
   },
   lsSectionTwo: {
     textAlign: "left",
@@ -99,14 +106,18 @@ const useStyles = makeStyles((theme) => ({
   },
   mainImg: {
     width: "800px",
+    maxHeight: "600px",
     [theme.breakpoints.down("md")]: {
       maxWidth: "500px",
+      maxHeight: "400px",
     },
     [theme.breakpoints.down("sm")]: {
       maxWidth: "350px",
+      maxHeight: "300px",
     },
     [theme.breakpoints.down("xs")]: {
       maxWidth: "450px",
+      maxHeight: "400px",
     },
   },
   downloadLinks: {
@@ -157,7 +168,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "100px",
   },
   paper: {
-    backfaceVisibility:'hidden',
+    backfaceVisibility: "hidden",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "top",
@@ -171,14 +182,14 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     color: "white",
   },
-    
+
   cardContainer: {
     padding: theme.spacing(1),
     height: "250px",
     maxWidth: "450px",
     borderRadius: "20px",
     "&:hover": {
-      "& $card": { transform: "rotateX(-180deg)" }
+      "& $card": { transform: "rotateX(-180deg)" },
     },
   },
   card: {
@@ -186,7 +197,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     transition: "transform 1s  ease-in-out ",
     transformStyle: "preserve-3d",
-    position:'relative'
+    position: "relative",
   },
   cardBackText: {
     fontWeight: "bold",
@@ -279,9 +290,10 @@ function FanToken() {
             <div className={classes.rightSite}>
               <img
                 className={classes.mainImg}
-                src=".\fanToken-mobilePicture.png"
+                src="/fanToken-mobilePicture.small.webp"
+                srcSet="/fanToken-mobilePicture.webp 800w"
                 loading="lazy"
-                alt='inter players'
+                alt="inter players"
               />
             </div>
           </div>
@@ -537,8 +549,8 @@ function FanToken() {
           <div>
             <img
               className={classes.logo}
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/2048px-FC_Internazionale_Milano_2021.svg.png"
-              alt='inter emblem'
+              src="/FcInter-logo.webp"
+              alt="inter emblem"
             ></img>
           </div>
           <div
@@ -554,7 +566,7 @@ function FanToken() {
                 <img
                   style={{ width: "35px", height: "35px", marginRight: "30px" }}
                   src="https://www.socios.com/wp-content/uploads/2019/11/Favicon-1-300x300.png"
-                  alt='socios emblem'
+                  alt="socios emblem"
                 />
                 <Typography variant="body1">
                   Own a share of influence of your team
