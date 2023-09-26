@@ -4,200 +4,209 @@ import { Container,Box,makeStyles, Card, CardMedia, CardContent,ImageListItemBar
 
 import React from 'react'
 
-const useStyles = makeStyles((theme)=>({
-  con:{
-   minWidth:'100vw',
-   margin:'0px',
-   padding: '0px',
+const useStyles = makeStyles((theme) => ({
+  con: {
+    minWidth: "100vw",
+    margin: "0px",
+    padding: "0px",
   },
-    containerone:{
-        minWidth:'100vw',
-        height:'850px',
-        position:'relative',
-        justifyContent:'center',
-        alignItems:'center',
-        [theme.breakpoints.down('md')]:{
-          height:'750px',
-          marginTop:'55px'
-        },
-        [theme.breakpoints.down('sm')]:{
-          height:'500px',
-        },  
-        [theme.breakpoints.down('xs')]:{
-          height:'500px',
-        },
-        marginTop:'30px'  
+  containerone: {
+    minWidth: "100vw",
+    height: "850px",
+    position: "relative",
+    justifyContent: "center",
+    alignItems: "center",
+    [theme.breakpoints.down("md")]: {
+      height: "750px",
+      marginTop: "55px",
     },
-    back:{
-        backgroundImage:`url(/san-siro-compressed.webp)`,
-        opacity:1,
-        backgroundPosition:'center',
-        backgroundSize:'cover',
-        position:'absolute',
-        top:0,
-        left:0,
-        right:0,
-        height:'100%',
-        width:'100vw',
-        display:'flex',
-        justifyContent:'center',
-        alignItems:'center',
-        [theme.breakpoints.down('xs')]:{
-          height:'525px'
-        }  
+    [theme.breakpoints.down("sm")]: {
+      height: "500px",
     },
-    stadium:{
-        boxSizing:'border-box',
-        width:'100%',
-        height:'100%',
-        backgroundColor:'rgba(20,46,107,0.9)',
-        zIndex:1,
-        position:'absolute',
-        top:0,
-        bottom:0,
-        left:0,
-        right:0,   
+    [theme.breakpoints.down("xs")]: {
+      height: "500px",
     },
-    title:{
-      zIndex:2,
-      fontSize:'34px'
+    marginTop: "30px",
+  },
+  back: {
+    backgroundImage: `url(/san-siro-compressed.webp)`,
+    opacity: 1,
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    height: "100%",
+    width: "100vw",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    [theme.breakpoints.down("xs")]: {
+      height: "525px",
     },
-    typo:{
-      zIndex:1
+  },
+  stadium: {
+    boxSizing: "border-box",
+    width: "100%",
+    height: "100%",
+    backgroundColor: "rgba(20,46,107,0.9)",
+    zIndex: 1,
+    position: "absolute",
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+  },
+  title: {
+    zIndex: 2,
+    fontSize: "34px",
+  },
+  typo: {
+    zIndex: 1,
+  },
+  resultsContainer: {
+    width: "100vw",
+    backgroundColor: "rgba(20,46,107,255)",
+    [theme.breakpoints.down("xs")]: {
+      marginTop: "5px",
     },
-    resultsContainer:{
-      width:'100vw',
-      backgroundColor: 'rgba(20,46,107,255)',
-      [theme.breakpoints.down('xs')]:{
-        marginTop:'5px'
-      }  
+  },
+  results: {
+    zIndex: 1,
+    justifyContent: "center",
+    backgroundColor: "rgba(20,46,107,255)",
+    width: "100%",
+    [theme.breakpoints.down("xs")]: {
+      marginTop: "25px",
     },
-    results:{
-      zIndex:1,
-      justifyContent:'center',
-      backgroundColor: 'rgba(20,46,107,255)',
-      width:'100%',
-      [theme.breakpoints.down('xs')]:{
-        marginTop:'25px'
-      }  
-    },
-    bottomcontainer:{
-      display:'flex',
-      flexDirection:'column',
-    },
-    leftsite:{
-      display:'flex',
-      justifyContent:'space-between',
-      alignItems:'center',
-      backgroundColor: 'rgba(35, 61, 101, 0.54)',
-      fontWeight:'700',
-      color:'white',
-    },
-    rightsite:{
-      display:'flex',
-      justifyContent:'space-between',
-      alignItems:'center',
-      backgroundColor: 'rgba(0,0,0,255)',
-      color:'white',
-      fontWeight:'700'
-    },
+  },
+  bottomcontainer: {
+    display: "flex",
+    flexDirection: "column",
+  },
+  leftsite: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    backgroundColor: "rgba(35, 61, 101, 0.54)",
+    fontWeight: "700",
+    color: "white",
+  },
+  rightsite: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    backgroundColor: "rgba(0,0,0,255)",
+    color: "white",
+    fontWeight: "700",
+  },
 
-    timeofplay:{
-       fontWeight:'700'
-       
+  timeofplay: {
+    fontWeight: "700",
+  },
+  gridContainer: {
+    marginRight: "0px",
+    boxSizing: "border-box",
+    width: "60%",
+    zIndex: 1,
+
+    marginTop: "50px",
+    [theme.breakpoints.down("md")]: {
+      width: "80%",
+      marginTop: "20px",
+      marginRight: "0px",
+      overflow: "hidden",
     },
-    gridContainer:{
-      marginRight:'0px',
-      boxSizing:'border-box',
-      width:'60%',
-      zIndex:1,
-      
-      marginTop:'50px',
-      [theme.breakpoints.down('md')]:{
-        width:'80%',
-        marginTop:'20px',
-        marginRight:'0px',
-        overflow:'hidden'
-      },
-      [theme.breakpoints.down('sm')]:{
-        width:'100%',
-        height:'100%',
-        marginBottom:'25px',
-        display:'flex',
-        justifyContent:'center',
-        alignItems:'center'
-      },
-      [theme.breakpoints.down('xs')]:{ 
-       marginBottom:'0px',
-       padding:'0px',
-       marginTop:'0px'
-      }
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      height: "100%",
+      marginBottom: "25px",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
     },
-    mainCardContainer:{
-      '&:hover':{
-        transform:
-          'scale(1.02)'
-       },
-       marginTop:'25px',
-       marginBottom:'10px',
-      height:'550px',
-      padding:theme.spacing(0),
-      [theme.breakpoints.down('md')]:{
-        marginTop:'5px',
-        height:'420px',
-        padding:theme.spacing(0),
-        overflow:'hidden' 
-     },
-      [theme.breakpoints.down('sm')]:{
-        height:'500px',
-        marginTop:'5px',
-        marginBottom:'5px',
-        padding:theme.spacing(0),
-        overflow:'hidden' 
-     },
-      [theme.breakpoints.down('xs')]:{
-         height:'500px',
-         margin:'0px',
-         padding:theme.spacing(0),
-         overflow:'hidden' 
-      } 
+    [theme.breakpoints.down("xs")]: {
+      marginBottom: "0px",
+      padding: "0px",
+      marginTop: "0px",
     },
-    cardContainer:{
-      '&:hover':{
-        transform:
-          'scale(1.02)'
-      },
-      justifyContent:'center',
-      display:'flex',
-      alignItems:'center',
-      maxWidth:'380px',
-      height:'190px',
-      padding:theme.spacing(2),
-      [theme.breakpoints.down('sm')]:{
-        display:'none'
-      },
+  },
+  mainCardContainer: {
+    "&:hover": {
+      transform: "scale(1.02)",
     },
-    paper:{
-      backgroundRepeat: 'no-repeat',
-        backgroundSize:'cover',
-        backgroundPosition:'top-left',
-        height:'100%',
-        width:'100%',
-        display:'flex',
-        justifyContent:'flex-start',
-        alignItems:'flex-end',
+    marginTop: "25px",
+    marginBottom: "10px",
+    height: "550px",
+    padding: theme.spacing(0),
+    [theme.breakpoints.down("md")]: {
+      marginTop: "5px",
+      height: "420px",
+      padding: theme.spacing(0),
+      overflow: "hidden",
     },
-    mainTitle:{
-      fontSize:'1.5em',
-      fontWeight:'bold',
-      marginBottom:'5%',
-      color:'white',
-      marginLeft:'3%',
-      marginRight:'3%',
-     
-    }
-    
-}))
+    [theme.breakpoints.down("sm")]: {
+      height: "500px",
+      marginTop: "5px",
+      marginBottom: "5px",
+      padding: theme.spacing(0),
+      overflow: "hidden",
+    },
+    [theme.breakpoints.down("xs")]: {
+      height: "500px",
+      margin: "0px",
+      padding: theme.spacing(0),
+      overflow: "hidden",
+    },
+  },
+  cardContainer: {
+    "&:hover": {
+      transform: "scale(1.02)",
+    },
+    justifyContent: "center",
+    display: "flex",
+    alignItems: "center",
+    maxWidth: "380px",
+    height: "190px",
+    padding: theme.spacing(2),
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
+    },
+  },
+  mainPaper: {
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "top-left",
+    height: "100%",
+    width: "100%",
+    display: "flex",
+    justifyContent: "flex-start",
+    alignItems: "flex-end",
+    backgroundImage: `url(/inter-derby-win-large.webp)`,
+    [theme.breakpoints.down("xs")]: {
+      backgroundImage: `url(/inter-derby-win.small.webp)`,
+    },
+  },
+  paper: {
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "top-left",
+    height: "100%",
+    width: "100%",
+    display: "flex",
+    justifyContent: "flex-start",
+    alignItems: "flex-end",
+  },
+  mainTitle: {
+    fontSize: "1.5em",
+    fontWeight: "bold",
+    marginBottom: "5%",
+    color: "white",
+    marginLeft: "3%",
+    marginRight: "3%",
+  },
+}));
 
 
 function TopContainer() {
@@ -212,10 +221,7 @@ function TopContainer() {
                 <div className={classes.mainCardContainer}>
                   <Link href="mainNews" underline="none">
                     <Paper
-                      style={{
-                        backgroundImage: `url(/inter-derby-win.webp)`,
-                      }}
-                      className={classes.paper}
+                      className={classes.mainPaper}
                     >
                       <p className={classes.mainTitle}>A THUMPING DERBY WIN!</p>
                     </Paper>

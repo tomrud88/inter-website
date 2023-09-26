@@ -295,7 +295,6 @@ function FanToken() {
                 src="/fanToken-mobilePicture.small.webp"
                 srcSet="/fanToken-mobilePicture.webp 800w"
                 fetchpriority='high'
-                loading="lazy"
                 alt="inter players"
               />
             </div>

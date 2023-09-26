@@ -32,7 +32,7 @@ export default function News(props){
                 loadedNews.push({
                     id:key,
                     title:responseData[key].title,
-                    picture: responseData[key].picture,
+                    picture: responseData[key].pictureSmall,
                     date: responseData[key].date,
                     alt:responseData[key].alt
                 })
