@@ -278,11 +278,13 @@ function FanToken() {
                 <img
                   className={classes.imglinks}
                   src=".\fanToken-AppStore.png"
+                  alt="go to appstore"
                   loading="lazy"
                 ></img>
                 <img
                   className={classes.imglinks}
                   src=".\fanToken-googlePlay.png"
+                  alt="go to google play"
                   loading="lazy"
                 ></img>
               </div>
@@ -357,7 +359,7 @@ function FanToken() {
                 <div className={classes.card}>
                   <Paper
                     style={{
-                      backgroundImage: `url(/Bus_Design.png)`,
+                      backgroundImage: `url(/Bus_Design.webp)`,
                       height: "100%",
                     }}
                     className={classes.paper}
@@ -372,7 +374,7 @@ function FanToken() {
                   </Paper>
                   <Paper
                     style={{
-                      backgroundImage: `url(/Bus_Design.png)`,
+                      backgroundImage: `url(/Bus_Design.webp)`,
                       transform: "rotateX(180deg)",
                     }}
                     className={classes.paper}
@@ -395,7 +397,7 @@ function FanToken() {
                 <div className={classes.card}>
                   <Paper
                     style={{
-                      backgroundImage: `url(/interfantoken-armbound.jpg)`,
+                      backgroundImage: `url(/interfantoken-armbound.webp)`,
                       height: "100%",
                     }}
                     className={classes.paper}
@@ -410,7 +412,7 @@ function FanToken() {
                   </Paper>
                   <Paper
                     style={{
-                      backgroundImage: `url(/interfantoken-armbound.jpg)`,
+                      backgroundImage: `url(/interfantoken-armbound.webp)`,
                       transform: "rotateX(180deg)",
                     }}
                     className={classes.paper}
@@ -433,7 +435,7 @@ function FanToken() {
                 <div className={classes.card}>
                   <Paper
                     style={{
-                      backgroundImage: `url(/interfantoken-jersey.jpg)`,
+                      backgroundImage: `url(/interfantoken-jersey.webp)`,
                       height: "100%",
                     }}
                     className={classes.paper}
@@ -448,7 +450,7 @@ function FanToken() {
                   </Paper>
                   <Paper
                     style={{
-                      backgroundImage: `url(/interfantoken-jersey.jpg)`,
+                      backgroundImage: `url(/interfantoken-jersey.webp)`,
                       transform: "rotateX(180deg)",
                     }}
                     className={classes.paper}
@@ -471,7 +473,7 @@ function FanToken() {
                 <div className={classes.card}>
                   <Paper
                     style={{
-                      backgroundImage: `url(/interfantoken-startingLineup.jpg)`,
+                      backgroundImage: `url(/interfantoken-startingLineup.webp)`,
                       height: "100%",
                     }}
                     className={classes.paper}
@@ -486,7 +488,7 @@ function FanToken() {
                   </Paper>
                   <Paper
                     style={{
-                      backgroundImage: `url(/interfantoken-startingLineup.jpg)`,
+                      backgroundImage: `url(/interfantoken-startingLineup.webp)`,
                       transform: "rotateX(180deg)",
                     }}
                     className={classes.paper}
