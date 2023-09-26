@@ -1,9 +1,9 @@
-import { Button, Container,makeStyles, Typography,Box,Grid,Paper, List, ListItem, Link } from '@material-ui/core'
+import { Button, Container,makeStyles, Typography,Grid,Paper, List, ListItem, Link } from '@material-ui/core'
 
 
 import { Autorenew,RecordVoiceOver } from '@material-ui/icons';
 import React from 'react'
-import ReactDOM from 'react-dom'
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -294,6 +294,7 @@ function FanToken() {
                 className={classes.mainImg}
                 src="/fanToken-mobilePicture.small.webp"
                 srcSet="/fanToken-mobilePicture.webp 800w"
+                fetchpriority='high'
                 loading="lazy"
                 alt="inter players"
               />
