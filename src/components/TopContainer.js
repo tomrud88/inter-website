@@ -42,8 +42,13 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    [theme.breakpoints.down("sm")]: {
+      height: "505px",
+      backgroundImage: "none",
+    },
     [theme.breakpoints.down("xs")]: {
       height: "525px",
+      backgroundImage: "none",
     },
   },
   stadium: {
@@ -183,9 +188,10 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "flex-start",
     alignItems: "flex-end",
-    backgroundImage: `url(/inter-derby-win-large.webp)`,
+    backgroundImage: `url(/inter-derby-win-large-compressed.webp)`,
     [theme.breakpoints.down("xs")]: {
-      backgroundImage: `url(/inter-derby-win.small.webp)`,
+      backgroundImage: `url(/inter-derby-win-small.webp)`,
+      backgroundPosition: "center",
     },
   },
   paper: {
