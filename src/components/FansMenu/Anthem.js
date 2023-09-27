@@ -50,7 +50,7 @@ function Anthem() {
           <img
             className={classes.firstImg}
             src="/inter-fans.small.webp"
-            srcSet="/inter-fans.webp 500w"
+            srcset="/inter-fans.webp 500w"
             alt="inter fans"
           />
           <p>
