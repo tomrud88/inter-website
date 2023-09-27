@@ -15,17 +15,18 @@ const useStyles = makeStyles((theme)=>({
      justifyContent:'center',
      marginTop:'100px'
 },
-   firstImg:{
-       maxHeight:'500px',
-       maxWidth:'800px',
-       margin:'20px 0',
-       [theme.breakpoints.down('sm')]:{
-        maxWidth:'100%'
-      },
+  firstImg: {
+    maxHeight: '500px',
+    maxWidth: '800px',
+    margin: '20px 0',
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: '100%'
+    }
+  },
     pazza:{
         justifyContent:'left'
     }
-   }
+   
 }))
 
 function Anthem() {
