@@ -29,7 +29,8 @@ const useStyles = makeStyles((theme)=>({
         minHeight:'500px'
     },
     legendItem:{
-        display:'flex',
+      display: 'flex',
+      minHeight:'100px'
     },
     square:{
         marginRight:'30px',
