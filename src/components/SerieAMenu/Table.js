@@ -1,4 +1,3 @@
-import { PostAddSharp } from '@material-ui/icons';
 import React from 'react';
 import {useState,useEffect} from 'react';
 import { Container, Grid, Table, TableContainer, TableHead, TableRow,TableCell, TableBody, Typography, makeStyles } from '@material-ui/core';
@@ -26,7 +25,8 @@ const useStyles = makeStyles((theme)=>({
         display:'flex',
         flexDirection:'column',
         justifyContent:'flex-start',
-        alignItems:'flex-start'
+      alignItems: 'flex-start',
+        minHeight:'500px'
     },
     legendItem:{
         display:'flex',
@@ -138,7 +138,7 @@ const useStyles = makeStyles((theme)=>({
                      ) : table.position > 17 ? (
                        <TableCell
                          style={{
-                           backgroundColor: "#bd0000",
+                           backgroundColor: "#ff4d4d",
                          }}
                        >
                          {table.position}
@@ -186,7 +186,7 @@ const useStyles = makeStyles((theme)=>({
          <div className={classes.legendItem}>
            <div
              className={classes.square}
-             style={{ backgroundColor: "#cc0000" }}
+             style={{ backgroundColor: "#ff4d4d" }}
            ></div>
            <p>Relegation - Serie B</p>
          </div>
