@@ -51,7 +51,6 @@ function Anthem() {
           <img
             className={classes.firstImg}
             src="/inter-fans.webp"
-            
             alt="inter fans"
           />
           <p>
