@@ -62,7 +62,7 @@ function TechnicalArea() {
           </Typography>
         </Container>
         <Grid container className={classes.mainContainer}>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
@@ -85,7 +85,7 @@ function TechnicalArea() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
@@ -108,7 +108,7 @@ function TechnicalArea() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
@@ -131,7 +131,7 @@ function TechnicalArea() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
@@ -153,7 +153,7 @@ function TechnicalArea() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
@@ -176,7 +176,7 @@ function TechnicalArea() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
@@ -199,7 +199,7 @@ function TechnicalArea() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
@@ -222,30 +222,8 @@ function TechnicalArea() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
-            <Card className={classes.fCard}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="300px"
-                  className={classes.media}
-                  image="https://img.a.transfermarkt.technology/portrait/header/2239-1461576232.jpg?lm=1"
-                  loading="lazy"
-                  title="Bonauti"
-                  alt="Bonauti"
-                />
-                <CardContent>
-                  <Typography variant="h5" className={classes.name}>
-                    ADRIANO BONAIUTI
-                  </Typography>
-                  <Typography variant="h5" className={classes.name}>
-                    Goalkeeper coach
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={5}>
+          
+          <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
