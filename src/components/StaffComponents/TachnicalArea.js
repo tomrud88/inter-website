@@ -116,7 +116,6 @@ function TechnicalArea() {
                   height="300px"
                   className={classes.media}
                   image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBeq4bBCYuirL4SwHqP_hO5KmTZVYTSbgegg&usqp=CAU"
-                  loading="lazy"
                   title="Cerasaro"
                   alt="Cerasaro"
                 />
@@ -138,7 +137,6 @@ function TechnicalArea() {
                   component="img"
                   height="300px"
                   image="/rocchini.webp"
-                  loading="lazy"
                   title="Rocchini"
                   alt="Rocchini"
                 />
