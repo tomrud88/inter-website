@@ -41,7 +41,7 @@ export default function Coach() {
           className={classes.SimoneImg}
           component="img"
           height="640"
-          image="https://intermilan.bynder.com/transform/53920958-ea02-4333-b01d-3b07cc9adf2b/OZ9_3782-1432596?quality=100&io=transform:fill,width:1920"
+          image="/inzaghi-coach.webp"
           alt="Simone Inzaghi"
         />
         <CardContent>
