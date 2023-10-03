@@ -2,13 +2,9 @@ import { ClickAwayListener, Fade, Link, MenuItem, MenuList, Paper, Popper, Typog
 import {useState} from 'react'
 import React from 'react'
 
-
-
-
 function Team() {
 
     const [anchor, setAnchor] = useState(null)
-
 
     const handleMenuOpen = (event) =>{
        setAnchor(event.currentTarget)
@@ -19,7 +15,6 @@ function Team() {
     }
 
     const open = Boolean(anchor)
-
 
     return (
         <div>

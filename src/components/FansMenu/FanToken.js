@@ -1,10 +1,6 @@
 import { Button, Container,makeStyles, Typography,Grid,Paper, List, ListItem, Link } from '@material-ui/core'
-
-
 import { Autorenew,RecordVoiceOver } from '@material-ui/icons';
 import React from 'react'
-
-
 
 const useStyles = makeStyles((theme) => ({
   gridContainer: {

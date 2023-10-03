@@ -1,10 +1,8 @@
 import { React, useEffect,useState } from 'react';
-import { Route, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
@@ -60,7 +58,7 @@ export default function SingleNews() {
                 };
                 setSingleNews(loadedNews);
             } else {
-                console.error('Item with ID ${id} not found');
+                console.error(`Item with ID ${id} not found`);
                 setSingleNews(null)
             }
             setLoading(false);

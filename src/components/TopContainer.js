@@ -1,4 +1,4 @@
-import { Container,Box,makeStyles, Card, CardMedia, CardContent,ImageListItemBar , Typography, Grid, ListItem, ImageList, ImageListItem,Item, Paper,Shadow, Link} from '@material-ui/core'
+import { Container,makeStyles, Grid, ListItem,  Paper, Link} from '@material-ui/core'
 
 
 
@@ -261,8 +261,6 @@ function TopContainer() {
                 md={4}
                 lg={4}
                 className={classes.imagelistItemSmall}
-                // cols={2}
-                //rows={1}
               >
                 <Link
                   href="https://twitter.com/Inter"
@@ -284,8 +282,6 @@ function TopContainer() {
                 md={4}
                 lg={4}
                 className={classes.imagelistItemSmall}
-                // cols={2}
-                // rows={1}
               >
                 <Link
                   href="https://www.instagram.com/inter/?hl=en"

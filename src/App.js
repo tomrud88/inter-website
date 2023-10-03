@@ -1,10 +1,6 @@
-import TopContainer from './components/TopContainer'
-import Button from '@material-ui/core/Button'
 import './App.css';
-import DrawerComponent from './components/DrawerComponent';
 import Topbar from './components/Topbar';
 import MainContainer from './components/MainContainer';
-import Trophies from './components/Trophies';
 import {BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import FirstTeam from './components/TeamMenu/FirstTeam';
 import Staff from './components/TeamMenu/Staff';
@@ -18,11 +14,10 @@ import ItalianCup from './components/CupsMenu/ItalianCup';
 import Anthem from './components/FansMenu/Anthem';
 import FanToken from './components/FansMenu/FanToken';
 import MainNews from './components/newsFolder/MainNews';
-import { useState, useContext } from 'react';
-import zIndex from '@material-ui/core/styles/zIndex';
+import { useContext } from 'react';
 import { makeStyles } from '@material-ui/core';
 import ProfileForm from './components/ProfileForm';
-import AuthContext, { AuthContextProvider } from './store/auth-context';
+import AuthContext from './store/auth-context';
 import SingleNews from './components/newsFolder/SingleNews';
 
 

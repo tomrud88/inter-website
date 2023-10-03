@@ -104,12 +104,9 @@ function ChampionsLeage() {
             const response = await fetch(
               "/api/fetchChampionsLeague");
             const responseData = await response.json()
-
-            
+ 
             const matches = responseData.matches
             console.log(matches)
-
-           
 
             const loadedData = [];
 
@@ -163,8 +160,6 @@ function ChampionsLeage() {
         fetchFixtures()
     }, [])
 
-   // const betterDate = fixtures.date.getUTCDate()
-    
     return (
         <div>
             <Container className={classes.outerContainer}>
@@ -181,7 +176,7 @@ function ChampionsLeage() {
                  
             {fixtures.map(fixture =>(
                 <div className={classes.mainContainer}id={fixture.id}>
-                    {(fixture.id %2) == 0 && <div className={classes.round}>
+                    {(fixture.id %2) === 0 && <div className={classes.round}>
                         <p style={{margin:'5px 13px'}}>Round {fixture.round}</p></div> }
                     <div className={classes.matchContainer}>
                     <div className={classes.dateContainer}>

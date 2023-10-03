@@ -1,4 +1,4 @@
-import { AppBar, Button, IconButton, Toolbar, Typography,  Drawer, MenuItem, Box, Popover, Fade, MenuList, Popper, Paper, ClickAwayListener, ImageListItem,Link} from '@material-ui/core'
+import { AppBar, Button, IconButton, Toolbar, Typography, Link} from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 import { Menu } from '@material-ui/icons'
 import React from 'react'
@@ -9,14 +9,8 @@ import Cups from './menuOptions/Cups';
 import ForFans from './menuOptions/ForFans';
 import Team from './menuOptions/Team';
 import Home from './menuOptions/Hom';
-import FirstTeam from './TeamMenu/FirstTeam';
-import {BrowserRouter as Router,Switch,Route } from 'react-router-dom'
-import {white} from '@material-ui/core/colors'
 import LoginModal from './LoginModal';
 import AuthContext from '../store/auth-context';
-
-
-const drawerWidth = 350;
 
 const useStyles = makeStyles((theme)=>({
     palette:{
@@ -76,7 +70,6 @@ const useStyles = makeStyles((theme)=>({
 function Topbar() {
     const classes = useStyles()
     const [opent,setOpent] = useState(false)
-    const [anchor, setAnchor] = useState(null)
     const [isOpen,setIsOpen] = useState(false)
 
     const authCtx = useContext(AuthContext)
@@ -85,16 +78,6 @@ function Topbar() {
     const logoutHandler = () =>{
         authCtx.logout();
     }
-
-    const handleMenuOpen = (event) =>{
-       setAnchor(event.currentTarget)
-    }
-
-    const handleClose = () => {
-        setAnchor(null)
-    }
-
-    const open = Boolean(anchor)
 
     return (
       <div>

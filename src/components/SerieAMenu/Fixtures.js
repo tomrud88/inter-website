@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { Container, makeStyle, makeStyles } from "@material-ui/core";
+import { Container, makeStyles } from "@material-ui/core";
 import { ClipLoader } from "react-spinners";
 
 const useStyles = makeStyles((theme) => ({
@@ -67,7 +67,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-
     function Fixtures() {
       const classes = useStyles();
 
@@ -116,7 +115,7 @@ const useStyles = makeStyles((theme) => ({
               </div>
               {fixtures.map((fixture) => (
                 <div className={classes.mainContainer} id={fixture.id}>
-                  {fixture.id % 10 == 0 && (
+                  {fixture.id % 10 === 0 && (
                     <div className={classes.round}>
                       <p style={{ margin: "5px 13px" }}>
                         Round {fixture.round}

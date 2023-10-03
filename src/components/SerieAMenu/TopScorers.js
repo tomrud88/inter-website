@@ -1,7 +1,6 @@
-import { PostAddSharp } from '@material-ui/icons';
 import React from 'react';
 import {useState,useEffect} from 'react';
-import { Container, Grid,Table, TableContainer, TableHead, TableRow,TableCell, TableBody, Typography, makeStyles } from '@material-ui/core';
+import { Container,Table, TableContainer, TableHead, TableRow,TableCell, TableBody, Typography, makeStyles } from '@material-ui/core';
 import { ClipLoader } from 'react-spinners';
 
 const useStyles = makeStyles((theme)=>({
@@ -31,9 +30,7 @@ const useStyles = makeStyles((theme)=>({
      
      const scorers = responseData.scorers;
      console.log(scorers)
-
-     
-     
+ 
     const  loadedData = [];
 
             for (const key in scorers){
@@ -48,8 +45,7 @@ const useStyles = makeStyles((theme)=>({
             setTopscorers(loadedData)
             setLoading(false)
         }
-       fetchTable() 
-       
+       fetchTable()   
    },[])
    console.log(topScorers)
 

@@ -2,13 +2,9 @@ import { ClickAwayListener, Fade, Link, MenuItem, MenuList, Paper, Popper, Typog
 import {useState} from 'react'
 import React from 'react'
 
-
-
-
 function ForFans() {
 
     const [anchor, setAnchor] = useState(null)
-
 
     const handleMenuOpen = (event) =>{
        setAnchor(event.currentTarget)
@@ -19,7 +15,6 @@ function ForFans() {
     }
 
     const open = Boolean(anchor)
-
 
     return (
         <div>
@@ -48,7 +43,6 @@ function ForFans() {
                 TransitionComponent={Fade}
                 disableRestoreFocus
                 >
-            
             <MenuItem onClick={handleClose} 
              ><Link href='/anthem' underline='none'>ANTHEM</Link>
              </MenuItem >
