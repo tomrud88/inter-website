@@ -87,7 +87,7 @@ function TechnicalArea() {
           </Grid>
           <Grid item lg={2} md={3} sm={3} xs={6}>
             <Card className={classes.fCard}>
-              <CardActionArea>
+             <CardActionArea>
                 <CardMedia
                   component="img"
                   height="300px"
@@ -137,7 +137,7 @@ function TechnicalArea() {
                 <CardMedia
                   component="img"
                   height="300px"
-                  image="https://sortitoutsi.net/uploads/media/89uGGN5MZPtBTecuxQWF7Wy2ZIzpULaA0Dn3mmaR.jpg"
+                  image="/rocchini.webp"
                   loading="lazy"
                   title="Rocchini"
                   alt="Rocchini"
@@ -160,7 +160,7 @@ function TechnicalArea() {
                   component="img"
                   height="300px"
                   className={classes.media}
-                  image="https://media.gettyimages.com/photos/fabio-ripert-fc-internazionale-fitness-coach-looks-on-during-the-a-picture-id1340101770?s=612x612"
+                  image="/ripert.webp"
                   loading="lazy"
                   title="Ripert"
                   alt="Ripert"
@@ -183,7 +183,7 @@ function TechnicalArea() {
                   component="img"
                   height="300px"
                   className={classes.media}
-                  image="https://sortitoutsi.net/uploads/media/o6RcqKzOiv8Vwl2GsLp2ktQkA9aKSvrnasHf2rsV.jpg"
+                  image="/spicciariello.webp"
                   loading="lazy"
                   title="Spicciariello"
                   alt="Spicciariello"
@@ -206,7 +206,7 @@ function TechnicalArea() {
                   component="img"
                   height="300px"
                   className={classes.media}
-                  image="https://media.gettyimages.com/photos/gianluca-zappala-fc-internazionale-goalkeeping-coach-during-the-warm-picture-id1336885337"
+                  image="/zappala.webp"
                   loading="lazy"
                   title="Zappala"
                   alt="Zappala"
@@ -230,7 +230,7 @@ function TechnicalArea() {
                   component="img"
                   height="300px"
                   className={classes.media}
-                  image="https://i1.rgstatic.net/ii/profile.image/997920413335552-1614934175484_Q512/Andrea-Belli-2.jpg"
+                  image="/belli.webp"
                   loading="lazy"
                   title="Belli"
                   alt="Belli"
