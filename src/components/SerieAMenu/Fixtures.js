@@ -33,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
     borderBottom: "solid grey 1px",
     [theme.breakpoints.down("sm")]: {
       minWidth: "100vw",
+      marginLeft:'20px'
     },
   },
   round: {
