@@ -10,7 +10,7 @@ describe("Team component", () => {
     expect(queryByTestId("team-popper")).not.toBeNull();
   });
     
-    test("clicking on a menu item should close the menu", () => {
+    test("clicking on each menu item should close the menu", () => {
       const { getByTestId, queryByTestId, queryAllByTestId } = render(<Team />);
         const typography = getByTestId("team-typography");
       expect(queryByTestId("team-popper")).toBeNull();
