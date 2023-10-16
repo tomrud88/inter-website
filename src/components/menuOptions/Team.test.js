@@ -1,4 +1,4 @@
-import { render,fireEvent, queryAllByTestId } from "@testing-library/react";
+import { render, fireEvent } from "@testing-library/react";
 import Team from "./Team";
 
 describe("Team component", () => {

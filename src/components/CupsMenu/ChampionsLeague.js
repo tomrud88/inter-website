@@ -91,7 +91,7 @@ const useStyles = makeStyles((theme)=>({
      })
 )
 
-function ChampionsLeage() {
+function ChampionsLeague() {
 
     const classes = useStyles()
 
@@ -263,5 +263,5 @@ function ChampionsLeage() {
     )
 }
 
-export default ChampionsLeage
+export default ChampionsLeague
 
