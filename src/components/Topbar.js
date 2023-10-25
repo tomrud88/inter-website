@@ -81,7 +81,7 @@ function Topbar() {
 
     return (
       <div>
-        <AppBar position="static">
+        <AppBar position="fixed" >
           <Toolbar className={classes.toolbar}>
             <IconButton
               className={classes.smallMenu}

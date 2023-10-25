@@ -6,7 +6,7 @@ import Trophies from './Trophies';
 
 const useStyles = makeStyles((theme)=>({
     MainContainer:{
-        width: '100%',
+        maxWidth: '100%',
         height: '100%',
         margin: '0px',
         padding: '0px',

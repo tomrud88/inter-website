@@ -6,12 +6,12 @@ import React from 'react'
 
 const useStyles = makeStyles((theme) => ({
   con: {
-    minWidth: "100vw",
+    maxWidth: "100%",
     margin: "0px",
     padding: "0px",
   },
   containerone: {
-    minWidth: "100vw",
+    maxWidth: "100%",
     height: "850px",
     position: "relative",
     justifyContent: "center",
@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     left: 0,
     right: 0,
     height: "100%",
-    width: "100vw",
+    maxWidth: "100%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 1,
   },
   resultsContainer: {
-    width: "100vw",
+    maxWidth: "100vw",
     backgroundColor: "rgba(20,46,107,255)",
     [theme.breakpoints.down("xs")]: {
       marginTop: "5px",
