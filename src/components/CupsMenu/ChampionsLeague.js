@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme)=>({
          fontWeight:'bold',
          borderBottom:'solid grey 1px',
          [theme.breakpoints.down('sm')]:{
-            minWidth:'100vw'
+            minWidth:'100%'
           }
          
      },
@@ -47,7 +47,8 @@ const useStyles = makeStyles((theme)=>({
          fontWeight:'bold',
          fontSize:'20px',
          [theme.breakpoints.down('sm')]:{
-           minWidth:'100vw'
+             minWidth: '100%',
+             maxWidth: '100%',
          }
      },
      result:{
