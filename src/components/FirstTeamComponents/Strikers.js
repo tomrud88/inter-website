@@ -43,6 +43,13 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "15px",
     marginBottom: "15px",
     backgroundColor: "#faf9fc",
+    minHeight: "350px",
+    [theme.breakpoints.down("xs")]: {
+      minHeight: "350px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      minHeight: "300px",
+    },
   },
   outerContainer: {
     display: "flex",

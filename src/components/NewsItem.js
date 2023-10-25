@@ -3,28 +3,33 @@ import { CardActionArea} from '@material-ui/core'
 import React from 'react'
 
 
-const useStyles = makeStyles((theme)=>({
-  cardTitleArea:{
-      backgroundColor:'rgba(5, 5, 5, 0.95)',
-      color:'white'
+const useStyles = makeStyles((theme) => ({
+  cardTitleArea: {
+    backgroundColor: "rgba(5, 5, 5, 0.95)",
+    color: "white",
+    minHeight: "80px",
+    [theme.breakpoints.down("xs")]: {
+      minHeight: "30px",
+    },
+    
   },
-  Card:{
-      '&:hover':{
-          transform:
-              'scale(1.02)'
-      }
+  Card: {
+    "&:hover": {
+      transform: "scale(1.02)",
+    },
   },
 
-  cardPicture:{
-    objectPosition:'top',
-    [theme.breakpoints.down('sm')]:{
-       height:'380px'
+  cardPicture: {
+      objectPosition: "top",
+      height:'420px',
+    [theme.breakpoints.down("sm")]: {
+      height: "380px",
     },
-    [theme.breakpoints.down('xs')]:{
-        height:'330px'
-     },
-  }
-}))
+    [theme.breakpoints.down("xs")]: {
+      height: "350px",
+    },
+  },
+}));
 
 function NewsItem({item}) {
 console.log(item.picture);

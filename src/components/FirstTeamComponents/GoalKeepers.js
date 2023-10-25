@@ -43,6 +43,13 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "15px",
     marginBottom: "15px",
     backgroundColor: "#faf9fc",
+    minHeight: "350px",
+    [theme.breakpoints.down("xs")]: {
+      minHeight: "350px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      minHeight: "300px",
+    },
   },
   outerContainer: {
     display: "flex",
@@ -62,7 +69,7 @@ function GoalKeepers() {
           </Typography>
         </Container>
         <Grid container className={classes.mainContainer}>
-          <Grid item lg={2} md={3} sm={3} xs={6}>
+          <Grid item lg={2} md={3} sm={4} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
@@ -82,7 +89,7 @@ function GoalKeepers() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={6}>
+          <Grid item lg={2} md={3} sm={4} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia
@@ -102,7 +109,7 @@ function GoalKeepers() {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item lg={2} md={3} sm={3} xs={6}>
+          <Grid item lg={2} md={3} sm={4} xs={6}>
             <Card className={classes.fCard}>
               <CardActionArea>
                 <CardMedia

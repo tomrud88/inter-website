@@ -1,52 +1,56 @@
 import React from 'react';
 import {Card, CardActionArea, CardMedia, makeStyles,Grid, CardContent, Typography,Container} from '@material-ui/core';
 
-const useStyles = makeStyles((theme)=>({
-    media:{
-        width:'100%',
+const useStyles = makeStyles((theme) => ({
+  media: {
+    width: "100%",
+  },
+  mainContainer: {
+    minWidth: "100%",
+    backgroundColor: "lightgrey",
+    padding: "20px",
+    maringBottom: "0",
+  },
+  name: {
+    [theme.breakpoints.up("md")]: {
+      fontSize: "14px",
+      fontWeight: "bold",
     },
-    mainContainer:{
-        minWidth:'100%',
-        backgroundColor:'lightgrey',
-        padding:'20px',
-        maringBottom:'0'
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "12px",
+      fontWeight: "bold",
     },
-    name:{
-        [theme.breakpoints.up('md')]:{
-            fontSize:'14px',
-            fontWeight:'bold'
-         },
-        [theme.breakpoints.down('sm')]:{
-           fontSize:'12px',
-           fontWeight:'bold'
-        },
-         [theme.breakpoints.down('xs')]:{
-            fontSize:'12px',
-            fontWeight:'bold'
-         },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "12px",
+      fontWeight: "bold",
     },
-    titleContainer:{
-        display:'flex',
-        justifyContent:'flex-start',
-        width:'100%',
-        backgroundColor:'lightgrey',
+  },
+  titleContainer: {
+    display: "flex",
+    justifyContent: "flex-start",
+    width: "100%",
+    backgroundColor: "lightgrey",
+  },
+  title: {
+    fontWeight: "bold",
+    padding: "20px 0px 5px 10px",
+    margin: "0",
+  },
+  fCard: {
+    marginRight: "15px",
+    marginBottom: "15px",
+    minHeight: "390px",
+    [theme.breakpoints.down("xs")]: {
+      minHeight: "350px",
     },
-    title:{
-        fontWeight:'bold',
-        padding:'20px 0px 5px 10px',
-        margin:'0'
-    },
-    fCard:{
-        marginRight:'15px',
-        marginBottom:'15px'
-    },
-    outerContainer:{
-        display:'flex',
-        flexDirection:'column',
-        backgroundColor:'lightgrey',
-        borderBottom:'5px black solid',
-    }
-}))
+  },
+  outerContainer: {
+    display: "flex",
+    flexDirection: "column",
+    backgroundColor: "lightgrey",
+    borderBottom: "5px black solid",
+  },
+}));
 
 function AnalysisArea() {
     const classes = useStyles()
