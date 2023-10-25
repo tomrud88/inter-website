@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme)=>({
      matchContainer:{
          display:'grid',
          gridTemplateColumns:'3fr 3fr 2fr 3fr',
-         height:'50px',
+         height:'60px',
          minWidth:'800px',
          fontWeight:'bold',
          borderBottom:'solid grey 1px',

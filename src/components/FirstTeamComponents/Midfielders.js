@@ -49,7 +49,6 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       minHeight: "300px",
-      backgroundColor:'red',
     },
   },
   outerContainer: {
