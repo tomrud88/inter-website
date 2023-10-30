@@ -23,7 +23,11 @@ const useStyles = makeStyles((theme)=>({
         display:'flex',
         justifyContent:'center',
         marginBottom:'30px'
-       },
+    },
+    loader: {
+        display:'flex',
+        justifyContent:'center',
+    },
      matchContainer:{
          display:'grid',
          gridTemplateColumns:'3fr 3fr 2fr 3fr',
@@ -162,106 +166,125 @@ function ChampionsLeague() {
     }, [])
 
     return (
-        <div>
-            <Container className={classes.outerContainer}>
-            <div className={classes.mainTitle}>
-                    <h1>Champions League</h1>  
-                    </div>   
-            {loading ? 
-            (<ClipLoader
-                size={350}
-                color={'#001ea0'}
-                loading={loading}
-                />):(        
-            <div> 
-                 
-            {fixtures.map(fixture =>(
-                <div className={classes.mainContainer}id={fixture.id}>
-                    {(fixture.id %2) === 0 && <div className={classes.round}>
-                        <p style={{margin:'5px 13px'}}>Round {fixture.round}</p></div> }
-                    <div className={classes.matchContainer}>
+      <div>
+        <Container className={classes.outerContainer}>
+          <div className={classes.mainTitle}>
+            <h1>Champions League</h1>
+          </div>
+          {loading ? (
+            <div className={classes.loader}>
+              <ClipLoader size={350} color={"#001ea0"} loading={loading} />
+            </div>
+          ) : (
+            <div>
+              {fixtures.map((fixture) => (
+                <div className={classes.mainContainer} id={fixture.id}>
+                  {fixture.id % 2 === 0 && (
+                    <div className={classes.round}>
+                      <p style={{ margin: "5px 13px" }}>
+                        Round {fixture.round}
+                      </p>
+                    </div>
+                  )}
+                  <div className={classes.matchContainer}>
                     <div className={classes.dateContainer}>
-                    <p>{new Date(fixture.date).toLocaleString()}</p>
+                      <p>{new Date(fixture.date).toLocaleString()}</p>
                     </div>
                     <div className={classes.homeContainer}>
-                    {(fixture.homeTeam) === 'FC Internazionale Milano' ? <p style={{color:'#0841ff'}}>{fixture.homeTeam}</p> : <p>{fixture.homeTeam}</p> }
+                      {fixture.homeTeam === "FC Internazionale Milano" ? (
+                        <p style={{ color: "#0841ff" }}>{fixture.homeTeam}</p>
+                      ) : (
+                        <p>{fixture.homeTeam}</p>
+                      )}
                     </div>
                     <div className={classes.result}>
-                    <p>{fixture.scoreHomeTeam}</p>
-                    <p>:</p>
-                    <p>{fixture.scoreAwayTeam}</p>
+                      <p>{fixture.scoreHomeTeam}</p>
+                      <p>:</p>
+                      <p>{fixture.scoreAwayTeam}</p>
                     </div>
                     <div className={classes.awayContainer}>
-                    {(fixture.awayTeam) === 'FC Internazionale Milano' ? <p style={{color:'#0841ff'}}>{fixture.awayTeam}</p> : <p>{fixture.awayTeam}</p> }
+                      {fixture.awayTeam === "FC Internazionale Milano" ? (
+                        <p style={{ color: "#0841ff" }}>{fixture.awayTeam}</p>
+                      ) : (
+                        <p>{fixture.awayTeam}</p>
+                      )}
                     </div>
-                    </div>
-                    </div>
-            ))}
-            <div className={classes.tableTitle}>
-            <Typography variant='h5' style={{marginBottom:'15px',marginTop:'50px'}}>
-             TABLE
-        </Typography>
-            </div>
-                    <Container style={{marginTop:'20px',justifyContent:'center',display:'flex'}}>
-        
-        <TableContainer className={classes.tablecontainer}>
-           <Table  size='medium' aria-label='a dense table'>
-        <TableHead style={{backgroundColor:'black'}}
-        >
-            <TableRow >
-                <TableCell className={classes.tableHead}></TableCell>
-                <TableCell className={classes.tableHead}>Team</TableCell>
-                <TableCell className={classes.tableHead}>MP</TableCell>
-                <TableCell className={classes.tableHead}>W</TableCell>
-                <TableCell className={classes.tableHead}>D</TableCell>
-                <TableCell className={classes.tableHead}>L</TableCell>
-                <TableCell className={classes.tableHead}>GS</TableCell>
-                <TableCell className={classes.tableHead}>GC</TableCell>
-                <TableCell className={classes.tableHead}>Pts</TableCell>
-            </TableRow>
-        </TableHead>
-          <TableBody>
-              {footballData.map((table)=>(
-                  <TableRow
-                  key={table.key}
-                  >
-                      <TableCell className={classes.tableCellbody}>
-                          {table.position}
-                      </TableCell>
-                      <TableCell className={classes.tableCellbody}>
-                          {table.name}
-                      </TableCell>
-                      <TableCell className={classes.tableCellbody}>
-                          {table.games}
-                      </TableCell>
-                      <TableCell className={classes.tableCellbody}>
-                          {table.won}
-                      </TableCell>
-                      <TableCell className={classes.tableCellbody}>
-                          {table.draw}
-                      </TableCell>
-                      <TableCell className={classes.tableCellbody}>
-                          {table.lost}
-                      </TableCell>
-                      <TableCell className={classes.tableCellbody}>
-                          {table.goalsFor}
-                      </TableCell>
-                      <TableCell className={classes.tableCellbody}>
-                          {table.goalsAgainst}
-                      </TableCell>
-                      <TableCell className={classes.tableCellbody}>
-                          {table.points}
-                      </TableCell>
-                  </TableRow>
+                  </div>
+                </div>
               ))}
-          </TableBody>
-        </Table>
-        </TableContainer>
-    </Container>
-    </div>)}
-    </Container>     
-        </div>
-    )
+              <div className={classes.tableTitle}>
+                <Typography
+                  variant="h5"
+                  style={{ marginBottom: "15px", marginTop: "50px" }}
+                >
+                  TABLE
+                </Typography>
+              </div>
+              <Container
+                style={{
+                  marginTop: "20px",
+                  justifyContent: "center",
+                  display: "flex",
+                }}
+              >
+                <TableContainer className={classes.tablecontainer}>
+                  <Table size="medium" aria-label="a dense table">
+                    <TableHead style={{ backgroundColor: "black" }}>
+                      <TableRow>
+                        <TableCell className={classes.tableHead}></TableCell>
+                        <TableCell className={classes.tableHead}>
+                          Team
+                        </TableCell>
+                        <TableCell className={classes.tableHead}>MP</TableCell>
+                        <TableCell className={classes.tableHead}>W</TableCell>
+                        <TableCell className={classes.tableHead}>D</TableCell>
+                        <TableCell className={classes.tableHead}>L</TableCell>
+                        <TableCell className={classes.tableHead}>GS</TableCell>
+                        <TableCell className={classes.tableHead}>GC</TableCell>
+                        <TableCell className={classes.tableHead}>Pts</TableCell>
+                      </TableRow>
+                    </TableHead>
+                    <TableBody>
+                      {footballData.map((table) => (
+                        <TableRow key={table.key}>
+                          <TableCell className={classes.tableCellbody}>
+                            {table.position}
+                          </TableCell>
+                          <TableCell className={classes.tableCellbody}>
+                            {table.name}
+                          </TableCell>
+                          <TableCell className={classes.tableCellbody}>
+                            {table.games}
+                          </TableCell>
+                          <TableCell className={classes.tableCellbody}>
+                            {table.won}
+                          </TableCell>
+                          <TableCell className={classes.tableCellbody}>
+                            {table.draw}
+                          </TableCell>
+                          <TableCell className={classes.tableCellbody}>
+                            {table.lost}
+                          </TableCell>
+                          <TableCell className={classes.tableCellbody}>
+                            {table.goalsFor}
+                          </TableCell>
+                          <TableCell className={classes.tableCellbody}>
+                            {table.goalsAgainst}
+                          </TableCell>
+                          <TableCell className={classes.tableCellbody}>
+                            {table.points}
+                          </TableCell>
+                        </TableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </TableContainer>
+              </Container>
+            </div>
+          )}
+        </Container>
+      </div>
+    );
 }
 
 export default ChampionsLeague

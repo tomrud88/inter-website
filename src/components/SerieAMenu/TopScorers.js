@@ -3,17 +3,19 @@ import {useState,useEffect} from 'react';
 import { Container,Table, TableContainer, TableHead, TableRow,TableCell, TableBody, Typography, makeStyles } from '@material-ui/core';
 import { ClipLoader } from 'react-spinners';
 
-const useStyles = makeStyles((theme)=>({
-    mainContainer:{
-        marginTop:'100px',
-        [theme.breakpoints.down('sm')]:{
-            marginTop:'90px'
-        }
+const useStyles = makeStyles((theme) => ({
+  mainContainer: {
+    marginTop: "100px",
+    display: "flex",
+    justifyContent: "center",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "90px",
     },
-    tableHead:{
-        color:'white'
-    },
-}))
+  },
+  tableHead: {
+    color: "white",
+  },
+}));
 
 
  function TopScorers() {
