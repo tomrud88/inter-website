@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "100px",
     display: "flex",
     justifyContent: "center",
+    flexDirection:"column",
     marginBottom: "50px",
     [theme.breakpoints.down("sm")]: {
       marginTop: "90px",
