@@ -8,11 +8,15 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "100px",
     display: "flex",
     justifyContent: "center",
-    flexDirection:"column",
+    flexDirection: "column",
     marginBottom: "50px",
     [theme.breakpoints.down("sm")]: {
       marginTop: "90px",
     },
+  },
+  loader: {
+    display: "flex",
+    justifyContent: "center",
   },
   mainTitle: {
     display: "flex",
@@ -91,7 +95,9 @@ const useStyles = makeStyles((theme) => ({
    return (
      <Container className={classes.mainContainer}>
        {loading ? (
-         <ClipLoader size={350} color={"#001ea0"} loading={loading} />
+         <div className={classes.loader}>
+           <ClipLoader size={350} color={"#001ea0"} loading={loading} />
+           </div>
        ) : (
          <>
            <div>
