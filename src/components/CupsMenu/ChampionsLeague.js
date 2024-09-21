@@ -122,7 +122,7 @@ function ChampionsLeague() {
                     awayTeam:matches[key].awayTeam.name,
                     scoreHomeTeam:matches[key].score.fullTime.home,
                     scoreAwayTeam:matches[key].score.fullTime.away,
-                    round:matches[key].season.currentMatchday,
+                    round:matches[key].matchday,
                     date:matches[key].utcDate
                 })
             }
@@ -136,7 +136,7 @@ function ChampionsLeague() {
               const standing = responseDat.standings;
               console.log(standing)
          
-              const table = responseDat.standings.table;
+              const table = responseDat.standings[0].table;
               console.log(table)
              
               
