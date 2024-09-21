@@ -122,7 +122,7 @@ function ChampionsLeague() {
                     awayTeam:matches[key].awayTeam.name,
                     scoreHomeTeam:matches[key].score.fullTime.home,
                     scoreAwayTeam:matches[key].score.fullTime.away,
-                    round:matches[key].matchday,
+                    round:matches[key].season.currentMatchday,
                     date:matches[key].utcDate
                 })
             }
@@ -133,10 +133,10 @@ function ChampionsLeague() {
             const responses = await fetch("/api/fetchClStandings");   
               const responseDat = await responses.json()
               
-              const standing = responseDat.standings[3];
+              const standing = responseDat.standings;
               console.log(standing)
          
-              const table = responseDat.standings[3].table;
+              const table = responseDat.standings.table;
               console.log(table)
              
               
@@ -147,7 +147,7 @@ function ChampionsLeague() {
                              id:key,
                              name:table[key].team.name,
                              position:table[key].position,
-                             logo:table[key].team.crestUrl,
+                             logo:table[key].team.crest,
                              games:table[key].playedGames,
                              won:table[key].won,
                              draw:table[key].draw,
