@@ -19,6 +19,7 @@ import { makeStyles } from '@material-ui/core';
 import ProfileForm from './components/ProfileForm';
 import AuthContext from './store/auth-context';
 import SingleNews from './components/newsFolder/SingleNews';
+import ClFixtures from './components/CupsMenu/ClFixtures';
 
 
 const useStyles = makeStyles((theme)=>({
@@ -45,7 +46,8 @@ function App() {
           <Route path="/fixtures" element={<Fixtures />} />
           <Route path="/table" element={<Table />} />
           <Route path="/top-scorers" element={<TopScorers />} />
-          <Route path="/champions-league" element={<ChampionsLeague />} />
+          <Route path="/cl-table" element={<ChampionsLeague />} />
+          <Route path="/cl-fixtures" element={<ClFixtures/>} />
           <Route path="/italian-cup" element={<ItalianCup />} />
           <Route path="/anthem" element={<Anthem />} />
           <Route path="/fantoken" element={<FanToken />} />
