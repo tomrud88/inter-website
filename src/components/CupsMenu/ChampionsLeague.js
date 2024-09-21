@@ -28,39 +28,6 @@ const useStyles = makeStyles((theme)=>({
         display:'flex',
         justifyContent:'center',
     },
-     matchContainer:{
-         display:'grid',
-         gridTemplateColumns:'3fr 3fr 2fr 3fr',
-         height:'60px',
-         minWidth:'800px',
-         fontWeight:'bold',
-         borderBottom:'solid grey 1px',
-         [theme.breakpoints.down('sm')]:{
-            minWidth:'100%'
-          }
-         
-     },
-     round:{
-        boxShadow:'5px 5px 15px 0px #000000',
-         backgroundColor:'#001ea0',
-         minWidth:'800px',
-         color:'white',
-         display:'flex',
-         marginTop:'1px',
-         padding:'5px',
-         fontWeight:'bold',
-         fontSize:'20px',
-         [theme.breakpoints.down('sm')]:{
-             minWidth: '100%',
-             maxWidth: '100%',
-         }
-     },
-     result:{
-         display:'flex',
-         alignItems:'center',
-         justifyContent:'center',
-         margin:'0 5px'
-     },
      tableTitle:{
          display:'flex',
          justifyContent:'center',
@@ -77,57 +44,18 @@ const useStyles = makeStyles((theme)=>({
     tableCellbody:{
         fontSize:'16px',
         fontWeight:'bold'
-    },
-    dateContainer:{
-        display:'flex',
-        justifyContent:'flex-start',
-        alignItems:'center'
-    },
-    homeContainer:{
-        display:'flex',
-        justifyContent:'flex-start',
-        alignItems:'center'
-    },
-    awayContainer:{
-        display:'flex',
-        justifyContent:'flex-start',
-        alignItems:'center'
     }
      })
 )
 
-function ChampionsLeague() {
+function ClTable() {
 
     const classes = useStyles()
 
     const[footballData,setFootballData] = useState([])
     const[loading,setLoading]= useState(false);
-    const[fixtures,setFixtures] = useState([])
 
     useEffect(() => {
-        const fetchFixtures = async() =>{
-            const response = await fetch(
-              "/api/fetchChampionsLeague");
-            const responseData = await response.json()
- 
-            const matches = responseData.matches
-            console.log(matches)
-
-            const loadedData = [];
-
-            for(const key in matches){
-                loadedData.push({
-                    id:key,
-                    homeTeam:matches[key].homeTeam.name,
-                    awayTeam:matches[key].awayTeam.name,
-                    scoreHomeTeam:matches[key].score.fullTime.home,
-                    scoreAwayTeam:matches[key].score.fullTime.away,
-                    round:matches[key].matchday,
-                    date:matches[key].utcDate
-                })
-            }
-            setFixtures(loadedData)
-        }
         const fetchTable = async () =>{
             setLoading(true);
             const responses = await fetch("/api/fetchClStandings");   
@@ -162,7 +90,6 @@ function ChampionsLeague() {
                      setLoading(false)
                  }
         fetchTable()
-        fetchFixtures()
     }, [])
 
     return (
@@ -177,41 +104,6 @@ function ChampionsLeague() {
             </div>
           ) : (
             <div>
-              {fixtures.map((fixture) => (
-                <div className={classes.mainContainer} id={fixture.id}>
-                  {fixture.id % 2 === 0 && (
-                    <div className={classes.round}>
-                      <p style={{ margin: "5px 13px" }}>
-                        Round {fixture.round}
-                      </p>
-                    </div>
-                  )}
-                  <div className={classes.matchContainer}>
-                    <div className={classes.dateContainer}>
-                      <p>{new Date(fixture.date).toLocaleString()}</p>
-                    </div>
-                    <div className={classes.homeContainer}>
-                      {fixture.homeTeam === "FC Internazionale Milano" ? (
-                        <p style={{ color: "#0841ff" }}>{fixture.homeTeam}</p>
-                      ) : (
-                        <p>{fixture.homeTeam}</p>
-                      )}
-                    </div>
-                    <div className={classes.result}>
-                      <p>{fixture.scoreHomeTeam}</p>
-                      <p>:</p>
-                      <p>{fixture.scoreAwayTeam}</p>
-                    </div>
-                    <div className={classes.awayContainer}>
-                      {fixture.awayTeam === "FC Internazionale Milano" ? (
-                        <p style={{ color: "#0841ff" }}>{fixture.awayTeam}</p>
-                      ) : (
-                        <p>{fixture.awayTeam}</p>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              ))}
               <div className={classes.tableTitle}>
                 <Typography
                   variant="h5"
@@ -287,5 +179,5 @@ function ChampionsLeague() {
     );
 }
 
-export default ChampionsLeague
+export default ClTable
 
