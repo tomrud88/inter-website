@@ -1,16 +1,17 @@
 import { useState, useEffect } from "react";
 
-const useClFixtures = (pageSize = 10) => {
+const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 30) => {
   const [fixtures, setFixtures] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
+  const [startDate, setStartDate] = useState(initialStartDate);
+  const [endDate, setEndDate] = useState(initialEndDate);
 
   useEffect(() => {
     const fetchFixtures = async () => {
       setLoading(true);
       try {
         const response = await fetch(
-          `/api/fetchFixtures?page=${currentPage}&pageSize=${pageSize}`
+          `/api/fetchFixtures?dateFrom=${startDate}&dateTo=${endDate}`
         );
         const responseData = await response.json();
 
@@ -23,7 +24,7 @@ const useClFixtures = (pageSize = 10) => {
           round: item.matchday,
         }));
 
-        setFixtures(loadedData);
+        setFixtures((prevFixtures) => [...prevFixtures, ...loadedData]);
         setLoading(false);
       } catch (error) {
         console.error("Error fetching fixtures:", error);
@@ -32,28 +33,29 @@ const useClFixtures = (pageSize = 10) => {
     };
 
     fetchFixtures();
-  }, [currentPage, pageSize]);
+  }, [startDate, endDate]);
     
     useEffect(() => {
+      const handleScroll = () => {
+        const { scrollTop, clientHeight, scrollHeight } =
+          document.documentElement;
+
+        if (scrollTop + clientHeight >= scrollHeight) {
+          const newStartDate = new Date(endDate);
+          const newEndDate = new Date(newStartDate);
+          newEndDate.setDate(newEndDate.getDate() + daysIncrement);
+
+          setStartDate(newStartDate.toISOString().split("T")[0]);
+          setEndDate(newEndDate.toISOString().split("T")[0]);
+        }
+      };
+
       window.addEventListener("scroll", handleScroll);
 
       return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    }, [endDate, daysIncrement]);
 
-    const handleScroll = () => {
-      const { scrollTop, clientHeight, scrollHeight } =
-        document.documentElement;
-
-      if (scrollTop + clientHeight >= scrollHeight) {
-        setCurrentPage((prev) => prev + 1);
-      }
-    };
-
-  const nextPage = () => setCurrentPage((prevPage) => prevPage + 1);
-  const prevPage = () =>
-    setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
-
-  return { fixtures, loading, currentPage, nextPage, prevPage };
+  return { fixtures, loading };
 };
 
 export default useClFixtures;

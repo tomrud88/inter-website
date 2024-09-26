@@ -73,7 +73,12 @@ const useStyles = makeStyles((theme) => ({
 
     function Fixtures() {
       const classes = useStyles();
-      const { fixtures, loading } = useClFixtures();
+      const initialStartDate = "2024-08-17";
+      const initialEndDate = "2024-09-24";
+      const { fixtures, loading } = useClFixtures(
+        initialStartDate,
+        initialEndDate
+      );
       
       return (
         <Container className={classes.outerContainer}>
