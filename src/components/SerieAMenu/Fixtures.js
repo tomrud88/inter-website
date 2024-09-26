@@ -89,9 +89,9 @@ const useStyles = makeStyles((theme) => ({
               <div className={classes.mainTitle}>
                 <h1>Fixtures</h1>
               </div>
-              {fixtures.map((fixture) => (
-                <div className={classes.mainContainer} id={fixture.index}>
-                  {fixture.index % 10 === 0 && (
+              {fixtures.map((fixture, index) => (
+                <div className={classes.mainContainer} key={index}>
+                  {index % 10 === 0 && (
                     <div className={classes.round}>
                       <p style={{ margin: "5px 13px" }}>
                         Round {fixture.matchday}

@@ -8,7 +8,8 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 30) => 
 
   useEffect(() => {
     const fetchFixtures = async () => {
-      setLoading(true);
+        setLoading(true);
+        const scrollPosition = window.scrollY;
       try {
         const response = await fetch(
           `/api/fetchFixtures?dateFrom=${startDate}&dateTo=${endDate}`
@@ -25,7 +26,8 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 30) => 
         }));
 
         setFixtures((prevFixtures) => [...prevFixtures, ...loadedData]);
-        setLoading(false);
+          setLoading(false);
+          window.scrollTo(0, scrollPosition);
       } catch (error) {
         console.error("Error fetching fixtures:", error);
         setLoading(false);
