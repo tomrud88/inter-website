@@ -53,21 +53,23 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 30) => 
           document.documentElement;
 
         if (scrollTop + clientHeight >= scrollHeight) {
-          const endDateObj = new Date(endDate);
-          const newStartDate = new Date(endDateObj);
-          newStartDate.setDate(newStartDate.getDate() + 1);
-          const newEndDate = new Date(newStartDate);
-          newEndDate.setDate(newEndDate.getDate() + daysIncrement);
+          setEndDate((prevEndDate) => {
+            const endDateObj = new Date(prevEndDate);
+            const newStartDate = new Date(endDateObj);
+            newStartDate.setDate(newStartDate.getDate() + 1);
+            const newEndDate = new Date(newStartDate);
+            newEndDate.setDate(newEndDate.getDate() + daysIncrement);
 
-          setStartDate(newStartDate.toISOString().split("T")[0]);
-          setEndDate(newEndDate.toISOString().split("T")[0]);
-        }
+            setStartDate(newStartDate.toISOString().split("T")[0]);
+            setEndDate(newEndDate.toISOString().split("T")[0]);
+          })
+          }  
       }, 200);
 
       window.addEventListener("scroll", handleScroll);
 
       return () => window.removeEventListener("scroll", handleScroll);
-    }, [endDate, daysIncrement]);
+    }, [daysIncrement]);
 
   return { fixtures, loading };
 };
