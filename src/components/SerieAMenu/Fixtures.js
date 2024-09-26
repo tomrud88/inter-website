@@ -90,11 +90,11 @@ const useStyles = makeStyles((theme) => ({
                 <h1>Fixtures</h1>
               </div>
               {fixtures.map((fixture) => (
-                <div className={classes.mainContainer} id={fixture.id}>
-                  {fixture.id % 10 === 0 && (
+                <div className={classes.mainContainer} id={fixture.index}>
+                  {fixture.index % 10 === 0 && (
                     <div className={classes.round}>
                       <p style={{ margin: "5px 13px" }}>
-                        Round {fixture.round}
+                        Round {fixture.matchday}
                       </p>
                     </div>
                   )}
