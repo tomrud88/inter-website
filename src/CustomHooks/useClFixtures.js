@@ -1,13 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 30) => {
   const [fixtures, setFixtures] = useState([]);
   const [loading, setLoading] = useState(false);
   const [startDate, setStartDate] = useState(initialStartDate);
   const [endDate, setEndDate] = useState(initialEndDate);
+  const isFetching = useRef(false);
 
   useEffect(() => {
     const fetchFixtures = async () => {
+      if (isFetching.current) return;
+      isFetching.current = true;
         setLoading(true);
         const scrollPosition = window.scrollY;
       try {
@@ -34,6 +37,8 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 30) => 
       } catch (error) {
         console.error("Error fetching fixtures:", error);
         setLoading(false);
+      } finally {
+        isFetching.current = false;
       }
     };
 
