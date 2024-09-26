@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import debounce from "lodash.debounce"; 
 
 const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 30) => {
   const [fixtures, setFixtures] = useState([]);
@@ -42,11 +43,12 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 30) => 
       }
     };
 
+    
     fetchFixtures();
   }, [startDate, endDate]);
     
     useEffect(() => {
-      const handleScroll = () => {
+      const handleScroll = debounce(() => {
         const { scrollTop, clientHeight, scrollHeight } =
           document.documentElement;
 
@@ -60,7 +62,7 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 30) => 
           setStartDate(newStartDate.toISOString().split("T")[0]);
           setEndDate(newEndDate.toISOString().split("T")[0]);
         }
-      };
+      }, 200);
 
       window.addEventListener("scroll", handleScroll);
 
