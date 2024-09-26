@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useClFixtures = (pageSize = 50) => {
+const useClFixtures = (pageSize = 10) => {
   const [fixtures, setFixtures] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
@@ -35,20 +35,19 @@ const useClFixtures = (pageSize = 50) => {
   }, [currentPage, pageSize]);
     
     useEffect(() => {
-      const handleScroll = () => {
-        if (
-          window.innerHeight + document.documentElement.scrollTop + 1 >=
-          document.documentElement.scrollHeight
-        ) {
-          setLoading(true);
-          setCurrentPage((prevPage) => prevPage + 1);
-        }
-      };
-
       window.addEventListener("scroll", handleScroll);
 
       return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    const handleScroll = () => {
+      const { scrollTop, clientHeight, scrollHeight } =
+        document.documentElement;
+
+      if (scrollTop + clientHeight >= scrollHeight) {
+        setCurrentPage((prev) => prev + 1);
+      }
+    };
 
   const nextPage = () => setCurrentPage((prevPage) => prevPage + 1);
   const prevPage = () =>
