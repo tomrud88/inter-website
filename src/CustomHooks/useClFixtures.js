@@ -44,7 +44,7 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 30) => 
 
         if (scrollTop + clientHeight >= scrollHeight) {
           const newStartDate = new Date(endDate);
-          const newEndDate = new Date(newStartDate);
+          const newEndDate = new Date(newStartDate.getDate() + 1);
           newEndDate.setDate(newEndDate.getDate() + daysIncrement);
 
           setStartDate(newStartDate.toISOString().split("T")[0]);

@@ -94,7 +94,7 @@ const useStyles = makeStyles((theme) => ({
                   {index % 10 === 0 && (
                     <div className={classes.round}>
                       <p style={{ margin: "5px 13px" }}>
-                        Round {fixture.matchday}
+                        Round {fixture.round}
                       </p>
                     </div>
                   )}
