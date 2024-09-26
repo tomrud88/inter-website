@@ -26,8 +26,11 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 30) => 
         }));
 
         setFixtures((prevFixtures) => [...prevFixtures, ...loadedData]);
-          setLoading(false);
+        setLoading(false);
+        setTimeout(() => {
           window.scrollTo(0, scrollPosition);
+        }, 0);
+          
       } catch (error) {
         console.error("Error fetching fixtures:", error);
         setLoading(false);
