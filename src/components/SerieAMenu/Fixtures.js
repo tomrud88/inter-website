@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { Container, makeStyles } from "@material-ui/core";
 import { ClipLoader } from "react-spinners";
+import useClFixtures from "../../CustomHooks/useClFixtures";
 
 const useStyles = makeStyles((theme) => ({
   outerContainer: {
@@ -72,41 +73,8 @@ const useStyles = makeStyles((theme) => ({
 
     function Fixtures() {
       const classes = useStyles();
-
-      const [fixtures, setFixtures] = useState([]);
-      const [loading, setLoading] = useState(false);
-
-      useEffect(() => {
-        setLoading(true);
-        const fetchFixtures = async () => {
-          try {
-            const response = await fetch(`/api/fetchFixtures`);
-            const responseData = await response.json();
-            console.log(responseData);
-            console.log("test")
-
-            const loadedData = [];
-
-            for (const key in responseData) {
-              loadedData.push({
-                id: key,
-                homeTeam: responseData[key].homeTeam.name,
-                awayTeam: responseData[key].awayTeam.name,
-                scoreHomeTeam: responseData[key].score.fullTime.home,
-                scoreAwayTeam: responseData[key].score.fullTime.away,
-                round: responseData[key].matchday,
-              });
-            }
-            setFixtures(loadedData);
-            setLoading(false);
-          } catch (error) {
-            console.error("Error fetching fixtures:", error);
-            setLoading(false);
-          }
-        };
-        fetchFixtures();
-      }, []);
-
+      const { fixtures, loading } = useClFixtures();
+      
       return (
         <Container className={classes.outerContainer}>
           {loading ? (
@@ -148,6 +116,9 @@ const useStyles = makeStyles((theme) => ({
                   </div>
                 </div>
               ))}
+              {loading && (
+                <ClipLoader size={50} color={"#001ea0"} loading={loading} />
+              )}
             </div>
           )}
         </Container>
