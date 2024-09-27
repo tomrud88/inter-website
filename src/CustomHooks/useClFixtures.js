@@ -1,11 +1,13 @@
 import { useState, useEffect, useRef } from "react";
 import debounce from "lodash.debounce"; 
 
-const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 30) => {
+const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 90) => {
   const [fixtures, setFixtures] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [startDate, setStartDate] = useState(initialStartDate);
-  const [endDate, setEndDate] = useState(initialEndDate);
+   const [dateRange, setDateRange] = useState({
+     startDate: initialStartDate,
+     endDate: initialEndDate,
+   });
   const isFetching = useRef(false);
 
   useEffect(() => {
@@ -16,7 +18,7 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 30) => 
         const scrollPosition = window.scrollY;
       try {
         const response = await fetch(
-          `/api/fetchFixtures?dateFrom=${startDate}&dateTo=${endDate}`
+          `/api/fetchFixtures?dateFrom=${dateRange.startDate}&dateTo=${dateRange.endDate}`
         );
         const responseData = await response.json();
 
@@ -44,22 +46,24 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 30) => 
     };
 
     fetchFixtures();
-  }, [startDate, endDate]);
+  }, [dateRange]);
     
     const handleScroll = debounce(() => {
       const { scrollTop, clientHeight, scrollHeight } =
         document.documentElement;
 
       if (scrollTop + clientHeight >= scrollHeight) {
-        setEndDate((prevEndDate) => {
-          const endDateObj = new Date(prevEndDate);
+        setDateRange((prevDateRange) => {
+          const endDateObj = new Date(prevDateRange.endDate);
           const newStartDate = new Date(endDateObj);
           newStartDate.setDate(newStartDate.getDate() + 1);
           const newEndDate = new Date(newStartDate);
           newEndDate.setDate(newEndDate.getDate() + daysIncrement);
 
-          setStartDate(newStartDate.toISOString().split("T")[0]);
-          return newEndDate.toISOString().split("T")[0];
+           return {
+             startDate: newStartDate.toISOString().split("T")[0],
+             endDate: newEndDate.toISOString().split("T")[0],
+           };
         });
       }
     }, 200);
