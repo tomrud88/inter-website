@@ -54,7 +54,7 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 90) => 
         setLoading(false);
       } finally {
         isFetching.current = false;
-        lastFetchDate.current = null;
+        lastFetchDate.current = dateRange.endDate;
       }
     };
 
@@ -73,7 +73,12 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 90) => 
           const newEndDate = new Date(newStartDate);
           newEndDate.setDate(newEndDate.getDate() + daysIncrement);
 
-          
+          const limitDate = new Date("2025-06-23");
+          if (newEndDate > limitDate) {
+            console.log("Reached the limit date of 2025-06-23. No more fetching.");
+            return prevDateRange;
+          }
+
   console.log("Previous End Date:", prevDateRange.endDate);
   console.log("New Start Date:", newStartDate.toISOString().split("T")[0]);
   console.log("New End Date:", newEndDate.toISOString().split("T")[0]);
