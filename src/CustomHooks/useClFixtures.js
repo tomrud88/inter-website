@@ -9,10 +9,16 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 90) => 
      endDate: initialEndDate,
    });
   const isFetching = useRef(false);
+  const lastFetchDate = useRef(null);
 
   useEffect(() => {
     const fetchFixtures = async () => {
-      if (isFetching.current) return;
+      if (
+        isFetching.current ||
+        (lastFetchDate.current &&
+          new Date(lastFetchDate.current) > new Date(dateRange.endDate))
+      )
+        return;
       isFetching.current = true;
         setLoading(true);
         const scrollPosition = window.scrollY;
@@ -48,6 +54,7 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 90) => 
         setLoading(false);
       } finally {
         isFetching.current = false;
+        lastFetchDate.current = null;
       }
     };
 
@@ -58,7 +65,7 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 90) => 
       const { scrollTop, clientHeight, scrollHeight } =
         document.documentElement;
 
-      if (scrollTop + clientHeight >= scrollHeight) {
+      if (scrollTop + clientHeight >= scrollHeight && !isFetching.current) {
         setDateRange((prevDateRange) => {
           const endDateObj = new Date(prevDateRange.endDate);
           const newStartDate = new Date(endDateObj);
