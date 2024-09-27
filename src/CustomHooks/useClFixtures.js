@@ -60,6 +60,11 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 90) => 
           const newEndDate = new Date(newStartDate);
           newEndDate.setDate(newEndDate.getDate() + daysIncrement);
 
+          
+  console.log("Previous End Date:", prevDateRange.endDate);
+  console.log("New Start Date:", newStartDate.toISOString().split("T")[0]);
+  console.log("New End Date:", newEndDate.toISOString().split("T")[0]);
+
            return {
              startDate: newStartDate.toISOString().split("T")[0],
              endDate: newEndDate.toISOString().split("T")[0],
