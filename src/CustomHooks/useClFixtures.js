@@ -61,7 +61,7 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 30) => 
             newEndDate.setDate(newEndDate.getDate() + daysIncrement);
 
             setStartDate(newStartDate.toISOString().split("T")[0]);
-            setEndDate(newEndDate.toISOString().split("T")[0]);
+            return newEndDate.toISOString().split("T")[0];
           })
           }  
       }, 200);
