@@ -73,7 +73,7 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 90) => 
           const newEndDate = new Date(newStartDate);
           newEndDate.setDate(newEndDate.getDate() + daysIncrement);
 
-          const limitDate = new Date("2025-06-23");
+          const limitDate = new Date("2025-06-24");
           if (newEndDate > limitDate) {
             console.log("Reached the limit date of 2025-06-23. No more fetching.");
             return prevDateRange;
