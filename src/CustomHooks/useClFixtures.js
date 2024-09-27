@@ -43,33 +43,32 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 30) => 
       }
     };
 
-    
     fetchFixtures();
   }, [startDate, endDate]);
     
+    const handleScroll = debounce(() => {
+      const { scrollTop, clientHeight, scrollHeight } =
+        document.documentElement;
+
+      if (scrollTop + clientHeight >= scrollHeight) {
+        setEndDate((prevEndDate) => {
+          const endDateObj = new Date(prevEndDate);
+          const newStartDate = new Date(endDateObj);
+          newStartDate.setDate(newStartDate.getDate() + 1);
+          const newEndDate = new Date(newStartDate);
+          newEndDate.setDate(newEndDate.getDate() + daysIncrement);
+
+          setStartDate(newStartDate.toISOString().split("T")[0]);
+          return newEndDate.toISOString().split("T")[0];
+        });
+      }
+    }, 200);
+
     useEffect(() => {
-      const handleScroll = debounce(() => {
-        const { scrollTop, clientHeight, scrollHeight } =
-          document.documentElement;
-
-        if (scrollTop + clientHeight >= scrollHeight) {
-          setEndDate((prevEndDate) => {
-            const endDateObj = new Date(prevEndDate);
-            const newStartDate = new Date(endDateObj);
-            newStartDate.setDate(newStartDate.getDate() + 1);
-            const newEndDate = new Date(newStartDate);
-            newEndDate.setDate(newEndDate.getDate() + daysIncrement);
-
-            setStartDate(newStartDate.toISOString().split("T")[0]);
-            return newEndDate.toISOString().split("T")[0];
-          })
-          }  
-      }, 200);
-
       window.addEventListener("scroll", handleScroll);
 
       return () => window.removeEventListener("scroll", handleScroll);
-    }, [daysIncrement]);
+    }, [handleScroll]);
 
   return { fixtures, loading };
 };
