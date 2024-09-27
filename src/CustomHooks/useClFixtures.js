@@ -17,6 +17,12 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 90) => 
         setLoading(true);
         const scrollPosition = window.scrollY;
       try {
+        console.log(
+          "Fetching fixtures from:",
+          dateRange.startDate,
+          "to:",
+          dateRange.endDate
+        );
         const response = await fetch(
           `/api/fetchFixtures?dateFrom=${dateRange.startDate}&dateTo=${dateRange.endDate}`
         );
