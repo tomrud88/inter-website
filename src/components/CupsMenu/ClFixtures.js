@@ -2,6 +2,7 @@ import React from 'react'
 import {useEffect,useState} from 'react'
 import{ makeStyles,Container} from '@material-ui/core';
 import { ClipLoader } from 'react-spinners';
+import useClFixtures from '../../CustomHooks/useClFixtures';
 
 const useStyles = makeStyles((theme) => ({
   outerContainer: {
@@ -80,41 +81,17 @@ const useStyles = makeStyles((theme) => ({
 function ClFixtures() {
 
     const classes = useStyles()
-    const[loading,setLoading]= useState(false);
-    const[fixtures,setFixtures] = useState([])
-
-    useEffect(() => {
-        const fetchFixtures = async () => {
-            const response = await fetch(
-                "/api/fetchChampionsLeague");
-            const responseData = await response.json()
- 
-            const matches = responseData.matches
-            console.log(matches)
-
-            const loadedData = [];
-
-            for (const key in matches) {
-                loadedData.push({
-                    id: key,
-                    homeTeam: matches[key].homeTeam.name,
-                    awayTeam: matches[key].awayTeam.name,
-                    scoreHomeTeam: matches[key].score.fullTime.home,
-                    scoreAwayTeam: matches[key].score.fullTime.away,
-                    round: matches[key].matchday,
-                    date: matches[key].utcDate
-                })
-            }
-            setFixtures(loadedData)
-        }
-        fetchFixtures();
-        },[])
-
+      const initialStartDate = "2024-09-17";
+  const initialEndDate = "2025-02-10";
+  const { fixtures, loading } = useClFixtures(
+    initialStartDate,
+    initialEndDate
+  )
         return (
       <div>
         <Container className={classes.outerContainer}>
           <div className={classes.mainTitle}>
-            <h1>Champions League</h1>
+            <h1>Champions League Fixtures</h1>
           </div>
           {loading ? (
             <div className={classes.loader}>
@@ -122,9 +99,9 @@ function ClFixtures() {
             </div>
           ) : (
             <div>
-              {fixtures.map((fixture) => (
-                <div className={classes.mainContainer} id={fixture.id}>
-                  {fixture.id % 2 === 0 && (
+              {fixtures.map((fixture, index) => (
+                <div className={classes.mainContainer} key={index}>
+                  {index % 16 === 0 && (
                     <div className={classes.round}>
                       <p style={{ margin: "5px 13px" }}>
                         Round {fixture.round}

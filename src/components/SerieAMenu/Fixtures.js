@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { Container, makeStyles } from "@material-ui/core";
 import { ClipLoader } from "react-spinners";
-import useSerieAFixtures from "../../CustomHooks/useClFixtures";
+import useSerieAFixtures from "../../CustomHooks/useSerieAFixtures";
 
 const useStyles = makeStyles((theme) => ({
   outerContainer: {
@@ -126,7 +126,9 @@ const useStyles = makeStyles((theme) => ({
                 </div>
               ))}
               {loading && fixtures.length > 0 && (
-                  <ClipLoader className={classes.smallLoaderContainer} size={50} color={"#001ea0"} loading={loading} />
+                <div className={classes.smallLoaderContainer}>
+                  <ClipLoader size={50} color={"#001ea0"} loading={loading} />
+                </div>
               )}
             </div>
           )}

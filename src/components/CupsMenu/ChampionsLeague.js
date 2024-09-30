@@ -96,7 +96,7 @@ function ClTable() {
       <div>
         <Container className={classes.outerContainer}>
           <div className={classes.mainTitle}>
-            <h1>Champions League</h1>
+            <h1>Champions League Table</h1>
           </div>
           {loading ? (
             <div className={classes.loader}>

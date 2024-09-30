@@ -1,7 +1,9 @@
 module.exports = async (req, res) => {
+  const { dateFrom, dateTo } = req.query;
+
   try {
     const response = await fetch(
-      "https://api.football-data.org/v4/competitions/CL/matches?",
+      `https://api.football-data.org/v4/competitions/CL/matches?dateFrom=${dateFrom}&dateTo=${dateTo}`,
       {
         method: "GET",
         headers: {
