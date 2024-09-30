@@ -82,7 +82,7 @@ function ClFixtures() {
 
     const classes = useStyles()
       const initialStartDate = "2024-09-17";
-  const initialEndDate = "2025-02-10";
+  const initialEndDate = "2025-02-01";
   const { fixtures, loading } = useClFixtures(
     initialStartDate,
     initialEndDate
@@ -101,7 +101,7 @@ function ClFixtures() {
             <div>
               {fixtures.map((fixture, index) => (
                 <div className={classes.mainContainer} key={index}>
-                  {index % 16 === 0 && (
+                  {index % 18 === 0 && (
                     <div className={classes.round}>
                       <p style={{ margin: "5px 13px" }}>
                         Round {fixture.round}
