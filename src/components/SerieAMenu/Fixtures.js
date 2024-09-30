@@ -69,6 +69,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "flex-start",
     alignItems: "center",
   },
+  smallLoaderContainer: {
+    display: "flex",
+    justifyContent: "center",
+  }
 }));
 
     function Fixtures() {
@@ -122,7 +126,7 @@ const useStyles = makeStyles((theme) => ({
                 </div>
               ))}
               {loading && fixtures.length > 0 && (
-                <ClipLoader size={50} color={"#001ea0"} loading={loading} />
+                  <ClipLoader className={classes.smallLoaderContainer} size={50} color={"#001ea0"} loading={loading} />
               )}
             </div>
           )}
