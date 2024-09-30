@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import debounce from "lodash.debounce"; 
 
-const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 90) => {
+const useSerieAFixtures = (initialStartDate, initialEndDate, daysIncrement = 90) => {
   const [fixtures, setFixtures] = useState([]);
   const [loading, setLoading] = useState(false);
    const [dateRange, setDateRange] = useState({
@@ -100,4 +100,4 @@ const useClFixtures = (initialStartDate, initialEndDate, daysIncrement = 90) => 
   return { fixtures, loading };
 };
 
-export default useClFixtures;
+export default useSerieAFixtures;
