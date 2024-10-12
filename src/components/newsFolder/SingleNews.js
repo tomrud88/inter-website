@@ -34,7 +34,15 @@ export default function SingleNews() {
         const {id} = useParams()
     const classes = useStyles()
     
-    const [singleNews, setSingleNews] = useState([]);
+    const [singleNews, setSingleNews] = useState({
+      title: "",
+      picture: "",
+      date: "",
+      alt: "",
+      text1: "",
+      text2: "",
+      text3: "",
+    });
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
@@ -104,7 +112,7 @@ export default function SingleNews() {
                   style={{ marginBottom: "10px", whiteSpace: "pre-wrap" }}
                 >
                   {" "}
-                  {singleNews.text3.split("\n").map((line, index) => (
+                  {singleNews.text3 && singleNews.text3.split("\n").map((line, index) => (
                     <React.Fragment key={index}>
                       {line}
                       <br />
