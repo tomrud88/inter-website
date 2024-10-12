@@ -109,15 +109,10 @@ export default function SingleNews() {
                   {singleNews.text2}
                 </Typography>
                 <Typography
-                  style={{ marginBottom: "10px", whiteSpace: "pre-wrap" }}
+                  style={{ marginBottom: "10px" }}
                 >
                   {" "}
-                  {singleNews.text3 && singleNews.text3.split("\n").map((line, index) => (
-                    <React.Fragment key={index}>
-                      {line}
-                      <br />
-                    </React.Fragment>
-                  ))}
+                  {singleNews.text3}
                 </Typography>
               </CardContent>
             </Card>
