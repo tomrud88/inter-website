@@ -100,7 +100,7 @@ export default function SingleNews() {
                   {" "}
                   {singleNews.text2}
                 </Typography>
-                <Typography style={{ marginBottom: "10px" }}>
+                <Typography style={{ marginBottom: "10px", whiteSpace: 'pre-wrap' }}>
                   {" "}
                   {singleNews.text3}
                 </Typography>
